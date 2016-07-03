@@ -148,11 +148,16 @@
     <Compile Include="Models\Owner.cs" />
     <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\Rent.cs" />
+    <Compile Include="Models\Repository\CustomerRepository.cs" />
+    <Compile Include="Models\Repository\FeeRepository.cs" />
+    <Compile Include="Models\Repository\HabitationRepository.cs" />
+    <Compile Include="Models\Repository\IRepository.cs" />
+    <Compile Include="Models\Repository\Owner.cs" />
+    <Compile Include="Models\Repository\PaymentRepository.cs" />
+    <Compile Include="Models\Repository\RentRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\Repository\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201607032110262_All.resx">
       <DependentUpon>201607032110262_All.cs</DependentUpon>
