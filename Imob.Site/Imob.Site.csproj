@@ -136,6 +136,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201607032110262_All.cs" />
+    <Compile Include="Migrations\201607032110262_All.Designer.cs">
+      <DependentUpon>201607032110262_All.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Context\Context.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -148,6 +152,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Repository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201607032110262_All.resx">
+      <DependentUpon>201607032110262_All.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
