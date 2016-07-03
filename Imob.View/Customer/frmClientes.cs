@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Imob.View.Habitation
+namespace Imob.View.Customer
 {
-    public partial class VisaoGeral : Form
+    public partial class frmClientes : Form
     {
-        public VisaoGeral()
+        public frmClientes()
         {
             InitializeComponent();
         }

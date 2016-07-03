@@ -1,6 +1,6 @@
 ﻿namespace Imob.View.Rent
 {
-    partial class VisaoGeral
+    partial class frmAlgueis
     {
         /// <summary>
         /// Required designer variable.

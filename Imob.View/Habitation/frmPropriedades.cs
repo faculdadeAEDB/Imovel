@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Imob.View.Rent
+namespace Imob.View.Habitation
 {
-    public partial class VisaoGeral : Form
+    public partial class frmPropriedades : Form
     {
-        public VisaoGeral()
+        public frmPropriedades()
         {
             InitializeComponent();
-        }
-
-        private void Rent_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

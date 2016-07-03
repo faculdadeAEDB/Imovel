@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Imob.View.Customer
+namespace Imob.View.Rent
 {
-    public partial class VisaoGeral : Form
+    public partial class frmAlgueis : Form
     {
-        public VisaoGeral()
+        public frmAlgueis()
         {
             InitializeComponent();
+        }
+
+        private void Rent_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

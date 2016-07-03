@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Imob.View.Owner
 {
-    public partial class VisaoGeral : Form
+    public partial class frmProprietarios : Form
     {
-        public VisaoGeral()
+        public frmProprietarios()
         {
             InitializeComponent();
         }

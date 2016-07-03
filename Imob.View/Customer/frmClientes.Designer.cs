@@ -1,6 +1,6 @@
 ﻿namespace Imob.View.Customer
 {
-    partial class VisaoGeral
+    partial class frmClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -203,7 +203,7 @@
             this.Controls.Add(this.CostxbNome);
             this.Controls.Add(this.CoslblNome);
             this.Name = "VisaoGeral";
-            this.Text = "VisaoGeral";
+            this.Text = "Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

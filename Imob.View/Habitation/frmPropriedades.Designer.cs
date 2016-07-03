@@ -1,6 +1,6 @@
 ﻿namespace Imob.View.Habitation
 {
-    partial class VisaoGeral
+    partial class frmPropriedades
     {
         /// <summary>
         /// Required designer variable.
@@ -191,7 +191,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Name = "VisaoGeral";
-            this.Text = "VisaoGeral";
+            this.Text = "Propriedades";
             ((System.ComponentModel.ISupportInitialize)(this.dgvImo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,6 +1,6 @@
 ﻿namespace Imob.View.Owner
 {
-    partial class VisaoGeral
+    partial class frmProprietarios
     {
         /// <summary>
         /// Required designer variable.
@@ -213,7 +213,7 @@
             this.Controls.Add(this.txbNomePro);
             this.Controls.Add(this.label1);
             this.Name = "VisaoGeral";
-            this.Text = "VisaoGeral";
+            this.Text = "Proprietarios";
             ((System.ComponentModel.ISupportInitialize)(this.grdProprietario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
