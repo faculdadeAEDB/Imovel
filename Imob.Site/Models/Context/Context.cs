@@ -8,5 +8,6 @@ namespace Imob.Site.Models.Context
 {
     public class Context : DbContext
     {
+
     }
 }
