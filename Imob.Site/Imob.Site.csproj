@@ -139,8 +139,11 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Context\Context.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Fee.cs" />
     <Compile Include="Models\Habitation.cs" />
     <Compile Include="Models\Owner.cs" />
+    <Compile Include="Models\Payment.cs" />
+    <Compile Include="Models\Rent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
