@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0e1b6ce5-14f7-47bc-b7b5-da994401f164" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:10945/Controllers/TaxaController.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TaxaController.xsd" MetadataType="Schema" ID="705ce35d-46d3-45e5-aacf-ecb4d5b5944a" SourceId="1" SourceUrl="http://localhost:10945/Controllers/TaxaController.svc?xsd=xsd1" />
+    <MetadataFile FileName="TaxaController1.xsd" MetadataType="Schema" ID="a55182e1-7c35-4d78-85db-e07084bfa8cf" SourceId="1" SourceUrl="http://localhost:10945/Controllers/TaxaController.svc?xsd=xsd0" />
+    <MetadataFile FileName="TaxaController.disco" MetadataType="Disco" ID="98293acc-1530-40ee-9f7c-319431d0948a" SourceId="1" SourceUrl="http://localhost:10945/Controllers/TaxaController.svc?disco" />
+    <MetadataFile FileName="TaxaController.wsdl" MetadataType="Wsdl" ID="5f11d253-17ad-4839-a10b-36c40eb65f98" SourceId="1" SourceUrl="http://localhost:10945/Controllers/TaxaController.svc?wsdl" />
+    <MetadataFile FileName="TaxaController2.xsd" MetadataType="Schema" ID="a27bce93-b566-4cd1-9519-bc9c9c3ef21a" SourceId="1" SourceUrl="http://localhost:10945/Controllers/TaxaController.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -85,6 +85,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\TaxaController\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Customer\frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +115,7 @@
       <DependentUpon>frmAlgueis.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\Imob.Site.Models.Customer.datasource" />
+    <None Include="Properties\DataSources\Imob.Site.Models.Fee.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -129,6 +135,16 @@
     <None Include="Service References\ClienteController\ClienteController2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\TaxaController\TaxaController.wsdl" />
+    <None Include="Service References\TaxaController\TaxaController.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TaxaController\TaxaController1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TaxaController\TaxaController2.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -144,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ClienteController\" />
+    <WCFMetadataStorage Include="Service References\TaxaController\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ClienteController\ClienteController.disco" />
@@ -156,6 +173,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ClienteController\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TaxaController\TaxaController.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TaxaController\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TaxaController\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TaxaController\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
