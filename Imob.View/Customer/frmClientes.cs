@@ -21,6 +21,7 @@ namespace Imob.View.Customer
         private void frmClientes_Load(object sender, EventArgs e)
         {
             Imob.Site.Models.Customer c = new Imob.Site.Models.Customer();
+
             c.Nome = "Xablau";
             c.Telefone = "9999";
             c.Idade = "20";

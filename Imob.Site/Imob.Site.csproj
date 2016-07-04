@@ -123,6 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controllers\ClienteController.svc" />
+    <Content Include="Controllers\TaxaController.svc" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -144,6 +145,10 @@
       <DependentUpon>ClienteController.svc</DependentUpon>
     </Compile>
     <Compile Include="Controllers\IClienteController.cs" />
+    <Compile Include="Controllers\ITaxaController.cs" />
+    <Compile Include="Controllers\TaxaController.svc.cs">
+      <DependentUpon>TaxaController.svc</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201607032110262_All.cs" />
     <Compile Include="Migrations\201607032110262_All.Designer.cs">
       <DependentUpon>201607032110262_All.cs</DependentUpon>
