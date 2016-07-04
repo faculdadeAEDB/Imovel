@@ -20,13 +20,36 @@ namespace Imob.View.Customer
 
         private void frmClientes_Load(object sender, EventArgs e)
         {
+            (new ClienteController.ClienteControllerClient()).Obter();
+        }
+
+        private void CosbtnNovo_Click(object sender, EventArgs e)
+        {
             Imob.Site.Models.Customer c = new Imob.Site.Models.Customer();
-            c.Nome = "Xablau";
-            c.Telefone = "9999";
-            c.Idade = "20";
-            c.cpf = 12378;
+            c.Nome = CoslblNome.Text;
+            c.Endereco = CoslblEndereco.Text;
+            c.Telefone = CoslblTelefone.Text;
+            c.Idade = CoslblIdade.Text;
+            c.cpf = Convert.ToInt32(CoslblCPF.Text);
 
             (new ClienteController.ClienteControllerClient()).Salvar(c);
+        }
+
+        private void CosbtnSalvar_Click(object sender, EventArgs e)
+        {
+            Imob.Site.Models.Customer c = new Imob.Site.Models.Customer();
+            c.Nome = CoslblNome.Text;
+            c.Endereco = CoslblEndereco.Text;
+            c.Telefone = CoslblTelefone.Text;
+            c.Idade = CoslblIdade.Text;
+            c.cpf = Convert.ToInt32(CoslblCPF.Text);
+
+            (new ClienteController.ClienteControllerClient()).Editar(c);
+        }
+
+        private void CosbtnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
