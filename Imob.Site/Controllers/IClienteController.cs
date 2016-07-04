@@ -14,5 +14,14 @@ namespace Imob.Site.Controllers
     {
         [OperationContract]
         Customer Salvar(Customer obj);
+
+        [OperationContract]
+        List<Customer> Obter();
+
+        [OperationContract]
+        Customer Editar(Customer obj);
+
+        [OperationContract]
+        Customer Excluir(Customer obj);
     }
 }

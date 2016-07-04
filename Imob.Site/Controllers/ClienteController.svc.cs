@@ -13,9 +13,26 @@ namespace Imob.Site.Controllers
     // NOTE: In order to launch WCF Test Client for testing this service, please select ClienteController.svc or ClienteController.svc.cs at the Solution Explorer and start debugging.
     public class ClienteController : IClienteController
     {
+        private CustomerRepository respository = new CustomerRepository();
+
+        public Customer Editar(Customer obj)
+        {
+            return respository.Editar(obj);
+        }
+
+        public Customer Excluir(Customer obj)
+        {
+            return respository.Excluir(obj);
+        }
+
+        public List<Customer> Obter()
+        {
+            return respository.Obter();
+        }
+
         public Customer Salvar(Customer obj)
         {
-            return (new CustomerRepository()).Salvar(obj);
+            return respository.Salvar(obj);
         }
     }
 }
