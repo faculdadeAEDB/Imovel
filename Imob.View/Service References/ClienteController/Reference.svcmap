@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d393f202-b840-4c6c-bcdb-afd5a19e567c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:10945/Controllers/ClienteController.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ClienteController.xsd" MetadataType="Schema" ID="3ad6bb9a-a91f-441f-a452-2ea3fc40ba96" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ClienteController.svc?xsd=xsd2" />
+    <MetadataFile FileName="ClienteController1.xsd" MetadataType="Schema" ID="23a636c1-552b-4a22-bd48-ec5d1c55f4f1" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ClienteController.svc?xsd=xsd1" />
+    <MetadataFile FileName="ClienteController.disco" MetadataType="Disco" ID="aad57578-b10d-4deb-87d8-f05c05ecc44e" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ClienteController.svc?disco" />
+    <MetadataFile FileName="ClienteController.wsdl" MetadataType="Wsdl" ID="6b39c751-f9fa-41ac-bdd4-b93d8ab4db42" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ClienteController.svc?wsdl" />
+    <MetadataFile FileName="ClienteController2.xsd" MetadataType="Schema" ID="6c0e7091-abe3-4426-9444-c44b6b14800a" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ClienteController.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

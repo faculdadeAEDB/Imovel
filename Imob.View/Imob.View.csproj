@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -78,6 +80,11 @@
     <Compile Include="Rent\frmAlgueis.Designer.cs">
       <DependentUpon>frmAlgueis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Service References\ClienteController\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Customer\frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +109,7 @@
     <EmbeddedResource Include="Rent\frmAlgueis.resx">
       <DependentUpon>frmAlgueis.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Imob.Site.Models.Customer.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -111,6 +119,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Service References\ClienteController\ClienteController.wsdl" />
+    <None Include="Service References\ClienteController\ClienteController.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClienteController\ClienteController1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClienteController\ClienteController2.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -123,6 +141,24 @@
       <Project>{1fbcac01-c13b-415b-94b9-e908caefc001}</Project>
       <Name>Imob.Site</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ClienteController\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClienteController\ClienteController.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClienteController\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClienteController\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClienteController\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -8,12 +8,11 @@ using Imob.Site.Models;
 
 namespace Imob.Site.Controllers
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "ICustomer" in both code and config file together.
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IClienteController" in both code and config file together.
     [ServiceContract]
-    public interface ICustomerController
+    public interface IClienteController
     {
         [OperationContract]
-        List<Customer> Obter();
         Customer Salvar(Customer obj);
     }
 }
