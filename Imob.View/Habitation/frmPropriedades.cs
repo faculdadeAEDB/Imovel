@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Imob.View.Habitation
 {
-    public partial class frmPropriedades : Form
+    public partial class PropiedcbxID : Form
     {
-        public frmPropriedades()
+        public PropiedcbxID()
         {
             InitializeComponent();
         }
