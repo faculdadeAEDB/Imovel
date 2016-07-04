@@ -181,7 +181,7 @@
             this.CoslblNome.TabIndex = 32;
             this.CoslblNome.Text = "Nome";
             // 
-            // VisaoGeral
+            // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -202,8 +202,9 @@
             this.Controls.Add(this.CoslblEndereco);
             this.Controls.Add(this.CostxbNome);
             this.Controls.Add(this.CoslblNome);
-            this.Name = "VisaoGeral";
+            this.Name = "frmClientes";
             this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.frmClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
