@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Imob.Site.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Imob.Site.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Owner">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Endereco" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Propriedades" nillable="true" type="tns:ArrayOfHabitation" />
+      <xs:element minOccurs="0" name="Telefone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Owner" nillable="true" type="tns:Owner" />
+  <xs:complexType name="ArrayOfHabitation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Habitation" nillable="true" type="tns:Habitation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHabitation" nillable="true" type="tns:ArrayOfHabitation" />
+  <xs:complexType name="Habitation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Algueis" nillable="true" type="tns:ArrayOfRent" />
+      <xs:element minOccurs="0" name="Dono" nillable="true" type="tns:Owner" />
+      <xs:element minOccurs="0" name="Endereco" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Habitation" nillable="true" type="tns:Habitation" />
+  <xs:complexType name="ArrayOfRent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Rent" nillable="true" type="tns:Rent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRent" nillable="true" type="tns:ArrayOfRent" />
+  <xs:complexType name="Rent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DataFim" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataInicio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Dono" nillable="true" type="tns:Owner" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Inquilino" nillable="true" type="tns:Customer" />
+      <xs:element minOccurs="0" name="Pagamentos" nillable="true" type="tns:ArrayOfPayment" />
+      <xs:element minOccurs="0" name="Valor" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Rent" nillable="true" type="tns:Rent" />
+  <xs:complexType name="Customer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alugueis" nillable="true" type="tns:ArrayOfRent" />
+      <xs:element minOccurs="0" name="Endereco" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Idade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MyProperty" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cpf" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Customer" nillable="true" type="tns:Customer" />
+  <xs:complexType name="ArrayOfPayment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Payment" nillable="true" type="tns:Payment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPayment" nillable="true" type="tns:ArrayOfPayment" />
+  <xs:complexType name="Payment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alguel" nillable="true" type="tns:Rent" />
+      <xs:element minOccurs="0" name="DataPagament" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Taxas" nillable="true" type="tns:ArrayOfFee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Payment" nillable="true" type="tns:Payment" />
+  <xs:complexType name="ArrayOfFee">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Fee" nillable="true" type="tns:Fee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFee" nillable="true" type="tns:ArrayOfFee" />
+  <xs:complexType name="Fee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Pagamento" nillable="true" type="tns:Payment" />
+      <xs:element minOccurs="0" name="Valor" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Fee" nillable="true" type="tns:Fee" />
+  <xs:complexType name="ArrayOfOwner">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Owner" nillable="true" type="tns:Owner" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOwner" nillable="true" type="tns:ArrayOfOwner" />
+</xs:schema>

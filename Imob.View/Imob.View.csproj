@@ -80,7 +80,27 @@
     <Compile Include="Rent\frmAlgueis.Designer.cs">
       <DependentUpon>frmAlgueis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Service References\AluguelController\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ClienteController\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PagamentoController\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PropriedadeController\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProprietarioController\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -116,6 +136,10 @@
     </EmbeddedResource>
     <None Include="Properties\DataSources\Imob.Site.Models.Customer.datasource" />
     <None Include="Properties\DataSources\Imob.Site.Models.Fee.datasource" />
+    <None Include="Properties\DataSources\Imob.Site.Models.Habitation.datasource" />
+    <None Include="Properties\DataSources\Imob.Site.Models.Owner.datasource" />
+    <None Include="Properties\DataSources\Imob.Site.Models.Payment.datasource" />
+    <None Include="Properties\DataSources\Imob.Site.Models.Rent.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,6 +149,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Service References\AluguelController\AluguelController.wsdl" />
+    <None Include="Service References\AluguelController\AluguelController.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AluguelController\AluguelController1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AluguelController\AluguelController2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\ClienteController\ClienteController.wsdl" />
     <None Include="Service References\ClienteController\ClienteController.xsd">
       <SubType>Designer</SubType>
@@ -133,6 +167,36 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\ClienteController\ClienteController2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PagamentoController\PagamentoController.wsdl" />
+    <None Include="Service References\PagamentoController\PagamentoController.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PagamentoController\PagamentoController1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PagamentoController\PagamentoController2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PropriedadeController\PropriedadeController.wsdl" />
+    <None Include="Service References\PropriedadeController\PropriedadeController.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PropriedadeController\PropriedadeController1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PropriedadeController\PropriedadeController2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProprietarioController\ProprietarioController.wsdl" />
+    <None Include="Service References\ProprietarioController\ProprietarioController.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProprietarioController\ProprietarioController1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProprietarioController\ProprietarioController2.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\TaxaController\TaxaController.wsdl" />
@@ -159,7 +223,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AluguelController\" />
     <WCFMetadataStorage Include="Service References\ClienteController\" />
+    <WCFMetadataStorage Include="Service References\PagamentoController\" />
+    <WCFMetadataStorage Include="Service References\PropriedadeController\" />
+    <WCFMetadataStorage Include="Service References\ProprietarioController\" />
     <WCFMetadataStorage Include="Service References\TaxaController\" />
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +256,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\TaxaController\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AluguelController\AluguelController.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AluguelController\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AluguelController\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AluguelController\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PagamentoController\PagamentoController.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PagamentoController\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PagamentoController\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PagamentoController\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PropriedadeController\PropriedadeController.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PropriedadeController\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PropriedadeController\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PropriedadeController\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProprietarioController\ProprietarioController.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProprietarioController\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProprietarioController\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProprietarioController\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

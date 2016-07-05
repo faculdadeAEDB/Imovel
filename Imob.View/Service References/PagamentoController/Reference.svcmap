@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e16f977c-7adf-462e-ba64-b9db3222831a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:10945/Controllers/PagamentoController.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PagamentoController.disco" MetadataType="Disco" ID="8423033e-eba5-4716-9398-8cd90e465688" SourceId="1" SourceUrl="http://localhost:10945/Controllers/PagamentoController.svc?disco" />
+    <MetadataFile FileName="PagamentoController.xsd" MetadataType="Schema" ID="d17cd4cb-7acf-4531-a4ef-27eaf06b4308" SourceId="1" SourceUrl="http://localhost:10945/Controllers/PagamentoController.svc?xsd=xsd1" />
+    <MetadataFile FileName="PagamentoController1.xsd" MetadataType="Schema" ID="a5af325c-cddf-4204-9c89-6cb60f23cdbd" SourceId="1" SourceUrl="http://localhost:10945/Controllers/PagamentoController.svc?xsd=xsd0" />
+    <MetadataFile FileName="PagamentoController2.xsd" MetadataType="Schema" ID="a8719841-690d-42a7-8487-ccada0c409a1" SourceId="1" SourceUrl="http://localhost:10945/Controllers/PagamentoController.svc?xsd=xsd2" />
+    <MetadataFile FileName="PagamentoController.wsdl" MetadataType="Wsdl" ID="ee585707-e612-4637-8712-7c980ce53a3e" SourceId="1" SourceUrl="http://localhost:10945/Controllers/PagamentoController.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PagamentoController" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:10945/Controllers/PagamentoController.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:10945/Controllers/PagamentoController.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:10945/Controllers/PagamentoController.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Imob.Site.Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPagamentoController_Salvar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Salvar" />
+  </wsdl:message>
+  <wsdl:message name="IPagamentoController_Salvar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SalvarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPagamentoController_Obter_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obter" />
+  </wsdl:message>
+  <wsdl:message name="IPagamentoController_Obter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPagamentoController_Editar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Editar" />
+  </wsdl:message>
+  <wsdl:message name="IPagamentoController_Editar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPagamentoController_Excluir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Excluir" />
+  </wsdl:message>
+  <wsdl:message name="IPagamentoController_Excluir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPagamentoController">
+    <wsdl:operation name="Salvar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPagamentoController/Salvar" message="tns:IPagamentoController_Salvar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPagamentoController/SalvarResponse" message="tns:IPagamentoController_Salvar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPagamentoController/Obter" message="tns:IPagamentoController_Obter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPagamentoController/ObterResponse" message="tns:IPagamentoController_Obter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Editar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPagamentoController/Editar" message="tns:IPagamentoController_Editar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPagamentoController/EditarResponse" message="tns:IPagamentoController_Editar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPagamentoController/Excluir" message="tns:IPagamentoController_Excluir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPagamentoController/ExcluirResponse" message="tns:IPagamentoController_Excluir_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPagamentoController" type="tns:IPagamentoController">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Salvar">
+      <soap:operation soapAction="http://tempuri.org/IPagamentoController/Salvar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obter">
+      <soap:operation soapAction="http://tempuri.org/IPagamentoController/Obter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Editar">
+      <soap:operation soapAction="http://tempuri.org/IPagamentoController/Editar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap:operation soapAction="http://tempuri.org/IPagamentoController/Excluir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PagamentoController">
+    <wsdl:port name="BasicHttpBinding_IPagamentoController" binding="tns:BasicHttpBinding_IPagamentoController">
+      <soap:address location="http://localhost:10945/Controllers/PagamentoController.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

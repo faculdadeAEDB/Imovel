@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="855a4f62-23b1-4bcc-b8fc-86843c816bc0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:10945/Controllers/AluguelController.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AluguelController.xsd" MetadataType="Schema" ID="5b44862d-5e75-4e16-8b1a-a47bdb66c8c6" SourceId="1" SourceUrl="http://localhost:10945/Controllers/AluguelController.svc?xsd=xsd1" />
+    <MetadataFile FileName="AluguelController1.xsd" MetadataType="Schema" ID="1711fdaa-982c-4c41-adb1-1ae2c9748f46" SourceId="1" SourceUrl="http://localhost:10945/Controllers/AluguelController.svc?xsd=xsd0" />
+    <MetadataFile FileName="AluguelController.wsdl" MetadataType="Wsdl" ID="bdfbf03d-a76c-4128-9ea5-d29544d5b03f" SourceId="1" SourceUrl="http://localhost:10945/Controllers/AluguelController.svc?wsdl" />
+    <MetadataFile FileName="AluguelController2.xsd" MetadataType="Schema" ID="ab633448-03cc-4cc0-8b44-c235dcfb42e2" SourceId="1" SourceUrl="http://localhost:10945/Controllers/AluguelController.svc?xsd=xsd2" />
+    <MetadataFile FileName="AluguelController.disco" MetadataType="Disco" ID="817f74a4-c7cd-4ced-984d-2f2cbcb3de6c" SourceId="1" SourceUrl="http://localhost:10945/Controllers/AluguelController.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

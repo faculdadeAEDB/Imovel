@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cfcd98b4-4683-4e65-8d92-8a84479b5066" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:10945/Controllers/ProprietarioController.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ProprietarioController.wsdl" MetadataType="Wsdl" ID="1479f0b5-cf26-461e-93e8-eae61ddbb153" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?wsdl" />
+    <MetadataFile FileName="ProprietarioController.disco" MetadataType="Disco" ID="2034a4e5-9f05-4f75-97c3-584b022b797d" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?disco" />
+    <MetadataFile FileName="ProprietarioController.xsd" MetadataType="Schema" ID="cb13464b-7be0-426a-ba39-3e2acc3f72a6" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?xsd=xsd0" />
+    <MetadataFile FileName="ProprietarioController1.xsd" MetadataType="Schema" ID="fa03ef47-5806-4399-93b8-eeec5be27259" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?xsd=xsd2" />
+    <MetadataFile FileName="ProprietarioController2.xsd" MetadataType="Schema" ID="067a5a2b-07ff-42e7-a017-1f0d139898ae" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
