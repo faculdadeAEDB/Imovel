@@ -13,16 +13,73 @@
   <wsdl:message name="IClienteController_Salvar_OutputMessage">
     <wsdl:part name="parameters" element="tns:SalvarResponse" />
   </wsdl:message>
+  <wsdl:message name="IClienteController_Obter_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obter" />
+  </wsdl:message>
+  <wsdl:message name="IClienteController_Obter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClienteController_Editar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Editar" />
+  </wsdl:message>
+  <wsdl:message name="IClienteController_Editar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClienteController_Excluir_InputMessage">
+    <wsdl:part name="parameters" element="tns:Excluir" />
+  </wsdl:message>
+  <wsdl:message name="IClienteController_Excluir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirResponse" />
+  </wsdl:message>
   <wsdl:portType name="IClienteController">
     <wsdl:operation name="Salvar">
       <wsdl:input wsaw:Action="http://tempuri.org/IClienteController/Salvar" message="tns:IClienteController_Salvar_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IClienteController/SalvarResponse" message="tns:IClienteController_Salvar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClienteController/Obter" message="tns:IClienteController_Obter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClienteController/ObterResponse" message="tns:IClienteController_Obter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Editar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClienteController/Editar" message="tns:IClienteController_Editar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClienteController/EditarResponse" message="tns:IClienteController_Editar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClienteController/Excluir" message="tns:IClienteController_Excluir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClienteController/ExcluirResponse" message="tns:IClienteController_Excluir_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IClienteController" type="tns:IClienteController">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="Salvar">
       <soap:operation soapAction="http://tempuri.org/IClienteController/Salvar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obter">
+      <soap:operation soapAction="http://tempuri.org/IClienteController/Obter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Editar">
+      <soap:operation soapAction="http://tempuri.org/IClienteController/Editar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Excluir">
+      <soap:operation soapAction="http://tempuri.org/IClienteController/Excluir" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

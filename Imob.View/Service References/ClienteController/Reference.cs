@@ -20,6 +20,24 @@ namespace Imob.View.ClienteController {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClienteController/Salvar", ReplyAction="http://tempuri.org/IClienteController/SalvarResponse")]
         System.Threading.Tasks.Task<Imob.Site.Models.Customer> SalvarAsync(Imob.Site.Models.Customer obj);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClienteController/Obter", ReplyAction="http://tempuri.org/IClienteController/ObterResponse")]
+        Imob.Site.Models.Customer[] Obter();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClienteController/Obter", ReplyAction="http://tempuri.org/IClienteController/ObterResponse")]
+        System.Threading.Tasks.Task<Imob.Site.Models.Customer[]> ObterAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClienteController/Editar", ReplyAction="http://tempuri.org/IClienteController/EditarResponse")]
+        Imob.Site.Models.Customer Editar(Imob.Site.Models.Customer obj);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClienteController/Editar", ReplyAction="http://tempuri.org/IClienteController/EditarResponse")]
+        System.Threading.Tasks.Task<Imob.Site.Models.Customer> EditarAsync(Imob.Site.Models.Customer obj);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClienteController/Excluir", ReplyAction="http://tempuri.org/IClienteController/ExcluirResponse")]
+        Imob.Site.Models.Customer Excluir(Imob.Site.Models.Customer obj);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClienteController/Excluir", ReplyAction="http://tempuri.org/IClienteController/ExcluirResponse")]
+        System.Threading.Tasks.Task<Imob.Site.Models.Customer> ExcluirAsync(Imob.Site.Models.Customer obj);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,6 +73,30 @@ namespace Imob.View.ClienteController {
         
         public System.Threading.Tasks.Task<Imob.Site.Models.Customer> SalvarAsync(Imob.Site.Models.Customer obj) {
             return base.Channel.SalvarAsync(obj);
+        }
+        
+        public Imob.Site.Models.Customer[] Obter() {
+            return base.Channel.Obter();
+        }
+        
+        public System.Threading.Tasks.Task<Imob.Site.Models.Customer[]> ObterAsync() {
+            return base.Channel.ObterAsync();
+        }
+        
+        public Imob.Site.Models.Customer Editar(Imob.Site.Models.Customer obj) {
+            return base.Channel.Editar(obj);
+        }
+        
+        public System.Threading.Tasks.Task<Imob.Site.Models.Customer> EditarAsync(Imob.Site.Models.Customer obj) {
+            return base.Channel.EditarAsync(obj);
+        }
+        
+        public Imob.Site.Models.Customer Excluir(Imob.Site.Models.Customer obj) {
+            return base.Channel.Excluir(obj);
+        }
+        
+        public System.Threading.Tasks.Task<Imob.Site.Models.Customer> ExcluirAsync(Imob.Site.Models.Customer obj) {
+            return base.Channel.ExcluirAsync(obj);
         }
     }
 }

@@ -33,164 +33,132 @@
             this.btnProSalvar = new System.Windows.Forms.Button();
             this.btnProVoltar = new System.Windows.Forms.Button();
             this.grdProprietario = new System.Windows.Forms.DataGridView();
-            this.txbCPFPro = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txbTelefonePro = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txbBairroPro = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txbCidadePro = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txbEnderecoPro = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txbNomePro = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.PropriettxbCPF = new System.Windows.Forms.TextBox();
+            this.ProprietlblCPF = new System.Windows.Forms.Label();
+            this.PropriettxbTelefone = new System.Windows.Forms.TextBox();
+            this.ProprietlblTelefone = new System.Windows.Forms.Label();
+            this.PropriettxbEndereco = new System.Windows.Forms.TextBox();
+            this.ProprietlblEndereco = new System.Windows.Forms.Label();
+            this.PropriettxbNome = new System.Windows.Forms.TextBox();
+            this.ProprietlblNome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdProprietario)).BeginInit();
             this.SuspendLayout();
             // 
             // btnImovel
             // 
-            this.btnImovel.Location = new System.Drawing.Point(13, 121);
+            this.btnImovel.Location = new System.Drawing.Point(13, 92);
             this.btnImovel.Name = "btnImovel";
             this.btnImovel.Size = new System.Drawing.Size(96, 23);
             this.btnImovel.TabIndex = 46;
             this.btnImovel.Text = "Cadastrar Imóvel";
             this.btnImovel.UseVisualStyleBackColor = true;
+            this.btnImovel.Click += new System.EventHandler(this.btnImovel_Click);
             // 
             // btnProNovo
             // 
-            this.btnProNovo.Location = new System.Drawing.Point(359, 121);
+            this.btnProNovo.Location = new System.Drawing.Point(359, 92);
             this.btnProNovo.Name = "btnProNovo";
             this.btnProNovo.Size = new System.Drawing.Size(75, 23);
             this.btnProNovo.TabIndex = 45;
             this.btnProNovo.Text = "Novo";
             this.btnProNovo.UseVisualStyleBackColor = true;
+            this.btnProNovo.Click += new System.EventHandler(this.btnProNovo_Click);
             // 
             // btnProSalvar
             // 
-            this.btnProSalvar.Location = new System.Drawing.Point(440, 121);
+            this.btnProSalvar.Location = new System.Drawing.Point(440, 92);
             this.btnProSalvar.Name = "btnProSalvar";
             this.btnProSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnProSalvar.TabIndex = 44;
             this.btnProSalvar.Text = "Salvar";
             this.btnProSalvar.UseVisualStyleBackColor = true;
+            this.btnProSalvar.Click += new System.EventHandler(this.btnProSalvar_Click);
             // 
             // btnProVoltar
             // 
-            this.btnProVoltar.Location = new System.Drawing.Point(521, 121);
+            this.btnProVoltar.Location = new System.Drawing.Point(521, 92);
             this.btnProVoltar.Name = "btnProVoltar";
             this.btnProVoltar.Size = new System.Drawing.Size(75, 23);
             this.btnProVoltar.TabIndex = 43;
             this.btnProVoltar.Text = "Voltar";
             this.btnProVoltar.UseVisualStyleBackColor = true;
+            this.btnProVoltar.Click += new System.EventHandler(this.btnProVoltar_Click);
             // 
             // grdProprietario
             // 
             this.grdProprietario.AllowUserToDeleteRows = false;
             this.grdProprietario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdProprietario.Location = new System.Drawing.Point(13, 156);
+            this.grdProprietario.Location = new System.Drawing.Point(13, 121);
             this.grdProprietario.Name = "grdProprietario";
             this.grdProprietario.ReadOnly = true;
-            this.grdProprietario.Size = new System.Drawing.Size(584, 159);
+            this.grdProprietario.Size = new System.Drawing.Size(584, 194);
             this.grdProprietario.TabIndex = 42;
             // 
-            // txbCPFPro
+            // PropriettxbCPF
             // 
-            this.txbCPFPro.Location = new System.Drawing.Point(380, 94);
-            this.txbCPFPro.Name = "txbCPFPro";
-            this.txbCPFPro.Size = new System.Drawing.Size(217, 20);
-            this.txbCPFPro.TabIndex = 41;
+            this.PropriettxbCPF.Location = new System.Drawing.Point(359, 65);
+            this.PropriettxbCPF.Name = "PropriettxbCPF";
+            this.PropriettxbCPF.Size = new System.Drawing.Size(238, 20);
+            this.PropriettxbCPF.TabIndex = 41;
             // 
-            // label6
+            // ProprietlblCPF
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(347, 97);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 13);
-            this.label6.TabIndex = 40;
-            this.label6.Text = "CPF";
+            this.ProprietlblCPF.AutoSize = true;
+            this.ProprietlblCPF.Location = new System.Drawing.Point(325, 68);
+            this.ProprietlblCPF.Name = "ProprietlblCPF";
+            this.ProprietlblCPF.Size = new System.Drawing.Size(27, 13);
+            this.ProprietlblCPF.TabIndex = 40;
+            this.ProprietlblCPF.Text = "CPF";
             // 
-            // txbTelefonePro
+            // PropriettxbTelefone
             // 
-            this.txbTelefonePro.Location = new System.Drawing.Point(73, 90);
-            this.txbTelefonePro.Name = "txbTelefonePro";
-            this.txbTelefonePro.Size = new System.Drawing.Size(230, 20);
-            this.txbTelefonePro.TabIndex = 39;
+            this.PropriettxbTelefone.Location = new System.Drawing.Point(73, 65);
+            this.PropriettxbTelefone.Name = "PropriettxbTelefone";
+            this.PropriettxbTelefone.Size = new System.Drawing.Size(230, 20);
+            this.PropriettxbTelefone.TabIndex = 39;
             // 
-            // label5
+            // ProprietlblTelefone
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 93);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
-            this.label5.TabIndex = 38;
-            this.label5.Text = "Telefone";
+            this.ProprietlblTelefone.AutoSize = true;
+            this.ProprietlblTelefone.Location = new System.Drawing.Point(18, 68);
+            this.ProprietlblTelefone.Name = "ProprietlblTelefone";
+            this.ProprietlblTelefone.Size = new System.Drawing.Size(49, 13);
+            this.ProprietlblTelefone.TabIndex = 38;
+            this.ProprietlblTelefone.Text = "Telefone";
             // 
-            // txbBairroPro
+            // PropriettxbEndereco
             // 
-            this.txbBairroPro.Location = new System.Drawing.Point(380, 64);
-            this.txbBairroPro.Name = "txbBairroPro";
-            this.txbBairroPro.Size = new System.Drawing.Size(217, 20);
-            this.txbBairroPro.TabIndex = 37;
+            this.PropriettxbEndereco.Location = new System.Drawing.Point(73, 38);
+            this.PropriettxbEndereco.Name = "PropriettxbEndereco";
+            this.PropriettxbEndereco.Size = new System.Drawing.Size(524, 20);
+            this.PropriettxbEndereco.TabIndex = 33;
             // 
-            // label4
+            // ProprietlblEndereco
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(340, 67);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 13);
-            this.label4.TabIndex = 36;
-            this.label4.Text = "Bairro";
+            this.ProprietlblEndereco.AutoSize = true;
+            this.ProprietlblEndereco.Location = new System.Drawing.Point(14, 41);
+            this.ProprietlblEndereco.Name = "ProprietlblEndereco";
+            this.ProprietlblEndereco.Size = new System.Drawing.Size(53, 13);
+            this.ProprietlblEndereco.TabIndex = 32;
+            this.ProprietlblEndereco.Text = "Endereço";
             // 
-            // txbCidadePro
+            // PropriettxbNome
             // 
-            this.txbCidadePro.Location = new System.Drawing.Point(73, 64);
-            this.txbCidadePro.Name = "txbCidadePro";
-            this.txbCidadePro.Size = new System.Drawing.Size(230, 20);
-            this.txbCidadePro.TabIndex = 35;
+            this.PropriettxbNome.Location = new System.Drawing.Point(73, 12);
+            this.PropriettxbNome.Name = "PropriettxbNome";
+            this.PropriettxbNome.Size = new System.Drawing.Size(524, 20);
+            this.PropriettxbNome.TabIndex = 31;
             // 
-            // label3
+            // ProprietlblNome
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 67);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
-            this.label3.TabIndex = 34;
-            this.label3.Text = "Cidade";
+            this.ProprietlblNome.AutoSize = true;
+            this.ProprietlblNome.Location = new System.Drawing.Point(32, 15);
+            this.ProprietlblNome.Name = "ProprietlblNome";
+            this.ProprietlblNome.Size = new System.Drawing.Size(35, 13);
+            this.ProprietlblNome.TabIndex = 30;
+            this.ProprietlblNome.Text = "Nome";
             // 
-            // txbEnderecoPro
-            // 
-            this.txbEnderecoPro.Location = new System.Drawing.Point(73, 38);
-            this.txbEnderecoPro.Name = "txbEnderecoPro";
-            this.txbEnderecoPro.Size = new System.Drawing.Size(524, 20);
-            this.txbEnderecoPro.TabIndex = 33;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Endereço";
-            // 
-            // txbNomePro
-            // 
-            this.txbNomePro.Location = new System.Drawing.Point(73, 12);
-            this.txbNomePro.Name = "txbNomePro";
-            this.txbNomePro.Size = new System.Drawing.Size(524, 20);
-            this.txbNomePro.TabIndex = 31;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Nome";
-            // 
-            // VisaoGeral
+            // frmProprietarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -200,20 +168,17 @@
             this.Controls.Add(this.btnProSalvar);
             this.Controls.Add(this.btnProVoltar);
             this.Controls.Add(this.grdProprietario);
-            this.Controls.Add(this.txbCPFPro);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txbTelefonePro);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.txbBairroPro);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txbCidadePro);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txbEnderecoPro);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txbNomePro);
-            this.Controls.Add(this.label1);
-            this.Name = "VisaoGeral";
+            this.Controls.Add(this.PropriettxbCPF);
+            this.Controls.Add(this.ProprietlblCPF);
+            this.Controls.Add(this.PropriettxbTelefone);
+            this.Controls.Add(this.ProprietlblTelefone);
+            this.Controls.Add(this.PropriettxbEndereco);
+            this.Controls.Add(this.ProprietlblEndereco);
+            this.Controls.Add(this.PropriettxbNome);
+            this.Controls.Add(this.ProprietlblNome);
+            this.Name = "frmProprietarios";
             this.Text = "Proprietarios";
+            this.Load += new System.EventHandler(this.frmProprietarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdProprietario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -227,17 +192,13 @@
         private System.Windows.Forms.Button btnProSalvar;
         private System.Windows.Forms.Button btnProVoltar;
         private System.Windows.Forms.DataGridView grdProprietario;
-        private System.Windows.Forms.TextBox txbCPFPro;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txbTelefonePro;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txbBairroPro;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txbCidadePro;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txbEnderecoPro;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txbNomePro;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox PropriettxbCPF;
+        private System.Windows.Forms.Label ProprietlblCPF;
+        private System.Windows.Forms.TextBox PropriettxbTelefone;
+        private System.Windows.Forms.Label ProprietlblTelefone;
+        private System.Windows.Forms.TextBox PropriettxbEndereco;
+        private System.Windows.Forms.Label ProprietlblEndereco;
+        private System.Windows.Forms.TextBox PropriettxbNome;
+        private System.Windows.Forms.Label ProprietlblNome;
     }
 }

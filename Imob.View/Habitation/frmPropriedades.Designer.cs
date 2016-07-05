@@ -36,57 +36,55 @@
             this.PropiedlvlID = new System.Windows.Forms.Label();
             this.PropiedcbxTipo = new System.Windows.Forms.ComboBox();
             this.PropiedlvlTipo = new System.Windows.Forms.Label();
-            this.PropriedtxbBairro = new System.Windows.Forms.TextBox();
-            this.PropiedlvlBairro = new System.Windows.Forms.Label();
-            this.PropriedtxbCidade = new System.Windows.Forms.TextBox();
-            this.PropiedlvlCidade = new System.Windows.Forms.Label();
             this.PropriedtxbEndereco = new System.Windows.Forms.TextBox();
             this.PropiedlvlEndereco = new System.Windows.Forms.Label();
-            this.PropriedbtnExcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Proprieddgv)).BeginInit();
             this.SuspendLayout();
             // 
             // PropriedbtnNovo
             // 
-            this.PropriedbtnNovo.Location = new System.Drawing.Point(357, 70);
+            this.PropriedbtnNovo.Location = new System.Drawing.Point(357, 41);
             this.PropriedbtnNovo.Name = "PropriedbtnNovo";
             this.PropriedbtnNovo.Size = new System.Drawing.Size(75, 23);
             this.PropriedbtnNovo.TabIndex = 41;
             this.PropriedbtnNovo.Text = "Novo";
             this.PropriedbtnNovo.UseVisualStyleBackColor = true;
+            this.PropriedbtnNovo.Click += new System.EventHandler(this.PropriedbtnNovo_Click);
             // 
             // PropriedbtnSalvar
             // 
-            this.PropriedbtnSalvar.Location = new System.Drawing.Point(438, 70);
+            this.PropriedbtnSalvar.Location = new System.Drawing.Point(438, 41);
             this.PropriedbtnSalvar.Name = "PropriedbtnSalvar";
             this.PropriedbtnSalvar.Size = new System.Drawing.Size(75, 23);
             this.PropriedbtnSalvar.TabIndex = 40;
             this.PropriedbtnSalvar.Text = "Salvar";
             this.PropriedbtnSalvar.UseVisualStyleBackColor = true;
+            this.PropriedbtnSalvar.Click += new System.EventHandler(this.PropriedbtnSalvar_Click);
             // 
             // PropriedbtnVoltar
             // 
-            this.PropriedbtnVoltar.Location = new System.Drawing.Point(519, 69);
+            this.PropriedbtnVoltar.Location = new System.Drawing.Point(519, 40);
             this.PropriedbtnVoltar.Name = "PropriedbtnVoltar";
             this.PropriedbtnVoltar.Size = new System.Drawing.Size(75, 23);
             this.PropriedbtnVoltar.TabIndex = 39;
             this.PropriedbtnVoltar.Text = "Voltar";
             this.PropriedbtnVoltar.UseVisualStyleBackColor = true;
+            this.PropriedbtnVoltar.Click += new System.EventHandler(this.PropriedbtnVoltar_Click);
             // 
             // Proprieddgv
             // 
             this.Proprieddgv.AllowUserToAddRows = false;
             this.Proprieddgv.AllowUserToDeleteRows = false;
             this.Proprieddgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Proprieddgv.Location = new System.Drawing.Point(19, 101);
+            this.Proprieddgv.Location = new System.Drawing.Point(19, 70);
             this.Proprieddgv.Name = "Proprieddgv";
             this.Proprieddgv.ReadOnly = true;
-            this.Proprieddgv.Size = new System.Drawing.Size(575, 212);
+            this.Proprieddgv.Size = new System.Drawing.Size(575, 243);
             this.Proprieddgv.TabIndex = 38;
             // 
             // PropiedtxbID
             // 
-            this.PropiedtxbID.Location = new System.Drawing.Point(519, 13);
+            this.PropiedtxbID.Location = new System.Drawing.Point(406, 13);
             this.PropiedtxbID.Name = "PropiedtxbID";
             this.PropiedtxbID.ReadOnly = true;
             this.PropiedtxbID.Size = new System.Drawing.Size(75, 20);
@@ -95,7 +93,7 @@
             // PropiedlvlID
             // 
             this.PropiedlvlID.AutoSize = true;
-            this.PropiedlvlID.Location = new System.Drawing.Point(485, 16);
+            this.PropiedlvlID.Location = new System.Drawing.Point(382, 17);
             this.PropiedlvlID.Name = "PropiedlvlID";
             this.PropiedlvlID.Size = new System.Drawing.Size(18, 13);
             this.PropiedlvlID.TabIndex = 36;
@@ -110,7 +108,7 @@
             "Sítio",
             "Chácara",
             "Kitnet"});
-            this.PropiedcbxTipo.Location = new System.Drawing.Point(519, 39);
+            this.PropiedcbxTipo.Location = new System.Drawing.Point(519, 13);
             this.PropiedcbxTipo.Name = "PropiedcbxTipo";
             this.PropiedcbxTipo.Size = new System.Drawing.Size(75, 21);
             this.PropiedcbxTipo.TabIndex = 35;
@@ -118,49 +116,17 @@
             // PropiedlvlTipo
             // 
             this.PropiedlvlTipo.AutoSize = true;
-            this.PropiedlvlTipo.Location = new System.Drawing.Point(485, 42);
+            this.PropiedlvlTipo.Location = new System.Drawing.Point(485, 16);
             this.PropiedlvlTipo.Name = "PropiedlvlTipo";
             this.PropiedlvlTipo.Size = new System.Drawing.Size(28, 13);
             this.PropiedlvlTipo.TabIndex = 34;
             this.PropiedlvlTipo.Text = "Tipo";
             // 
-            // PropriedtxbBairro
-            // 
-            this.PropriedtxbBairro.Location = new System.Drawing.Point(318, 39);
-            this.PropriedtxbBairro.Name = "PropriedtxbBairro";
-            this.PropriedtxbBairro.Size = new System.Drawing.Size(161, 20);
-            this.PropriedtxbBairro.TabIndex = 33;
-            // 
-            // PropiedlvlBairro
-            // 
-            this.PropiedlvlBairro.AutoSize = true;
-            this.PropiedlvlBairro.Location = new System.Drawing.Point(278, 42);
-            this.PropiedlvlBairro.Name = "PropiedlvlBairro";
-            this.PropiedlvlBairro.Size = new System.Drawing.Size(34, 13);
-            this.PropiedlvlBairro.TabIndex = 32;
-            this.PropiedlvlBairro.Text = "Bairro";
-            // 
-            // PropriedtxbCidade
-            // 
-            this.PropriedtxbCidade.Location = new System.Drawing.Point(75, 39);
-            this.PropriedtxbCidade.Name = "PropriedtxbCidade";
-            this.PropriedtxbCidade.Size = new System.Drawing.Size(188, 20);
-            this.PropriedtxbCidade.TabIndex = 31;
-            // 
-            // PropiedlvlCidade
-            // 
-            this.PropiedlvlCidade.AutoSize = true;
-            this.PropiedlvlCidade.Location = new System.Drawing.Point(29, 42);
-            this.PropiedlvlCidade.Name = "PropiedlvlCidade";
-            this.PropiedlvlCidade.Size = new System.Drawing.Size(40, 13);
-            this.PropiedlvlCidade.TabIndex = 30;
-            this.PropiedlvlCidade.Text = "Cidade";
-            // 
             // PropriedtxbEndereco
             // 
             this.PropriedtxbEndereco.Location = new System.Drawing.Point(75, 13);
             this.PropriedtxbEndereco.Name = "PropriedtxbEndereco";
-            this.PropriedtxbEndereco.Size = new System.Drawing.Size(404, 20);
+            this.PropriedtxbEndereco.Size = new System.Drawing.Size(301, 20);
             this.PropriedtxbEndereco.TabIndex = 29;
             // 
             // PropiedlvlEndereco
@@ -172,21 +138,11 @@
             this.PropiedlvlEndereco.TabIndex = 28;
             this.PropiedlvlEndereco.Text = "Endereço";
             // 
-            // PropriedbtnExcluir
-            // 
-            this.PropriedbtnExcluir.Location = new System.Drawing.Point(19, 70);
-            this.PropriedbtnExcluir.Name = "PropriedbtnExcluir";
-            this.PropriedbtnExcluir.Size = new System.Drawing.Size(75, 23);
-            this.PropriedbtnExcluir.TabIndex = 42;
-            this.PropriedbtnExcluir.Text = "Excluir";
-            this.PropriedbtnExcluir.UseVisualStyleBackColor = true;
-            // 
             // PropiedcbxID
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 327);
-            this.Controls.Add(this.PropriedbtnExcluir);
             this.Controls.Add(this.PropriedbtnNovo);
             this.Controls.Add(this.PropriedbtnSalvar);
             this.Controls.Add(this.PropriedbtnVoltar);
@@ -195,14 +151,11 @@
             this.Controls.Add(this.PropiedlvlID);
             this.Controls.Add(this.PropiedcbxTipo);
             this.Controls.Add(this.PropiedlvlTipo);
-            this.Controls.Add(this.PropriedtxbBairro);
-            this.Controls.Add(this.PropiedlvlBairro);
-            this.Controls.Add(this.PropriedtxbCidade);
-            this.Controls.Add(this.PropiedlvlCidade);
             this.Controls.Add(this.PropriedtxbEndereco);
             this.Controls.Add(this.PropiedlvlEndereco);
             this.Name = "PropiedcbxID";
             this.Text = "Propriedades";
+            this.Load += new System.EventHandler(this.PropiedcbxID_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Proprieddgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -219,12 +172,7 @@
         private System.Windows.Forms.Label PropiedlvlID;
         private System.Windows.Forms.ComboBox PropiedcbxTipo;
         private System.Windows.Forms.Label PropiedlvlTipo;
-        private System.Windows.Forms.TextBox PropriedtxbBairro;
-        private System.Windows.Forms.Label PropiedlvlBairro;
-        private System.Windows.Forms.TextBox PropriedtxbCidade;
-        private System.Windows.Forms.Label PropiedlvlCidade;
         private System.Windows.Forms.TextBox PropriedtxbEndereco;
         private System.Windows.Forms.Label PropiedlvlEndereco;
-        private System.Windows.Forms.Button PropriedbtnExcluir;
     }
 }

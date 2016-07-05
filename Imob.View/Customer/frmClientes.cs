@@ -20,17 +20,18 @@ namespace Imob.View.Customer
 
         private void frmClientes_Load(object sender, EventArgs e)
         {
-            (new ClienteController.ClienteControllerClient()).Obter();
+            var c =(new ClienteController.ClienteControllerClient()).Obter();
+            Cosdgv.DataSource = c.ToList();
         }
 
         private void CosbtnNovo_Click(object sender, EventArgs e)
         {
             Imob.Site.Models.Customer c = new Imob.Site.Models.Customer();
-            c.Nome = CoslblNome.Text;
-            c.Endereco = CoslblEndereco.Text;
-            c.Telefone = CoslblTelefone.Text;
-            c.Idade = CoslblIdade.Text;
-            c.cpf = Convert.ToInt32(CoslblCPF.Text);
+            c.Nome = CostxbNome.Text;
+            c.Endereco = CostxbEndereco.Text;
+            c.Telefone = CostxbTelefone.Text;
+            c.Idade = CostxbIdade.Text;
+            c.cpf = Convert.ToInt32(CostxbCPF.Text);
 
             (new ClienteController.ClienteControllerClient()).Salvar(c);
         }
@@ -38,11 +39,11 @@ namespace Imob.View.Customer
         private void CosbtnSalvar_Click(object sender, EventArgs e)
         {
             Imob.Site.Models.Customer c = new Imob.Site.Models.Customer();
-            c.Nome = CoslblNome.Text;
-            c.Endereco = CoslblEndereco.Text;
-            c.Telefone = CoslblTelefone.Text;
-            c.Idade = CoslblIdade.Text;
-            c.cpf = Convert.ToInt32(CoslblCPF.Text);
+            c.Nome = CostxbNome.Text;
+            c.Endereco = CostxbEndereco.Text;
+            c.Telefone = CostxbTelefone.Text;
+            c.Idade = CostxbIdade.Text;
+            c.cpf = Convert.ToInt32(CostxbCPF.Text);
 
             (new ClienteController.ClienteControllerClient()).Editar(c);
         }
