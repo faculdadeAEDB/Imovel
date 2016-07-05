@@ -122,7 +122,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controllers\AluguelController.svc" />
     <Content Include="Controllers\ClienteController.svc" />
+    <Content Include="Controllers\PagamentoController.svc" />
+    <Content Include="Controllers\PropriedadeController.svc" />
+    <Content Include="Controllers\ProprietarioController.svc" />
     <Content Include="Controllers\TaxaController.svc" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -141,11 +145,27 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AluguelController.svc.cs">
+      <DependentUpon>AluguelController.svc</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\ClienteController.svc.cs">
       <DependentUpon>ClienteController.svc</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\IAluguelController.cs" />
     <Compile Include="Controllers\IClienteController.cs" />
+    <Compile Include="Controllers\IPagamentoController.cs" />
+    <Compile Include="Controllers\IPropriedadeController.cs" />
+    <Compile Include="Controllers\IProprietarioController.cs" />
     <Compile Include="Controllers\ITaxaController.cs" />
+    <Compile Include="Controllers\PagamentoController.svc.cs">
+      <DependentUpon>PagamentoController.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\PropriedadeController.svc.cs">
+      <DependentUpon>PropriedadeController.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ProprietarioController.svc.cs">
+      <DependentUpon>ProprietarioController.svc</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\TaxaController.svc.cs">
       <DependentUpon>TaxaController.svc</DependentUpon>
     </Compile>

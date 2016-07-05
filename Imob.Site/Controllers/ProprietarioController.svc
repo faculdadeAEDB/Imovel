@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Imob.Site.Controllers.ProprietarioController" CodeBehind="ProprietarioController.svc.cs" %>
