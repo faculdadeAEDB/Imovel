@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using Imob.Site.Models;
 
 namespace Imob.Site.Controllers
 {
@@ -12,6 +13,15 @@ namespace Imob.Site.Controllers
     public interface IPagamentoController
     {
         [OperationContract]
-        void DoWork();
+        Payment Salvar(Payment obj);
+
+        [OperationContract]
+        List<Payment> Obter();
+
+        [OperationContract]
+        Payment Editar(Payment obj);
+
+        [OperationContract]
+        Payment Excluir(Payment obj);
     }
 }

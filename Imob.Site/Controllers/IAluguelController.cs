@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using Imob.Site.Models;
 
 namespace Imob.Site.Controllers
 {
@@ -12,6 +13,15 @@ namespace Imob.Site.Controllers
     public interface IAluguelController
     {
         [OperationContract]
-        void DoWork();
+        Rent Salvar(Rent obj);
+
+        [OperationContract]
+        List<Rent> Obter();
+
+        [OperationContract]
+        Rent Editar(Rent obj);
+
+        [OperationContract]
+        Rent Excluir(Rent obj);
     }
 }

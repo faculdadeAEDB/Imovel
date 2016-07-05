@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using Imob.Site.Models;
 
 namespace Imob.Site.Controllers
 {
@@ -12,6 +13,15 @@ namespace Imob.Site.Controllers
     public interface IProprietarioController
     {
         [OperationContract]
-        void DoWork();
+        Owner Salvar(Owner obj);
+
+        [OperationContract]
+        List<Owner> Obter();
+
+        [OperationContract]
+        Owner Editar(Owner obj);
+
+        [OperationContract]
+        Owner Excluir(Owner obj);
     }
 }
