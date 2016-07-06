@@ -13,6 +13,10 @@ namespace Imob.Site.Models
         public string CPF { get; set; }
         public string Telefone { get; set; }
 
+        public override string ToString()
+        {
+            return Nome;
+        }
         public virtual ICollection<Habitation> Propriedades { get; set; }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.CosbtnNovo = new System.Windows.Forms.Button();
             this.CosbtnSalvar = new System.Windows.Forms.Button();
             this.CosbtnVoltar = new System.Windows.Forms.Button();
@@ -42,7 +43,17 @@
             this.CoslblNome = new System.Windows.Forms.Label();
             this.CostxbIdade = new System.Windows.Forms.TextBox();
             this.CoslblIdade = new System.Windows.Forms.Label();
+            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cpfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClientebtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ClientebtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // CosbtnNovo
@@ -79,7 +90,18 @@
             // 
             this.Cosdgv.AllowUserToAddRows = false;
             this.Cosdgv.AllowUserToDeleteRows = false;
+            this.Cosdgv.AutoGenerateColumns = false;
             this.Cosdgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Cosdgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.nomeDataGridViewTextBoxColumn,
+            this.idadeDataGridViewTextBoxColumn,
+            this.enderecoDataGridViewTextBoxColumn,
+            this.telefoneDataGridViewTextBoxColumn,
+            this.cpfDataGridViewTextBoxColumn,
+            this.ClientebtnEditar,
+            this.ClientebtnExcluir});
+            this.Cosdgv.DataSource = this.customerBindingSource;
             this.Cosdgv.Location = new System.Drawing.Point(13, 118);
             this.Cosdgv.Name = "Cosdgv";
             this.Cosdgv.ReadOnly = true;
@@ -166,6 +188,64 @@
             this.CoslblIdade.TabIndex = 48;
             this.CoslblIdade.Text = "Idade";
             // 
+            // customerBindingSource
+            // 
+            this.customerBindingSource.DataSource = typeof(Imob.Site.Models.Customer);
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // idadeDataGridViewTextBoxColumn
+            // 
+            this.idadeDataGridViewTextBoxColumn.DataPropertyName = "Idade";
+            this.idadeDataGridViewTextBoxColumn.HeaderText = "Idade";
+            this.idadeDataGridViewTextBoxColumn.Name = "idadeDataGridViewTextBoxColumn";
+            this.idadeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // enderecoDataGridViewTextBoxColumn
+            // 
+            this.enderecoDataGridViewTextBoxColumn.DataPropertyName = "Endereco";
+            this.enderecoDataGridViewTextBoxColumn.HeaderText = "Endereco";
+            this.enderecoDataGridViewTextBoxColumn.Name = "enderecoDataGridViewTextBoxColumn";
+            this.enderecoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // telefoneDataGridViewTextBoxColumn
+            // 
+            this.telefoneDataGridViewTextBoxColumn.DataPropertyName = "Telefone";
+            this.telefoneDataGridViewTextBoxColumn.HeaderText = "Telefone";
+            this.telefoneDataGridViewTextBoxColumn.Name = "telefoneDataGridViewTextBoxColumn";
+            this.telefoneDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cpfDataGridViewTextBoxColumn
+            // 
+            this.cpfDataGridViewTextBoxColumn.DataPropertyName = "cpf";
+            this.cpfDataGridViewTextBoxColumn.HeaderText = "Cpf";
+            this.cpfDataGridViewTextBoxColumn.Name = "cpfDataGridViewTextBoxColumn";
+            this.cpfDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ClientebtnEditar
+            // 
+            this.ClientebtnEditar.HeaderText = "Editar";
+            this.ClientebtnEditar.Name = "ClientebtnEditar";
+            this.ClientebtnEditar.ReadOnly = true;
+            // 
+            // ClientebtnExcluir
+            // 
+            this.ClientebtnExcluir.HeaderText = "Excluir";
+            this.ClientebtnExcluir.Name = "ClientebtnExcluir";
+            this.ClientebtnExcluir.ReadOnly = true;
+            // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,6 +269,7 @@
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.frmClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,5 +291,14 @@
         private System.Windows.Forms.Label CoslblNome;
         private System.Windows.Forms.TextBox CostxbIdade;
         private System.Windows.Forms.Label CoslblIdade;
+        private System.Windows.Forms.BindingSource customerBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enderecoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cpfDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewButtonColumn ClientebtnEditar;
+        private System.Windows.Forms.DataGridViewButtonColumn ClientebtnExcluir;
     }
 }

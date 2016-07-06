@@ -11,9 +11,9 @@ using Imob.View.ClienteController;
 
 namespace Imob.View.Habitation
 {
-    public partial class PropiedcbxID : Form
+    public partial class frmPropriedades : Form
     {
-        public PropiedcbxID()
+        public frmPropriedades()
         {
             InitializeComponent();
         }
@@ -45,6 +45,7 @@ namespace Imob.View.Habitation
         {
             var c = (new PropriedadeController.PropriedadeControllerClient()).Obter();
             Proprieddgv.DataSource = c.ToList();
+            
         }
         
     }

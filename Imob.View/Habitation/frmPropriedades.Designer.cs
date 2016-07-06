@@ -1,6 +1,6 @@
 ﻿namespace Imob.View.Habitation
 {
-    partial class PropiedcbxID
+    partial class frmPropriedades
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.PropriedbtnNovo = new System.Windows.Forms.Button();
             this.PropriedbtnSalvar = new System.Windows.Forms.Button();
             this.PropriedbtnVoltar = new System.Windows.Forms.Button();
@@ -38,7 +39,13 @@
             this.PropiedlvlTipo = new System.Windows.Forms.Label();
             this.PropriedtxbEndereco = new System.Windows.Forms.TextBox();
             this.PropiedlvlEndereco = new System.Windows.Forms.Label();
+            this.habitationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Proprieddgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.habitationBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // PropriedbtnNovo
@@ -75,7 +82,14 @@
             // 
             this.Proprieddgv.AllowUserToAddRows = false;
             this.Proprieddgv.AllowUserToDeleteRows = false;
+            this.Proprieddgv.AutoGenerateColumns = false;
             this.Proprieddgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Proprieddgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.enderecoDataGridViewTextBoxColumn,
+            this.tipoDataGridViewTextBoxColumn,
+            this.donoDataGridViewTextBoxColumn});
+            this.Proprieddgv.DataSource = this.habitationBindingSource;
             this.Proprieddgv.Location = new System.Drawing.Point(19, 70);
             this.Proprieddgv.Name = "Proprieddgv";
             this.Proprieddgv.ReadOnly = true;
@@ -138,7 +152,39 @@
             this.PropiedlvlEndereco.TabIndex = 28;
             this.PropiedlvlEndereco.Text = "Endereço";
             // 
-            // PropiedcbxID
+            // habitationBindingSource
+            // 
+            this.habitationBindingSource.DataSource = typeof(Imob.Site.Models.Habitation);
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // enderecoDataGridViewTextBoxColumn
+            // 
+            this.enderecoDataGridViewTextBoxColumn.DataPropertyName = "Endereco";
+            this.enderecoDataGridViewTextBoxColumn.HeaderText = "Endereco";
+            this.enderecoDataGridViewTextBoxColumn.Name = "enderecoDataGridViewTextBoxColumn";
+            this.enderecoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tipoDataGridViewTextBoxColumn
+            // 
+            this.tipoDataGridViewTextBoxColumn.DataPropertyName = "Tipo";
+            this.tipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
+            this.tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
+            this.tipoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // donoDataGridViewTextBoxColumn
+            // 
+            this.donoDataGridViewTextBoxColumn.DataPropertyName = "Dono";
+            this.donoDataGridViewTextBoxColumn.HeaderText = "Dono";
+            this.donoDataGridViewTextBoxColumn.Name = "donoDataGridViewTextBoxColumn";
+            this.donoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // frmPropriedades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -153,10 +199,11 @@
             this.Controls.Add(this.PropiedlvlTipo);
             this.Controls.Add(this.PropriedtxbEndereco);
             this.Controls.Add(this.PropiedlvlEndereco);
-            this.Name = "PropiedcbxID";
+            this.Name = "frmPropriedades";
             this.Text = "Propriedades";
             this.Load += new System.EventHandler(this.PropiedcbxID_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Proprieddgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.habitationBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,5 +221,10 @@
         private System.Windows.Forms.Label PropiedlvlTipo;
         private System.Windows.Forms.TextBox PropriedtxbEndereco;
         private System.Windows.Forms.Label PropiedlvlEndereco;
+        private System.Windows.Forms.BindingSource habitationBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enderecoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donoDataGridViewTextBoxColumn;
     }
 }
