@@ -56,7 +56,17 @@ namespace Imob.View.Owner
         private void frmProprietarios_Load(object sender, EventArgs e)
         {
             var c = (new ProprietarioController.ProprietarioControllerClient()).Obter();
-            grdProprietario.DataSource = c.ToList();
+            
+            foreach (var item in c.ToList())
+            {
+                grdProprietario.Rows.Add (
+                    item.ID,
+                    item.Nome,
+                    item.Endereco,
+                    item.CPF,
+                    item.Telefone
+                );
+            }
         }
     }
 }
