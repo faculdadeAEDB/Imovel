@@ -38,6 +38,14 @@ namespace Imob.Site.Models.Repository
             }
         }
 
+        public Rent Obter(int id)
+        {
+            using (Context.Context c = new Context.Context())
+            {
+                return c.Aluguel.Where(item => item.ID == id).First();
+            }
+        }
+
         public Rent Salvar(Rent obj)
         {
             using (Context.Context c = new Context.Context())

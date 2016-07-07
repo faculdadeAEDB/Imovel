@@ -38,6 +38,14 @@ namespace Imob.Site.Models.Repository
             }
         }
 
+        public Owner Obter(int id)
+        {
+            using (Context.Context c = new Context.Context())
+            {
+                return c.Proprietario.Where(item => item.ID == id).First();
+            }
+        }
+
         public Owner Salvar(Owner obj)
         {
             using (Context.Context c = new Context.Context())

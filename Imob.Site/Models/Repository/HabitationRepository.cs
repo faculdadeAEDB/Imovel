@@ -38,6 +38,14 @@ namespace Imob.Site.Models.Repository
             }
         }
 
+        public Habitation Obter(int id)
+        {
+            using (Context.Context c = new Context.Context())
+            {
+                return c.Propriedade.Where(item => item.ID == id).First();
+            }
+        }
+
         public Habitation Salvar(Habitation obj)
         {
             using (Context.Context c = new Context.Context())

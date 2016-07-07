@@ -19,6 +19,12 @@
   <wsdl:message name="IProprietarioController_Obter_OutputMessage">
     <wsdl:part name="parameters" element="tns:ObterResponse" />
   </wsdl:message>
+  <wsdl:message name="IProprietarioController_ObterPorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterPorId" />
+  </wsdl:message>
+  <wsdl:message name="IProprietarioController_ObterPorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterPorIdResponse" />
+  </wsdl:message>
   <wsdl:message name="IProprietarioController_Editar_InputMessage">
     <wsdl:part name="parameters" element="tns:Editar" />
   </wsdl:message>
@@ -39,6 +45,10 @@
     <wsdl:operation name="Obter">
       <wsdl:input wsaw:Action="http://tempuri.org/IProprietarioController/Obter" message="tns:IProprietarioController_Obter_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IProprietarioController/ObterResponse" message="tns:IProprietarioController_Obter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObterPorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProprietarioController/ObterPorId" message="tns:IProprietarioController_ObterPorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProprietarioController/ObterPorIdResponse" message="tns:IProprietarioController_ObterPorId_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="Editar">
       <wsdl:input wsaw:Action="http://tempuri.org/IProprietarioController/Editar" message="tns:IProprietarioController_Editar_InputMessage" />
@@ -62,6 +72,15 @@
     </wsdl:operation>
     <wsdl:operation name="Obter">
       <soap:operation soapAction="http://tempuri.org/IProprietarioController/Obter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObterPorId">
+      <soap:operation soapAction="http://tempuri.org/IProprietarioController/ObterPorId" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

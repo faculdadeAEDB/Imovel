@@ -38,6 +38,14 @@ namespace Imob.Site.Models.Repository
             }
         }
 
+        public Customer Obter(int id)
+        {
+            using (Context.Context c = new Context.Context())
+            {
+                return c.Cliente.Where(item => item.ID == id).First();
+            }
+        }
+
         public Customer Salvar(Customer obj)
         {
             using (Context.Context c = new Context.Context())
