@@ -41,10 +41,6 @@
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Proprietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Inquilino = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PropbtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.PropbtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvProprietarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,15 +132,12 @@
             // 
             // DgvProprietarios
             // 
+            this.DgvProprietarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgvProprietarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvProprietarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Endereco,
-            this.Tipo,
-            this.Proprietario,
-            this.Inquilino,
-            this.PropbtnEditar,
-            this.PropbtnExcluir});
+            this.Tipo});
             this.DgvProprietarios.Location = new System.Drawing.Point(19, 78);
             this.DgvProprietarios.Name = "DgvProprietarios";
             this.DgvProprietarios.Size = new System.Drawing.Size(575, 237);
@@ -164,26 +157,6 @@
             // 
             this.Tipo.HeaderText = "Tipo";
             this.Tipo.Name = "Tipo";
-            // 
-            // Proprietario
-            // 
-            this.Proprietario.HeaderText = "Proprietário";
-            this.Proprietario.Name = "Proprietario";
-            // 
-            // Inquilino
-            // 
-            this.Inquilino.HeaderText = "Inquilino";
-            this.Inquilino.Name = "Inquilino";
-            // 
-            // PropbtnEditar
-            // 
-            this.PropbtnEditar.HeaderText = "Editar";
-            this.PropbtnEditar.Name = "PropbtnEditar";
-            // 
-            // PropbtnExcluir
-            // 
-            this.PropbtnExcluir.HeaderText = "Excluir";
-            this.PropbtnExcluir.Name = "PropbtnExcluir";
             // 
             // frmPropriedades
             // 
@@ -224,9 +197,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Endereco;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Proprietario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Inquilino;
-        private System.Windows.Forms.DataGridViewButtonColumn PropbtnEditar;
-        private System.Windows.Forms.DataGridViewButtonColumn PropbtnExcluir;
     }
 }
