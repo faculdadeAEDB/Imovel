@@ -28,144 +28,155 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PropriedbtnNovo = new System.Windows.Forms.Button();
-            this.PropriedbtnSalvar = new System.Windows.Forms.Button();
-            this.PropriedbtnVoltar = new System.Windows.Forms.Button();
-            this.PropiedtxbID = new System.Windows.Forms.TextBox();
-            this.PropiedlvlID = new System.Windows.Forms.Label();
-            this.PropiedcbxTipo = new System.Windows.Forms.ComboBox();
-            this.PropiedlvlTipo = new System.Windows.Forms.Label();
-            this.PropriedtxbEndereco = new System.Windows.Forms.TextBox();
-            this.PropiedlvlEndereco = new System.Windows.Forms.Label();
-            this.DgvProprietarios = new System.Windows.Forms.DataGridView();
+            this.btnPropriedadesNovo = new System.Windows.Forms.Button();
+            this.btnPropriedadesSalvar = new System.Windows.Forms.Button();
+            this.btnPropriedadesVoltar = new System.Windows.Forms.Button();
+            this.txbPropriedadesID = new System.Windows.Forms.TextBox();
+            this.lblPropiedadesID = new System.Windows.Forms.Label();
+            this.cbxPropriedadesTipo = new System.Windows.Forms.ComboBox();
+            this.lvlPropiedadesTipo = new System.Windows.Forms.Label();
+            this.txbPropriedadesEndereco = new System.Windows.Forms.TextBox();
+            this.lblPropriedadesEndereco = new System.Windows.Forms.Label();
+            this.dgvPropriedades = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PropriedbtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.PropriedbtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvProprietarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPropriedades)).BeginInit();
             this.SuspendLayout();
             // 
-            // PropriedbtnNovo
+            // btnPropriedadesNovo
             // 
-            this.PropriedbtnNovo.Location = new System.Drawing.Point(357, 41);
-            this.PropriedbtnNovo.Name = "PropriedbtnNovo";
-            this.PropriedbtnNovo.Size = new System.Drawing.Size(75, 23);
-            this.PropriedbtnNovo.TabIndex = 41;
-            this.PropriedbtnNovo.Text = "Novo";
-            this.PropriedbtnNovo.UseVisualStyleBackColor = true;
-            this.PropriedbtnNovo.Click += new System.EventHandler(this.PropriedbtnNovo_Click);
+            this.btnPropriedadesNovo.Location = new System.Drawing.Point(357, 41);
+            this.btnPropriedadesNovo.Name = "btnPropriedadesNovo";
+            this.btnPropriedadesNovo.Size = new System.Drawing.Size(75, 23);
+            this.btnPropriedadesNovo.TabIndex = 41;
+            this.btnPropriedadesNovo.Text = "Novo";
+            this.btnPropriedadesNovo.UseVisualStyleBackColor = true;
+            this.btnPropriedadesNovo.Click += new System.EventHandler(this.PropriedbtnNovo_Click);
             // 
-            // PropriedbtnSalvar
+            // btnPropriedadesSalvar
             // 
-            this.PropriedbtnSalvar.Location = new System.Drawing.Point(438, 41);
-            this.PropriedbtnSalvar.Name = "PropriedbtnSalvar";
-            this.PropriedbtnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.PropriedbtnSalvar.TabIndex = 40;
-            this.PropriedbtnSalvar.Text = "Salvar";
-            this.PropriedbtnSalvar.UseVisualStyleBackColor = true;
-            this.PropriedbtnSalvar.Click += new System.EventHandler(this.PropriedbtnSalvar_Click);
+            this.btnPropriedadesSalvar.Location = new System.Drawing.Point(438, 41);
+            this.btnPropriedadesSalvar.Name = "btnPropriedadesSalvar";
+            this.btnPropriedadesSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnPropriedadesSalvar.TabIndex = 40;
+            this.btnPropriedadesSalvar.Text = "Salvar";
+            this.btnPropriedadesSalvar.UseVisualStyleBackColor = true;
+            this.btnPropriedadesSalvar.Click += new System.EventHandler(this.PropriedbtnSalvar_Click);
             // 
-            // PropriedbtnVoltar
+            // btnPropriedadesVoltar
             // 
-            this.PropriedbtnVoltar.Location = new System.Drawing.Point(519, 40);
-            this.PropriedbtnVoltar.Name = "PropriedbtnVoltar";
-            this.PropriedbtnVoltar.Size = new System.Drawing.Size(75, 23);
-            this.PropriedbtnVoltar.TabIndex = 39;
-            this.PropriedbtnVoltar.Text = "Voltar";
-            this.PropriedbtnVoltar.UseVisualStyleBackColor = true;
-            this.PropriedbtnVoltar.Click += new System.EventHandler(this.PropriedbtnVoltar_Click);
+            this.btnPropriedadesVoltar.Location = new System.Drawing.Point(519, 40);
+            this.btnPropriedadesVoltar.Name = "btnPropriedadesVoltar";
+            this.btnPropriedadesVoltar.Size = new System.Drawing.Size(75, 23);
+            this.btnPropriedadesVoltar.TabIndex = 39;
+            this.btnPropriedadesVoltar.Text = "Voltar";
+            this.btnPropriedadesVoltar.UseVisualStyleBackColor = true;
+            this.btnPropriedadesVoltar.Click += new System.EventHandler(this.PropriedbtnVoltar_Click);
             // 
-            // PropiedtxbID
+            // txbPropriedadesID
             // 
-            this.PropiedtxbID.Location = new System.Drawing.Point(406, 13);
-            this.PropiedtxbID.Name = "PropiedtxbID";
-            this.PropiedtxbID.ReadOnly = true;
-            this.PropiedtxbID.Size = new System.Drawing.Size(75, 20);
-            this.PropiedtxbID.TabIndex = 37;
+            this.txbPropriedadesID.Location = new System.Drawing.Point(406, 13);
+            this.txbPropriedadesID.Name = "txbPropriedadesID";
+            this.txbPropriedadesID.ReadOnly = true;
+            this.txbPropriedadesID.Size = new System.Drawing.Size(75, 20);
+            this.txbPropriedadesID.TabIndex = 37;
             // 
-            // PropiedlvlID
+            // lblPropiedadesID
             // 
-            this.PropiedlvlID.AutoSize = true;
-            this.PropiedlvlID.Location = new System.Drawing.Point(382, 17);
-            this.PropiedlvlID.Name = "PropiedlvlID";
-            this.PropiedlvlID.Size = new System.Drawing.Size(18, 13);
-            this.PropiedlvlID.TabIndex = 36;
-            this.PropiedlvlID.Text = "ID";
+            this.lblPropiedadesID.AutoSize = true;
+            this.lblPropiedadesID.Location = new System.Drawing.Point(382, 17);
+            this.lblPropiedadesID.Name = "lblPropiedadesID";
+            this.lblPropiedadesID.Size = new System.Drawing.Size(18, 13);
+            this.lblPropiedadesID.TabIndex = 36;
+            this.lblPropiedadesID.Text = "ID";
             // 
-            // PropiedcbxTipo
+            // cbxPropriedadesTipo
             // 
-            this.PropiedcbxTipo.FormattingEnabled = true;
-            this.PropiedcbxTipo.Items.AddRange(new object[] {
+            this.cbxPropriedadesTipo.FormattingEnabled = true;
+            this.cbxPropriedadesTipo.Items.AddRange(new object[] {
             "Casa",
             "Apartamento",
             "Sítio",
             "Chácara",
             "Kitnet"});
-            this.PropiedcbxTipo.Location = new System.Drawing.Point(519, 13);
-            this.PropiedcbxTipo.Name = "PropiedcbxTipo";
-            this.PropiedcbxTipo.Size = new System.Drawing.Size(75, 21);
-            this.PropiedcbxTipo.TabIndex = 35;
+            this.cbxPropriedadesTipo.Location = new System.Drawing.Point(519, 13);
+            this.cbxPropriedadesTipo.Name = "cbxPropriedadesTipo";
+            this.cbxPropriedadesTipo.Size = new System.Drawing.Size(75, 21);
+            this.cbxPropriedadesTipo.TabIndex = 35;
             // 
-            // PropiedlvlTipo
+            // lvlPropiedadesTipo
             // 
-            this.PropiedlvlTipo.AutoSize = true;
-            this.PropiedlvlTipo.Location = new System.Drawing.Point(485, 16);
-            this.PropiedlvlTipo.Name = "PropiedlvlTipo";
-            this.PropiedlvlTipo.Size = new System.Drawing.Size(28, 13);
-            this.PropiedlvlTipo.TabIndex = 34;
-            this.PropiedlvlTipo.Text = "Tipo";
+            this.lvlPropiedadesTipo.AutoSize = true;
+            this.lvlPropiedadesTipo.Location = new System.Drawing.Point(485, 16);
+            this.lvlPropiedadesTipo.Name = "lvlPropiedadesTipo";
+            this.lvlPropiedadesTipo.Size = new System.Drawing.Size(28, 13);
+            this.lvlPropiedadesTipo.TabIndex = 34;
+            this.lvlPropiedadesTipo.Text = "Tipo";
             // 
-            // PropriedtxbEndereco
+            // txbPropriedadesEndereco
             // 
-            this.PropriedtxbEndereco.Location = new System.Drawing.Point(75, 13);
-            this.PropriedtxbEndereco.Name = "PropriedtxbEndereco";
-            this.PropriedtxbEndereco.Size = new System.Drawing.Size(301, 20);
-            this.PropriedtxbEndereco.TabIndex = 29;
+            this.txbPropriedadesEndereco.Location = new System.Drawing.Point(75, 13);
+            this.txbPropriedadesEndereco.Name = "txbPropriedadesEndereco";
+            this.txbPropriedadesEndereco.Size = new System.Drawing.Size(301, 20);
+            this.txbPropriedadesEndereco.TabIndex = 29;
             // 
-            // PropiedlvlEndereco
+            // lblPropriedadesEndereco
             // 
-            this.PropiedlvlEndereco.AutoSize = true;
-            this.PropiedlvlEndereco.Location = new System.Drawing.Point(16, 16);
-            this.PropiedlvlEndereco.Name = "PropiedlvlEndereco";
-            this.PropiedlvlEndereco.Size = new System.Drawing.Size(53, 13);
-            this.PropiedlvlEndereco.TabIndex = 28;
-            this.PropiedlvlEndereco.Text = "Endereço";
+            this.lblPropriedadesEndereco.AutoSize = true;
+            this.lblPropriedadesEndereco.Location = new System.Drawing.Point(16, 16);
+            this.lblPropriedadesEndereco.Name = "lblPropriedadesEndereco";
+            this.lblPropriedadesEndereco.Size = new System.Drawing.Size(53, 13);
+            this.lblPropriedadesEndereco.TabIndex = 28;
+            this.lblPropriedadesEndereco.Text = "Endereço";
             // 
-            // DgvProprietarios
+            // dgvPropriedades
             // 
-            this.DgvProprietarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DgvProprietarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvProprietarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvPropriedades.AllowUserToAddRows = false;
+            this.dgvPropriedades.AllowUserToDeleteRows = false;
+            this.dgvPropriedades.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvPropriedades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPropriedades.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Endereco,
             this.Tipo,
             this.PropriedbtnEditar,
             this.PropriedbtnExcluir});
-            this.DgvProprietarios.Location = new System.Drawing.Point(19, 78);
-            this.DgvProprietarios.Name = "DgvProprietarios";
-            this.DgvProprietarios.Size = new System.Drawing.Size(575, 237);
-            this.DgvProprietarios.TabIndex = 42;
+            this.dgvPropriedades.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvPropriedades.Location = new System.Drawing.Point(19, 78);
+            this.dgvPropriedades.MultiSelect = false;
+            this.dgvPropriedades.Name = "dgvPropriedades";
+            this.dgvPropriedades.ReadOnly = true;
+            this.dgvPropriedades.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPropriedades.Size = new System.Drawing.Size(575, 237);
+            this.dgvPropriedades.TabIndex = 42;
+            this.dgvPropriedades.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPropriedades_CellContentClick);
             // 
             // ID
             // 
             this.ID.HeaderText = "ID";
             this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
             // 
             // Endereco
             // 
             this.Endereco.HeaderText = "Endereço";
             this.Endereco.Name = "Endereco";
+            this.Endereco.ReadOnly = true;
             // 
             // Tipo
             // 
             this.Tipo.HeaderText = "Tipo";
             this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
             // 
             // PropriedbtnEditar
             // 
             this.PropriedbtnEditar.HeaderText = "Editar";
             this.PropriedbtnEditar.Name = "PropriedbtnEditar";
+            this.PropriedbtnEditar.ReadOnly = true;
             this.PropriedbtnEditar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.PropriedbtnEditar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
@@ -173,6 +184,7 @@
             // 
             this.PropriedbtnExcluir.HeaderText = "Excluir";
             this.PropriedbtnExcluir.Name = "PropriedbtnExcluir";
+            this.PropriedbtnExcluir.ReadOnly = true;
             this.PropriedbtnExcluir.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.PropriedbtnExcluir.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
@@ -181,23 +193,23 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 327);
-            this.Controls.Add(this.DgvProprietarios);
-            this.Controls.Add(this.PropriedbtnNovo);
-            this.Controls.Add(this.PropriedbtnSalvar);
-            this.Controls.Add(this.PropriedbtnVoltar);
-            this.Controls.Add(this.PropiedtxbID);
-            this.Controls.Add(this.PropiedlvlID);
-            this.Controls.Add(this.PropiedcbxTipo);
-            this.Controls.Add(this.PropiedlvlTipo);
-            this.Controls.Add(this.PropriedtxbEndereco);
-            this.Controls.Add(this.PropiedlvlEndereco);
+            this.Controls.Add(this.dgvPropriedades);
+            this.Controls.Add(this.btnPropriedadesNovo);
+            this.Controls.Add(this.btnPropriedadesSalvar);
+            this.Controls.Add(this.btnPropriedadesVoltar);
+            this.Controls.Add(this.txbPropriedadesID);
+            this.Controls.Add(this.lblPropiedadesID);
+            this.Controls.Add(this.cbxPropriedadesTipo);
+            this.Controls.Add(this.lvlPropiedadesTipo);
+            this.Controls.Add(this.txbPropriedadesEndereco);
+            this.Controls.Add(this.lblPropriedadesEndereco);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPropriedades";
             this.Text = "Propriedades";
             this.Load += new System.EventHandler(this.PropiedcbxID_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvProprietarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPropriedades)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,16 +217,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button PropriedbtnNovo;
-        private System.Windows.Forms.Button PropriedbtnSalvar;
-        private System.Windows.Forms.Button PropriedbtnVoltar;
-        private System.Windows.Forms.TextBox PropiedtxbID;
-        private System.Windows.Forms.Label PropiedlvlID;
-        private System.Windows.Forms.ComboBox PropiedcbxTipo;
-        private System.Windows.Forms.Label PropiedlvlTipo;
-        private System.Windows.Forms.TextBox PropriedtxbEndereco;
-        private System.Windows.Forms.Label PropiedlvlEndereco;
-        private System.Windows.Forms.DataGridView DgvProprietarios;
+        private System.Windows.Forms.Button btnPropriedadesNovo;
+        private System.Windows.Forms.Button btnPropriedadesSalvar;
+        private System.Windows.Forms.Button btnPropriedadesVoltar;
+        private System.Windows.Forms.TextBox txbPropriedadesID;
+        private System.Windows.Forms.Label lblPropiedadesID;
+        private System.Windows.Forms.ComboBox cbxPropriedadesTipo;
+        private System.Windows.Forms.Label lvlPropiedadesTipo;
+        private System.Windows.Forms.TextBox txbPropriedadesEndereco;
+        private System.Windows.Forms.Label lblPropriedadesEndereco;
+        private System.Windows.Forms.DataGridView dgvPropriedades;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Endereco;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;

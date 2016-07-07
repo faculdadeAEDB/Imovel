@@ -28,24 +28,23 @@ namespace Imob.View.Owner
 
         private void btnProNovo_Click(object sender, EventArgs e)
         {
-            Imob.Site.Models.Owner c = new Imob.Site.Models.Owner();
-            c.Nome = PropriettxbNome.Text;
-            c.Endereco = PropriettxbEndereco.Text;
-            c.Telefone = PropriettxbTelefone.Text;
-            c.CPF = PropriettxbCPF.Text;
-
-            (new ProprietarioController.ProprietarioControllerClient()).Salvar(c);
+            txbProprietariosCPF.Text = "";
+            txbProprietariosEndereco.Text = "";
+            txbProprietariosNome.Text = "";
+            txbProprietariosTelefone.Text = "";
         }
 
         private void btnProSalvar_Click(object sender, EventArgs e)
         {
             Imob.Site.Models.Owner c = new Imob.Site.Models.Owner();
-            c.Nome = PropriettxbNome.Text;
-            c.Endereco = PropriettxbEndereco.Text;
-            c.Telefone = PropriettxbTelefone.Text;
-            c.CPF = PropriettxbCPF.Text;
+            c.Nome = txbProprietariosNome.Text;
+            c.Endereco = txbProprietariosEndereco.Text;
+            c.Telefone = txbProprietariosTelefone.Text;
+            c.CPF = txbProprietariosCPF.Text;
 
             (new ProprietarioController.ProprietarioControllerClient()).Editar(c);
+
+            Atualizando_datagrid();
         }
 
         private void btnProVoltar_Click(object sender, EventArgs e)
@@ -55,17 +54,41 @@ namespace Imob.View.Owner
 
         private void frmProprietarios_Load(object sender, EventArgs e)
         {
+            Atualizando_datagrid();
+        }
+
+        public void Atualizando_datagrid()
+        {
             var c = (new ProprietarioController.ProprietarioControllerClient()).Obter();
-            
+
             foreach (var item in c.ToList())
             {
-                grdProprietario.Rows.Add (
+                dgvProprietarios.Rows.Add(
                     item.ID,
                     item.Nome,
                     item.Endereco,
                     item.CPF,
                     item.Telefone
                 );
+            }
+        }
+
+        private void dgvProprietarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvProprietarios.Rows[e.RowIndex].DataBoundItem != null || true)
+            {
+                if (e.ColumnIndex == 5)
+                {
+
+                }
+                if (e.ColumnIndex == 6)
+                {
+                    if (MessageBox.Show("Deseja realmente excluir?", "Cadastro de Proprietario", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+                    {
+                        dgvProprietarios.Rows.RemoveAt(e.RowIndex);
+                    }
+
+                }
             }
         }
     }

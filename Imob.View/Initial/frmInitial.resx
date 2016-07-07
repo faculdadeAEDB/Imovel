@@ -118,129 +118,237 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnClientes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 13</value>
+  <data name="btnInitialClientes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 40</value>
   </data>
-  <data name="btnClientes.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnInitialClientes.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 79</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnClientes.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnInitialClientes.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="btnClientes.Text" xml:space="preserve">
+  <data name="btnInitialClientes.Text" xml:space="preserve">
     <value>Clientes</value>
   </data>
-  <data name="&gt;&gt;btnClientes.Name" xml:space="preserve">
-    <value>btnClientes</value>
+  <data name="&gt;&gt;btnInitialClientes.Name" xml:space="preserve">
+    <value>btnInitialClientes</value>
   </data>
-  <data name="&gt;&gt;btnClientes.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnInitialClientes.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnClientes.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnInitialClientes.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnClientes.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;btnInitialClientes.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="btnProprietarios.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 12</value>
+  <data name="btnInitialProprietarios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 39</value>
   </data>
-  <data name="btnProprietarios.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnInitialProprietarios.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 79</value>
   </data>
-  <data name="btnProprietarios.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnInitialProprietarios.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btnProprietarios.Text" xml:space="preserve">
+  <data name="btnInitialProprietarios.Text" xml:space="preserve">
     <value>Proprietarios</value>
   </data>
-  <data name="&gt;&gt;btnProprietarios.Name" xml:space="preserve">
-    <value>btnProprietarios</value>
+  <data name="&gt;&gt;btnInitialProprietarios.Name" xml:space="preserve">
+    <value>btnInitialProprietarios</value>
   </data>
-  <data name="&gt;&gt;btnProprietarios.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnInitialProprietarios.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnProprietarios.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnInitialProprietarios.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnProprietarios.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;btnInitialProprietarios.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="btnPropriedades.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 12</value>
+  <data name="btnInitialPropriedades.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 39</value>
   </data>
-  <data name="btnPropriedades.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnInitialPropriedades.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 79</value>
   </data>
-  <data name="btnPropriedades.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnInitialPropriedades.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="btnPropriedades.Text" xml:space="preserve">
+  <data name="btnInitialPropriedades.Text" xml:space="preserve">
     <value>Propriedades</value>
   </data>
-  <data name="&gt;&gt;btnPropriedades.Name" xml:space="preserve">
-    <value>btnPropriedades</value>
+  <data name="&gt;&gt;btnInitialPropriedades.Name" xml:space="preserve">
+    <value>btnInitialPropriedades</value>
   </data>
-  <data name="&gt;&gt;btnPropriedades.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnInitialPropriedades.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnPropriedades.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnInitialPropriedades.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnPropriedades.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;btnInitialPropriedades.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="btnPagamentos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 12</value>
+  <data name="btnInitialPagamentos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>524, 39</value>
   </data>
-  <data name="btnPagamentos.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnInitialPagamentos.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 79</value>
   </data>
-  <data name="btnPagamentos.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnInitialPagamentos.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="btnPagamentos.Text" xml:space="preserve">
+  <data name="btnInitialPagamentos.Text" xml:space="preserve">
     <value>Pagamentos</value>
   </data>
-  <data name="&gt;&gt;btnPagamentos.Name" xml:space="preserve">
-    <value>btnPagamentos</value>
+  <data name="&gt;&gt;btnInitialPagamentos.Name" xml:space="preserve">
+    <value>btnInitialPagamentos</value>
   </data>
-  <data name="&gt;&gt;btnPagamentos.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnInitialPagamentos.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnPagamentos.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnInitialPagamentos.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnPagamentos.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAlguel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnAlguel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>688, 12</value>
-  </data>
-  <data name="btnAlguel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 79</value>
-  </data>
-  <data name="btnAlguel.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;btnInitialPagamentos.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="btnAlguel.Text" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnInitialAlguel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnInitialAlguel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>690, 39</value>
+  </data>
+  <data name="btnInitialAlguel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 79</value>
+  </data>
+  <data name="btnInitialAlguel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnInitialAlguel.Text" xml:space="preserve">
     <value>Alguéis</value>
   </data>
-  <data name="&gt;&gt;btnAlguel.Name" xml:space="preserve">
-    <value>btnAlguel</value>
+  <data name="&gt;&gt;btnInitialAlguel.Name" xml:space="preserve">
+    <value>btnInitialAlguel</value>
   </data>
-  <data name="&gt;&gt;btnAlguel.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnInitialAlguel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnAlguel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnInitialAlguel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnAlguel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnInitialAlguel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblRelatorios.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblRelatorios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 131</value>
+  </data>
+  <data name="lblRelatorios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 13</value>
+  </data>
+  <data name="lblRelatorios.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblRelatorios.Text" xml:space="preserve">
+    <value>---------------RELATÓRIOS------------</value>
+  </data>
+  <data name="&gt;&gt;lblRelatorios.Name" xml:space="preserve">
+    <value>lblRelatorios</value>
+  </data>
+  <data name="&gt;&gt;lblRelatorios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblRelatorios.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblRelatorios.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnRelatorioAlugueis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 157</value>
+  </data>
+  <data name="btnRelatorioAlugueis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 78</value>
+  </data>
+  <data name="btnRelatorioAlugueis.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnRelatorioAlugueis.Text" xml:space="preserve">
+    <value>Relatório de Aluguéis</value>
+  </data>
+  <data name="&gt;&gt;btnRelatorioAlugueis.Name" xml:space="preserve">
+    <value>btnRelatorioAlugueis</value>
+  </data>
+  <data name="&gt;&gt;btnRelatorioAlugueis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRelatorioAlugueis.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnRelatorioAlugueis.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnRelatorioPagamentos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnRelatorioPagamentos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>451, 157</value>
+  </data>
+  <data name="btnRelatorioPagamentos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 78</value>
+  </data>
+  <data name="btnRelatorioPagamentos.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnRelatorioPagamentos.Text" xml:space="preserve">
+    <value>Relatório de Pagamentos</value>
+  </data>
+  <data name="&gt;&gt;btnRelatorioPagamentos.Name" xml:space="preserve">
+    <value>btnRelatorioPagamentos</value>
+  </data>
+  <data name="&gt;&gt;btnRelatorioPagamentos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRelatorioPagamentos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnRelatorioPagamentos.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 9</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>---------------CADASTROS------------</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -250,13 +358,13 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>846, 106</value>
+    <value>846, 255</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>frmInitial</value>
+    <value>Iniciar</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmInitial</value>
+    <value>Iniciar</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Imob.View.Initial
 {
-    public partial class frmInitial : Form
+    public partial class Iniciar : Form
     {
-        public frmInitial()
+        public Iniciar()
         {
             InitializeComponent();
         }
@@ -48,6 +48,20 @@ namespace Imob.View.Initial
         {
             this.Visible = false;
             (new Imob.View.Rent.frmAlgueis()).ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnRelatorioAlugueis_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            (new Imob.View.Report.frmRelatorio_Algueis()).ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnRelatorioPagamentos_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            (new Imob.View.Report.frmRelatorio_Pagamentos()).ShowDialog();
             this.Visible = true;
         }
     }

@@ -92,6 +92,18 @@
     <Compile Include="Rent\frmAlgueis.Designer.cs">
       <DependentUpon>frmAlgueis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\frmRelatorio_Algueis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmRelatorio_Algueis.Designer.cs">
+      <DependentUpon>frmRelatorio_Algueis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmRelatorio_Pagamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmRelatorio_Pagamentos.Designer.cs">
+      <DependentUpon>frmRelatorio_Pagamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Service References\AluguelController\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -151,6 +163,12 @@
     </Compile>
     <EmbeddedResource Include="Rent\frmAlgueis.resx">
       <DependentUpon>frmAlgueis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmRelatorio_Algueis.resx">
+      <DependentUpon>frmRelatorio_Algueis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmRelatorio_Pagamentos.resx">
+      <DependentUpon>frmRelatorio_Pagamentos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\Imob.Site.Models.Customer.datasource" />
     <None Include="Properties\DataSources\Imob.Site.Models.Fee.datasource" />

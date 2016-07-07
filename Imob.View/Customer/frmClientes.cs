@@ -25,31 +25,29 @@ namespace Imob.View.Customer
 
         public void Atualizando_datagrid()
         {
-            var c = (new ClienteController.ClienteControllerClient()).Obter();
-            Cosdgv.DataSource = c.ToList();
-        }
-        private void CosbtnNovo_Click(object sender, EventArgs e)
-        {
-            Imob.Site.Models.Customer c = new Imob.Site.Models.Customer();
-            c.Nome = CostxbNome.Text;
-            c.Endereco = CostxbEndereco.Text;
-            c.Telefone = CostxbTelefone.Text;
-            c.Idade = CostxbIdade.Text;
-            c.cpf = Convert.ToInt32(CostxbCPF.Text);
-            Imob.Site.Models.Customer cliente = (new ClienteController.ClienteControllerClient()).Salvar(c);
-            Atualizando_datagrid();
-
+            foreach (var item in (new ClienteController.ClienteControllerClient()).Obter().ToList())
+            {
+                dgvClientes.Rows.Add(
+                    item.ID,
+                    item.Nome,
+                    item.Idade,
+                    item.Endereco,
+                    item.Telefone,
+                    item.cpf
+                );
+            }
         }
 
         private void CosbtnSalvar_Click(object sender, EventArgs e)
         {
             Imob.Site.Models.Customer c = new Imob.Site.Models.Customer();
-            c.Nome = CostxbNome.Text;
-            c.Endereco = CostxbEndereco.Text;
-            c.Telefone = CostxbTelefone.Text;
-            c.Idade = CostxbIdade.Text;
-            c.cpf = Convert.ToInt32(CostxbCPF.Text);
-            (new ClienteController.ClienteControllerClient()).Editar(c);
+            c.Nome = txbClientesNome.Text;
+            c.Endereco = txbClientesEndereco.Text;
+            c.Telefone = txbClientesTelefone.Text;
+            c.Idade = txbClientesIdade.Text;
+            c.cpf = Convert.ToInt32(txbClientesCPF.Text);
+            Imob.Site.Models.Customer cliente = (new ClienteController.ClienteControllerClient()).Salvar(c);
+            Atualizando_datagrid();
         }
 
         private void CosbtnVoltar_Click(object sender, EventArgs e)
@@ -59,7 +57,30 @@ namespace Imob.View.Customer
 
         private void Cosdgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (dgvClientes.Rows[e.RowIndex].DataBoundItem != null || true)
+            {
+                if (e.ColumnIndex == 6)
+                {
 
+                }
+                if (e.ColumnIndex == 7)
+                {
+                    if (MessageBox.Show("Deseja realmente excluir?", "Cadastro de Cliente", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+                    {
+                        dgvClientes.Rows.RemoveAt(e.RowIndex);
+                    }
+
+                }
+            }
+        }
+
+        private void btnClientesNovo_Click(object sender, EventArgs e)
+        {
+            txbClientesCPF.Text = "";
+            txbClientesEndereco.Text = "";
+            txbClientesIdade.Text = "";
+            txbClientesNome.Text = "";
+            txbClientesTelefone.Text = "";
         }
     }
 }

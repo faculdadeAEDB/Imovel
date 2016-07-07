@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnImovel = new System.Windows.Forms.Button();
-            this.btnProNovo = new System.Windows.Forms.Button();
-            this.btnProSalvar = new System.Windows.Forms.Button();
-            this.btnProVoltar = new System.Windows.Forms.Button();
-            this.grdProprietario = new System.Windows.Forms.DataGridView();
+            this.btnProprietariosImovel = new System.Windows.Forms.Button();
+            this.btnProprietariosNovo = new System.Windows.Forms.Button();
+            this.btnProprietariosSalvar = new System.Windows.Forms.Button();
+            this.btnProprietariosVoltar = new System.Windows.Forms.Button();
+            this.dgvProprietarios = new System.Windows.Forms.DataGridView();
             this.ProprietID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProprietNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProprietEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,63 +40,63 @@
             this.ProprietTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProprietbtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ProprietbtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.PropriettxbCPF = new System.Windows.Forms.TextBox();
-            this.ProprietlblCPF = new System.Windows.Forms.Label();
-            this.PropriettxbTelefone = new System.Windows.Forms.TextBox();
-            this.ProprietlblTelefone = new System.Windows.Forms.Label();
-            this.PropriettxbEndereco = new System.Windows.Forms.TextBox();
-            this.ProprietlblEndereco = new System.Windows.Forms.Label();
-            this.PropriettxbNome = new System.Windows.Forms.TextBox();
-            this.ProprietlblNome = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.grdProprietario)).BeginInit();
+            this.txbProprietariosCPF = new System.Windows.Forms.TextBox();
+            this.lblProprietariosCPF = new System.Windows.Forms.Label();
+            this.txbProprietariosTelefone = new System.Windows.Forms.TextBox();
+            this.lblProprietariosTelefone = new System.Windows.Forms.Label();
+            this.txbProprietariosEndereco = new System.Windows.Forms.TextBox();
+            this.lblProprietariosEndereco = new System.Windows.Forms.Label();
+            this.txbProprietariosNome = new System.Windows.Forms.TextBox();
+            this.lblProprietariosNome = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProprietarios)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnImovel
+            // btnProprietariosImovel
             // 
-            this.btnImovel.Location = new System.Drawing.Point(13, 92);
-            this.btnImovel.Name = "btnImovel";
-            this.btnImovel.Size = new System.Drawing.Size(96, 23);
-            this.btnImovel.TabIndex = 46;
-            this.btnImovel.Text = "Cadastrar Imóvel";
-            this.btnImovel.UseVisualStyleBackColor = true;
-            this.btnImovel.Click += new System.EventHandler(this.btnImovel_Click);
+            this.btnProprietariosImovel.Location = new System.Drawing.Point(13, 92);
+            this.btnProprietariosImovel.Name = "btnProprietariosImovel";
+            this.btnProprietariosImovel.Size = new System.Drawing.Size(96, 23);
+            this.btnProprietariosImovel.TabIndex = 46;
+            this.btnProprietariosImovel.Text = "Cadastrar Imóvel";
+            this.btnProprietariosImovel.UseVisualStyleBackColor = true;
+            this.btnProprietariosImovel.Click += new System.EventHandler(this.btnImovel_Click);
             // 
-            // btnProNovo
+            // btnProprietariosNovo
             // 
-            this.btnProNovo.Location = new System.Drawing.Point(359, 92);
-            this.btnProNovo.Name = "btnProNovo";
-            this.btnProNovo.Size = new System.Drawing.Size(75, 23);
-            this.btnProNovo.TabIndex = 45;
-            this.btnProNovo.Text = "Novo";
-            this.btnProNovo.UseVisualStyleBackColor = true;
-            this.btnProNovo.Click += new System.EventHandler(this.btnProNovo_Click);
+            this.btnProprietariosNovo.Location = new System.Drawing.Point(359, 92);
+            this.btnProprietariosNovo.Name = "btnProprietariosNovo";
+            this.btnProprietariosNovo.Size = new System.Drawing.Size(75, 23);
+            this.btnProprietariosNovo.TabIndex = 45;
+            this.btnProprietariosNovo.Text = "Novo";
+            this.btnProprietariosNovo.UseVisualStyleBackColor = true;
+            this.btnProprietariosNovo.Click += new System.EventHandler(this.btnProNovo_Click);
             // 
-            // btnProSalvar
+            // btnProprietariosSalvar
             // 
-            this.btnProSalvar.Location = new System.Drawing.Point(440, 92);
-            this.btnProSalvar.Name = "btnProSalvar";
-            this.btnProSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnProSalvar.TabIndex = 44;
-            this.btnProSalvar.Text = "Salvar";
-            this.btnProSalvar.UseVisualStyleBackColor = true;
-            this.btnProSalvar.Click += new System.EventHandler(this.btnProSalvar_Click);
+            this.btnProprietariosSalvar.Location = new System.Drawing.Point(440, 92);
+            this.btnProprietariosSalvar.Name = "btnProprietariosSalvar";
+            this.btnProprietariosSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnProprietariosSalvar.TabIndex = 44;
+            this.btnProprietariosSalvar.Text = "Salvar";
+            this.btnProprietariosSalvar.UseVisualStyleBackColor = true;
+            this.btnProprietariosSalvar.Click += new System.EventHandler(this.btnProSalvar_Click);
             // 
-            // btnProVoltar
+            // btnProprietariosVoltar
             // 
-            this.btnProVoltar.Location = new System.Drawing.Point(521, 92);
-            this.btnProVoltar.Name = "btnProVoltar";
-            this.btnProVoltar.Size = new System.Drawing.Size(75, 23);
-            this.btnProVoltar.TabIndex = 43;
-            this.btnProVoltar.Text = "Voltar";
-            this.btnProVoltar.UseVisualStyleBackColor = true;
-            this.btnProVoltar.Click += new System.EventHandler(this.btnProVoltar_Click);
+            this.btnProprietariosVoltar.Location = new System.Drawing.Point(521, 92);
+            this.btnProprietariosVoltar.Name = "btnProprietariosVoltar";
+            this.btnProprietariosVoltar.Size = new System.Drawing.Size(75, 23);
+            this.btnProprietariosVoltar.TabIndex = 43;
+            this.btnProprietariosVoltar.Text = "Voltar";
+            this.btnProprietariosVoltar.UseVisualStyleBackColor = true;
+            this.btnProprietariosVoltar.Click += new System.EventHandler(this.btnProVoltar_Click);
             // 
-            // grdProprietario
+            // dgvProprietarios
             // 
-            this.grdProprietario.AllowUserToDeleteRows = false;
-            this.grdProprietario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.grdProprietario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdProprietario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvProprietarios.AllowUserToDeleteRows = false;
+            this.dgvProprietarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvProprietarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProprietarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProprietID,
             this.ProprietNome,
             this.ProprietEndereco,
@@ -104,11 +104,15 @@
             this.ProprietTelefone,
             this.ProprietbtnEditar,
             this.ProprietbtnExcluir});
-            this.grdProprietario.Location = new System.Drawing.Point(13, 121);
-            this.grdProprietario.Name = "grdProprietario";
-            this.grdProprietario.ReadOnly = true;
-            this.grdProprietario.Size = new System.Drawing.Size(584, 194);
-            this.grdProprietario.TabIndex = 42;
+            this.dgvProprietarios.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvProprietarios.Location = new System.Drawing.Point(13, 121);
+            this.dgvProprietarios.MultiSelect = false;
+            this.dgvProprietarios.Name = "dgvProprietarios";
+            this.dgvProprietarios.ReadOnly = true;
+            this.dgvProprietarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProprietarios.Size = new System.Drawing.Size(584, 194);
+            this.dgvProprietarios.TabIndex = 42;
+            this.dgvProprietarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProprietarios_CellContentClick);
             // 
             // ProprietID
             // 
@@ -154,93 +158,93 @@
             this.ProprietbtnExcluir.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ProprietbtnExcluir.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // PropriettxbCPF
+            // txbProprietariosCPF
             // 
-            this.PropriettxbCPF.Location = new System.Drawing.Point(359, 65);
-            this.PropriettxbCPF.Name = "PropriettxbCPF";
-            this.PropriettxbCPF.Size = new System.Drawing.Size(238, 20);
-            this.PropriettxbCPF.TabIndex = 41;
+            this.txbProprietariosCPF.Location = new System.Drawing.Point(359, 65);
+            this.txbProprietariosCPF.Name = "txbProprietariosCPF";
+            this.txbProprietariosCPF.Size = new System.Drawing.Size(238, 20);
+            this.txbProprietariosCPF.TabIndex = 41;
             // 
-            // ProprietlblCPF
+            // lblProprietariosCPF
             // 
-            this.ProprietlblCPF.AutoSize = true;
-            this.ProprietlblCPF.Location = new System.Drawing.Point(325, 68);
-            this.ProprietlblCPF.Name = "ProprietlblCPF";
-            this.ProprietlblCPF.Size = new System.Drawing.Size(27, 13);
-            this.ProprietlblCPF.TabIndex = 40;
-            this.ProprietlblCPF.Text = "CPF";
+            this.lblProprietariosCPF.AutoSize = true;
+            this.lblProprietariosCPF.Location = new System.Drawing.Point(325, 68);
+            this.lblProprietariosCPF.Name = "lblProprietariosCPF";
+            this.lblProprietariosCPF.Size = new System.Drawing.Size(27, 13);
+            this.lblProprietariosCPF.TabIndex = 40;
+            this.lblProprietariosCPF.Text = "CPF";
             // 
-            // PropriettxbTelefone
+            // txbProprietariosTelefone
             // 
-            this.PropriettxbTelefone.Location = new System.Drawing.Point(73, 65);
-            this.PropriettxbTelefone.Name = "PropriettxbTelefone";
-            this.PropriettxbTelefone.Size = new System.Drawing.Size(230, 20);
-            this.PropriettxbTelefone.TabIndex = 39;
+            this.txbProprietariosTelefone.Location = new System.Drawing.Point(73, 65);
+            this.txbProprietariosTelefone.Name = "txbProprietariosTelefone";
+            this.txbProprietariosTelefone.Size = new System.Drawing.Size(230, 20);
+            this.txbProprietariosTelefone.TabIndex = 39;
             // 
-            // ProprietlblTelefone
+            // lblProprietariosTelefone
             // 
-            this.ProprietlblTelefone.AutoSize = true;
-            this.ProprietlblTelefone.Location = new System.Drawing.Point(18, 68);
-            this.ProprietlblTelefone.Name = "ProprietlblTelefone";
-            this.ProprietlblTelefone.Size = new System.Drawing.Size(49, 13);
-            this.ProprietlblTelefone.TabIndex = 38;
-            this.ProprietlblTelefone.Text = "Telefone";
+            this.lblProprietariosTelefone.AutoSize = true;
+            this.lblProprietariosTelefone.Location = new System.Drawing.Point(18, 68);
+            this.lblProprietariosTelefone.Name = "lblProprietariosTelefone";
+            this.lblProprietariosTelefone.Size = new System.Drawing.Size(49, 13);
+            this.lblProprietariosTelefone.TabIndex = 38;
+            this.lblProprietariosTelefone.Text = "Telefone";
             // 
-            // PropriettxbEndereco
+            // txbProprietariosEndereco
             // 
-            this.PropriettxbEndereco.Location = new System.Drawing.Point(73, 38);
-            this.PropriettxbEndereco.Name = "PropriettxbEndereco";
-            this.PropriettxbEndereco.Size = new System.Drawing.Size(524, 20);
-            this.PropriettxbEndereco.TabIndex = 33;
+            this.txbProprietariosEndereco.Location = new System.Drawing.Point(73, 38);
+            this.txbProprietariosEndereco.Name = "txbProprietariosEndereco";
+            this.txbProprietariosEndereco.Size = new System.Drawing.Size(524, 20);
+            this.txbProprietariosEndereco.TabIndex = 33;
             // 
-            // ProprietlblEndereco
+            // lblProprietariosEndereco
             // 
-            this.ProprietlblEndereco.AutoSize = true;
-            this.ProprietlblEndereco.Location = new System.Drawing.Point(14, 41);
-            this.ProprietlblEndereco.Name = "ProprietlblEndereco";
-            this.ProprietlblEndereco.Size = new System.Drawing.Size(53, 13);
-            this.ProprietlblEndereco.TabIndex = 32;
-            this.ProprietlblEndereco.Text = "Endereço";
+            this.lblProprietariosEndereco.AutoSize = true;
+            this.lblProprietariosEndereco.Location = new System.Drawing.Point(14, 41);
+            this.lblProprietariosEndereco.Name = "lblProprietariosEndereco";
+            this.lblProprietariosEndereco.Size = new System.Drawing.Size(53, 13);
+            this.lblProprietariosEndereco.TabIndex = 32;
+            this.lblProprietariosEndereco.Text = "Endereço";
             // 
-            // PropriettxbNome
+            // txbProprietariosNome
             // 
-            this.PropriettxbNome.Location = new System.Drawing.Point(73, 12);
-            this.PropriettxbNome.Name = "PropriettxbNome";
-            this.PropriettxbNome.Size = new System.Drawing.Size(524, 20);
-            this.PropriettxbNome.TabIndex = 31;
+            this.txbProprietariosNome.Location = new System.Drawing.Point(73, 12);
+            this.txbProprietariosNome.Name = "txbProprietariosNome";
+            this.txbProprietariosNome.Size = new System.Drawing.Size(524, 20);
+            this.txbProprietariosNome.TabIndex = 31;
             // 
-            // ProprietlblNome
+            // lblProprietariosNome
             // 
-            this.ProprietlblNome.AutoSize = true;
-            this.ProprietlblNome.Location = new System.Drawing.Point(32, 15);
-            this.ProprietlblNome.Name = "ProprietlblNome";
-            this.ProprietlblNome.Size = new System.Drawing.Size(35, 13);
-            this.ProprietlblNome.TabIndex = 30;
-            this.ProprietlblNome.Text = "Nome";
+            this.lblProprietariosNome.AutoSize = true;
+            this.lblProprietariosNome.Location = new System.Drawing.Point(32, 15);
+            this.lblProprietariosNome.Name = "lblProprietariosNome";
+            this.lblProprietariosNome.Size = new System.Drawing.Size(35, 13);
+            this.lblProprietariosNome.TabIndex = 30;
+            this.lblProprietariosNome.Text = "Nome";
             // 
             // frmProprietarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 327);
-            this.Controls.Add(this.btnImovel);
-            this.Controls.Add(this.btnProNovo);
-            this.Controls.Add(this.btnProSalvar);
-            this.Controls.Add(this.btnProVoltar);
-            this.Controls.Add(this.grdProprietario);
-            this.Controls.Add(this.PropriettxbCPF);
-            this.Controls.Add(this.ProprietlblCPF);
-            this.Controls.Add(this.PropriettxbTelefone);
-            this.Controls.Add(this.ProprietlblTelefone);
-            this.Controls.Add(this.PropriettxbEndereco);
-            this.Controls.Add(this.ProprietlblEndereco);
-            this.Controls.Add(this.PropriettxbNome);
-            this.Controls.Add(this.ProprietlblNome);
+            this.Controls.Add(this.btnProprietariosImovel);
+            this.Controls.Add(this.btnProprietariosNovo);
+            this.Controls.Add(this.btnProprietariosSalvar);
+            this.Controls.Add(this.btnProprietariosVoltar);
+            this.Controls.Add(this.dgvProprietarios);
+            this.Controls.Add(this.txbProprietariosCPF);
+            this.Controls.Add(this.lblProprietariosCPF);
+            this.Controls.Add(this.txbProprietariosTelefone);
+            this.Controls.Add(this.lblProprietariosTelefone);
+            this.Controls.Add(this.txbProprietariosEndereco);
+            this.Controls.Add(this.lblProprietariosEndereco);
+            this.Controls.Add(this.txbProprietariosNome);
+            this.Controls.Add(this.lblProprietariosNome);
             this.MaximizeBox = false;
             this.Name = "frmProprietarios";
             this.Text = "Proprietarios";
             this.Load += new System.EventHandler(this.frmProprietarios_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grdProprietario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProprietarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,19 +252,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnImovel;
-        private System.Windows.Forms.Button btnProNovo;
-        private System.Windows.Forms.Button btnProSalvar;
-        private System.Windows.Forms.Button btnProVoltar;
-        private System.Windows.Forms.DataGridView grdProprietario;
-        private System.Windows.Forms.TextBox PropriettxbCPF;
-        private System.Windows.Forms.Label ProprietlblCPF;
-        private System.Windows.Forms.TextBox PropriettxbTelefone;
-        private System.Windows.Forms.Label ProprietlblTelefone;
-        private System.Windows.Forms.TextBox PropriettxbEndereco;
-        private System.Windows.Forms.Label ProprietlblEndereco;
-        private System.Windows.Forms.TextBox PropriettxbNome;
-        private System.Windows.Forms.Label ProprietlblNome;
+        private System.Windows.Forms.Button btnProprietariosImovel;
+        private System.Windows.Forms.Button btnProprietariosNovo;
+        private System.Windows.Forms.Button btnProprietariosSalvar;
+        private System.Windows.Forms.Button btnProprietariosVoltar;
+        private System.Windows.Forms.DataGridView dgvProprietarios;
+        private System.Windows.Forms.TextBox txbProprietariosCPF;
+        private System.Windows.Forms.Label lblProprietariosCPF;
+        private System.Windows.Forms.TextBox txbProprietariosTelefone;
+        private System.Windows.Forms.Label lblProprietariosTelefone;
+        private System.Windows.Forms.TextBox txbProprietariosEndereco;
+        private System.Windows.Forms.Label lblProprietariosEndereco;
+        private System.Windows.Forms.TextBox txbProprietariosNome;
+        private System.Windows.Forms.Label lblProprietariosNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProprietID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProprietNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProprietEndereco;

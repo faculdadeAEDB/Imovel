@@ -28,129 +28,121 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.CosbtnNovo = new System.Windows.Forms.Button();
-            this.CosbtnSalvar = new System.Windows.Forms.Button();
-            this.CosbtnVoltar = new System.Windows.Forms.Button();
-            this.Cosdgv = new System.Windows.Forms.DataGridView();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.enderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cpfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnClientesNovo = new System.Windows.Forms.Button();
+            this.btnClientesSalvar = new System.Windows.Forms.Button();
+            this.btnClientesVoltar = new System.Windows.Forms.Button();
+            this.dgvClientes = new System.Windows.Forms.DataGridView();
+            this.Cliente_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cliente_Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cliente_Idade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cliente_Endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cliente_Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cliente_CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClibtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ClibtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.CostxbCPF = new System.Windows.Forms.TextBox();
-            this.CoslblCPF = new System.Windows.Forms.Label();
-            this.CostxbTelefone = new System.Windows.Forms.TextBox();
-            this.CoslblTelefone = new System.Windows.Forms.Label();
-            this.CostxbEndereco = new System.Windows.Forms.TextBox();
-            this.CoslblEndereco = new System.Windows.Forms.Label();
-            this.CostxbNome = new System.Windows.Forms.TextBox();
-            this.CoslblNome = new System.Windows.Forms.Label();
-            this.CostxbIdade = new System.Windows.Forms.TextBox();
-            this.CoslblIdade = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
+            this.txbClientesCPF = new System.Windows.Forms.TextBox();
+            this.lblClientesCPF = new System.Windows.Forms.Label();
+            this.txbClientesTelefone = new System.Windows.Forms.TextBox();
+            this.lblClientesTelefone = new System.Windows.Forms.Label();
+            this.txbClientesEndereco = new System.Windows.Forms.TextBox();
+            this.lblClientesEndereco = new System.Windows.Forms.Label();
+            this.txbClientesNome = new System.Windows.Forms.TextBox();
+            this.lblClientesNome = new System.Windows.Forms.Label();
+            this.txbClientesIdade = new System.Windows.Forms.TextBox();
+            this.lblClientesIdade = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
-            // CosbtnNovo
+            // btnClientesNovo
             // 
-            this.CosbtnNovo.Location = new System.Drawing.Point(360, 89);
-            this.CosbtnNovo.Name = "CosbtnNovo";
-            this.CosbtnNovo.Size = new System.Drawing.Size(75, 23);
-            this.CosbtnNovo.TabIndex = 47;
-            this.CosbtnNovo.Text = "Novo";
-            this.CosbtnNovo.UseVisualStyleBackColor = true;
-            this.CosbtnNovo.Click += new System.EventHandler(this.CosbtnNovo_Click);
+            this.btnClientesNovo.Location = new System.Drawing.Point(360, 89);
+            this.btnClientesNovo.Name = "btnClientesNovo";
+            this.btnClientesNovo.Size = new System.Drawing.Size(75, 23);
+            this.btnClientesNovo.TabIndex = 47;
+            this.btnClientesNovo.Text = "Novo";
+            this.btnClientesNovo.UseVisualStyleBackColor = true;
+            this.btnClientesNovo.Click += new System.EventHandler(this.btnClientesNovo_Click);
             // 
-            // CosbtnSalvar
+            // btnClientesSalvar
             // 
-            this.CosbtnSalvar.Location = new System.Drawing.Point(441, 89);
-            this.CosbtnSalvar.Name = "CosbtnSalvar";
-            this.CosbtnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.CosbtnSalvar.TabIndex = 46;
-            this.CosbtnSalvar.Text = "Salvar";
-            this.CosbtnSalvar.UseVisualStyleBackColor = true;
-            this.CosbtnSalvar.Click += new System.EventHandler(this.CosbtnSalvar_Click);
+            this.btnClientesSalvar.Location = new System.Drawing.Point(441, 89);
+            this.btnClientesSalvar.Name = "btnClientesSalvar";
+            this.btnClientesSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnClientesSalvar.TabIndex = 46;
+            this.btnClientesSalvar.Text = "Salvar";
+            this.btnClientesSalvar.UseVisualStyleBackColor = true;
+            this.btnClientesSalvar.Click += new System.EventHandler(this.CosbtnSalvar_Click);
             // 
-            // CosbtnVoltar
+            // btnClientesVoltar
             // 
-            this.CosbtnVoltar.Location = new System.Drawing.Point(522, 89);
-            this.CosbtnVoltar.Name = "CosbtnVoltar";
-            this.CosbtnVoltar.Size = new System.Drawing.Size(75, 23);
-            this.CosbtnVoltar.TabIndex = 45;
-            this.CosbtnVoltar.Text = "Voltar";
-            this.CosbtnVoltar.UseVisualStyleBackColor = true;
-            this.CosbtnVoltar.Click += new System.EventHandler(this.CosbtnVoltar_Click);
+            this.btnClientesVoltar.Location = new System.Drawing.Point(522, 89);
+            this.btnClientesVoltar.Name = "btnClientesVoltar";
+            this.btnClientesVoltar.Size = new System.Drawing.Size(75, 23);
+            this.btnClientesVoltar.TabIndex = 45;
+            this.btnClientesVoltar.Text = "Voltar";
+            this.btnClientesVoltar.UseVisualStyleBackColor = true;
+            this.btnClientesVoltar.Click += new System.EventHandler(this.CosbtnVoltar_Click);
             // 
-            // Cosdgv
+            // dgvClientes
             // 
-            this.Cosdgv.AllowUserToAddRows = false;
-            this.Cosdgv.AllowUserToDeleteRows = false;
-            this.Cosdgv.AutoGenerateColumns = false;
-            this.Cosdgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Cosdgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Cosdgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.nomeDataGridViewTextBoxColumn,
-            this.idadeDataGridViewTextBoxColumn,
-            this.enderecoDataGridViewTextBoxColumn,
-            this.telefoneDataGridViewTextBoxColumn,
-            this.cpfDataGridViewTextBoxColumn,
+            this.dgvClientes.AllowUserToAddRows = false;
+            this.dgvClientes.AllowUserToDeleteRows = false;
+            this.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Cliente_ID,
+            this.Cliente_Nome,
+            this.Cliente_Idade,
+            this.Cliente_Endereco,
+            this.Cliente_Telefone,
+            this.Cliente_CPF,
             this.ClibtnEditar,
             this.ClibtnExcluir});
-            this.Cosdgv.DataSource = this.customerBindingSource;
-            this.Cosdgv.Location = new System.Drawing.Point(13, 118);
-            this.Cosdgv.Name = "Cosdgv";
-            this.Cosdgv.ReadOnly = true;
-            this.Cosdgv.Size = new System.Drawing.Size(584, 197);
-            this.Cosdgv.TabIndex = 44;
-            this.Cosdgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Cosdgv_CellContentClick);
+            this.dgvClientes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvClientes.Location = new System.Drawing.Point(13, 118);
+            this.dgvClientes.MultiSelect = false;
+            this.dgvClientes.Name = "dgvClientes";
+            this.dgvClientes.ReadOnly = true;
+            this.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvClientes.Size = new System.Drawing.Size(584, 197);
+            this.dgvClientes.TabIndex = 44;
+            this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Cosdgv_CellContentClick);
             // 
-            // iDDataGridViewTextBoxColumn
+            // Cliente_ID
             // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.Cliente_ID.HeaderText = "ID";
+            this.Cliente_ID.Name = "Cliente_ID";
+            this.Cliente_ID.ReadOnly = true;
             // 
-            // nomeDataGridViewTextBoxColumn
+            // Cliente_Nome
             // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.Cliente_Nome.HeaderText = "Nome";
+            this.Cliente_Nome.Name = "Cliente_Nome";
+            this.Cliente_Nome.ReadOnly = true;
             // 
-            // idadeDataGridViewTextBoxColumn
+            // Cliente_Idade
             // 
-            this.idadeDataGridViewTextBoxColumn.DataPropertyName = "Idade";
-            this.idadeDataGridViewTextBoxColumn.HeaderText = "Idade";
-            this.idadeDataGridViewTextBoxColumn.Name = "idadeDataGridViewTextBoxColumn";
-            this.idadeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.Cliente_Idade.HeaderText = "Idade";
+            this.Cliente_Idade.Name = "Cliente_Idade";
+            this.Cliente_Idade.ReadOnly = true;
             // 
-            // enderecoDataGridViewTextBoxColumn
+            // Cliente_Endereco
             // 
-            this.enderecoDataGridViewTextBoxColumn.DataPropertyName = "Endereco";
-            this.enderecoDataGridViewTextBoxColumn.HeaderText = "Endereco";
-            this.enderecoDataGridViewTextBoxColumn.Name = "enderecoDataGridViewTextBoxColumn";
-            this.enderecoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.Cliente_Endereco.HeaderText = "Endereço";
+            this.Cliente_Endereco.Name = "Cliente_Endereco";
+            this.Cliente_Endereco.ReadOnly = true;
             // 
-            // telefoneDataGridViewTextBoxColumn
+            // Cliente_Telefone
             // 
-            this.telefoneDataGridViewTextBoxColumn.DataPropertyName = "Telefone";
-            this.telefoneDataGridViewTextBoxColumn.HeaderText = "Telefone";
-            this.telefoneDataGridViewTextBoxColumn.Name = "telefoneDataGridViewTextBoxColumn";
-            this.telefoneDataGridViewTextBoxColumn.ReadOnly = true;
+            this.Cliente_Telefone.HeaderText = "Telefone";
+            this.Cliente_Telefone.Name = "Cliente_Telefone";
+            this.Cliente_Telefone.ReadOnly = true;
             // 
-            // cpfDataGridViewTextBoxColumn
+            // Cliente_CPF
             // 
-            this.cpfDataGridViewTextBoxColumn.DataPropertyName = "cpf";
-            this.cpfDataGridViewTextBoxColumn.HeaderText = "CPF";
-            this.cpfDataGridViewTextBoxColumn.Name = "cpfDataGridViewTextBoxColumn";
-            this.cpfDataGridViewTextBoxColumn.ReadOnly = true;
+            this.Cliente_CPF.HeaderText = "CPF";
+            this.Cliente_CPF.Name = "Cliente_CPF";
+            this.Cliente_CPF.ReadOnly = true;
             // 
             // ClibtnEditar
             // 
@@ -166,117 +158,112 @@
             this.ClibtnExcluir.Name = "ClibtnExcluir";
             this.ClibtnExcluir.ReadOnly = true;
             // 
-            // customerBindingSource
+            // txbClientesCPF
             // 
-            this.customerBindingSource.DataSource = typeof(Imob.Site.Models.Customer);
+            this.txbClientesCPF.Location = new System.Drawing.Point(380, 63);
+            this.txbClientesCPF.Name = "txbClientesCPF";
+            this.txbClientesCPF.Size = new System.Drawing.Size(217, 20);
+            this.txbClientesCPF.TabIndex = 43;
             // 
-            // CostxbCPF
+            // lblClientesCPF
             // 
-            this.CostxbCPF.Location = new System.Drawing.Point(380, 63);
-            this.CostxbCPF.Name = "CostxbCPF";
-            this.CostxbCPF.Size = new System.Drawing.Size(217, 20);
-            this.CostxbCPF.TabIndex = 43;
+            this.lblClientesCPF.AutoSize = true;
+            this.lblClientesCPF.Location = new System.Drawing.Point(347, 66);
+            this.lblClientesCPF.Name = "lblClientesCPF";
+            this.lblClientesCPF.Size = new System.Drawing.Size(27, 13);
+            this.lblClientesCPF.TabIndex = 42;
+            this.lblClientesCPF.Text = "CPF";
             // 
-            // CoslblCPF
+            // txbClientesTelefone
             // 
-            this.CoslblCPF.AutoSize = true;
-            this.CoslblCPF.Location = new System.Drawing.Point(347, 66);
-            this.CoslblCPF.Name = "CoslblCPF";
-            this.CoslblCPF.Size = new System.Drawing.Size(27, 13);
-            this.CoslblCPF.TabIndex = 42;
-            this.CoslblCPF.Text = "CPF";
+            this.txbClientesTelefone.Location = new System.Drawing.Point(73, 63);
+            this.txbClientesTelefone.Name = "txbClientesTelefone";
+            this.txbClientesTelefone.Size = new System.Drawing.Size(163, 20);
+            this.txbClientesTelefone.TabIndex = 41;
             // 
-            // CostxbTelefone
+            // lblClientesTelefone
             // 
-            this.CostxbTelefone.Location = new System.Drawing.Point(73, 63);
-            this.CostxbTelefone.Name = "CostxbTelefone";
-            this.CostxbTelefone.Size = new System.Drawing.Size(163, 20);
-            this.CostxbTelefone.TabIndex = 41;
+            this.lblClientesTelefone.AutoSize = true;
+            this.lblClientesTelefone.Location = new System.Drawing.Point(18, 66);
+            this.lblClientesTelefone.Name = "lblClientesTelefone";
+            this.lblClientesTelefone.Size = new System.Drawing.Size(49, 13);
+            this.lblClientesTelefone.TabIndex = 40;
+            this.lblClientesTelefone.Text = "Telefone";
             // 
-            // CoslblTelefone
+            // txbClientesEndereco
             // 
-            this.CoslblTelefone.AutoSize = true;
-            this.CoslblTelefone.Location = new System.Drawing.Point(18, 66);
-            this.CoslblTelefone.Name = "CoslblTelefone";
-            this.CoslblTelefone.Size = new System.Drawing.Size(49, 13);
-            this.CoslblTelefone.TabIndex = 40;
-            this.CoslblTelefone.Text = "Telefone";
+            this.txbClientesEndereco.Location = new System.Drawing.Point(73, 38);
+            this.txbClientesEndereco.Name = "txbClientesEndereco";
+            this.txbClientesEndereco.Size = new System.Drawing.Size(524, 20);
+            this.txbClientesEndereco.TabIndex = 35;
             // 
-            // CostxbEndereco
+            // lblClientesEndereco
             // 
-            this.CostxbEndereco.Location = new System.Drawing.Point(73, 38);
-            this.CostxbEndereco.Name = "CostxbEndereco";
-            this.CostxbEndereco.Size = new System.Drawing.Size(524, 20);
-            this.CostxbEndereco.TabIndex = 35;
+            this.lblClientesEndereco.AutoSize = true;
+            this.lblClientesEndereco.Location = new System.Drawing.Point(14, 41);
+            this.lblClientesEndereco.Name = "lblClientesEndereco";
+            this.lblClientesEndereco.Size = new System.Drawing.Size(53, 13);
+            this.lblClientesEndereco.TabIndex = 34;
+            this.lblClientesEndereco.Text = "Endereço";
             // 
-            // CoslblEndereco
+            // txbClientesNome
             // 
-            this.CoslblEndereco.AutoSize = true;
-            this.CoslblEndereco.Location = new System.Drawing.Point(14, 41);
-            this.CoslblEndereco.Name = "CoslblEndereco";
-            this.CoslblEndereco.Size = new System.Drawing.Size(53, 13);
-            this.CoslblEndereco.TabIndex = 34;
-            this.CoslblEndereco.Text = "Endereço";
+            this.txbClientesNome.Location = new System.Drawing.Point(73, 12);
+            this.txbClientesNome.Name = "txbClientesNome";
+            this.txbClientesNome.Size = new System.Drawing.Size(524, 20);
+            this.txbClientesNome.TabIndex = 33;
             // 
-            // CostxbNome
+            // lblClientesNome
             // 
-            this.CostxbNome.Location = new System.Drawing.Point(73, 12);
-            this.CostxbNome.Name = "CostxbNome";
-            this.CostxbNome.Size = new System.Drawing.Size(524, 20);
-            this.CostxbNome.TabIndex = 33;
+            this.lblClientesNome.AutoSize = true;
+            this.lblClientesNome.Location = new System.Drawing.Point(32, 15);
+            this.lblClientesNome.Name = "lblClientesNome";
+            this.lblClientesNome.Size = new System.Drawing.Size(35, 13);
+            this.lblClientesNome.TabIndex = 32;
+            this.lblClientesNome.Text = "Nome";
             // 
-            // CoslblNome
+            // txbClientesIdade
             // 
-            this.CoslblNome.AutoSize = true;
-            this.CoslblNome.Location = new System.Drawing.Point(32, 15);
-            this.CoslblNome.Name = "CoslblNome";
-            this.CoslblNome.Size = new System.Drawing.Size(35, 13);
-            this.CoslblNome.TabIndex = 32;
-            this.CoslblNome.Text = "Nome";
+            this.txbClientesIdade.Location = new System.Drawing.Point(282, 63);
+            this.txbClientesIdade.Name = "txbClientesIdade";
+            this.txbClientesIdade.Size = new System.Drawing.Size(59, 20);
+            this.txbClientesIdade.TabIndex = 49;
             // 
-            // CostxbIdade
+            // lblClientesIdade
             // 
-            this.CostxbIdade.Location = new System.Drawing.Point(282, 63);
-            this.CostxbIdade.Name = "CostxbIdade";
-            this.CostxbIdade.Size = new System.Drawing.Size(59, 20);
-            this.CostxbIdade.TabIndex = 49;
-            // 
-            // CoslblIdade
-            // 
-            this.CoslblIdade.AutoSize = true;
-            this.CoslblIdade.Location = new System.Drawing.Point(242, 66);
-            this.CoslblIdade.Name = "CoslblIdade";
-            this.CoslblIdade.Size = new System.Drawing.Size(34, 13);
-            this.CoslblIdade.TabIndex = 48;
-            this.CoslblIdade.Text = "Idade";
+            this.lblClientesIdade.AutoSize = true;
+            this.lblClientesIdade.Location = new System.Drawing.Point(242, 66);
+            this.lblClientesIdade.Name = "lblClientesIdade";
+            this.lblClientesIdade.Size = new System.Drawing.Size(34, 13);
+            this.lblClientesIdade.TabIndex = 48;
+            this.lblClientesIdade.Text = "Idade";
             // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 327);
-            this.Controls.Add(this.CostxbIdade);
-            this.Controls.Add(this.CoslblIdade);
-            this.Controls.Add(this.CosbtnNovo);
-            this.Controls.Add(this.CosbtnSalvar);
-            this.Controls.Add(this.CosbtnVoltar);
-            this.Controls.Add(this.Cosdgv);
-            this.Controls.Add(this.CostxbCPF);
-            this.Controls.Add(this.CoslblCPF);
-            this.Controls.Add(this.CostxbTelefone);
-            this.Controls.Add(this.CoslblTelefone);
-            this.Controls.Add(this.CostxbEndereco);
-            this.Controls.Add(this.CoslblEndereco);
-            this.Controls.Add(this.CostxbNome);
-            this.Controls.Add(this.CoslblNome);
+            this.Controls.Add(this.txbClientesIdade);
+            this.Controls.Add(this.lblClientesIdade);
+            this.Controls.Add(this.btnClientesNovo);
+            this.Controls.Add(this.btnClientesSalvar);
+            this.Controls.Add(this.btnClientesVoltar);
+            this.Controls.Add(this.dgvClientes);
+            this.Controls.Add(this.txbClientesCPF);
+            this.Controls.Add(this.lblClientesCPF);
+            this.Controls.Add(this.txbClientesTelefone);
+            this.Controls.Add(this.lblClientesTelefone);
+            this.Controls.Add(this.txbClientesEndereco);
+            this.Controls.Add(this.lblClientesEndereco);
+            this.Controls.Add(this.txbClientesNome);
+            this.Controls.Add(this.lblClientesNome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmClientes";
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.frmClientes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,27 +271,26 @@
 
         #endregion
 
-        private System.Windows.Forms.Button CosbtnNovo;
-        private System.Windows.Forms.Button CosbtnSalvar;
-        private System.Windows.Forms.Button CosbtnVoltar;
-        private System.Windows.Forms.DataGridView Cosdgv;
-        private System.Windows.Forms.TextBox CostxbCPF;
-        private System.Windows.Forms.Label CoslblCPF;
-        private System.Windows.Forms.TextBox CostxbTelefone;
-        private System.Windows.Forms.Label CoslblTelefone;
-        private System.Windows.Forms.TextBox CostxbEndereco;
-        private System.Windows.Forms.Label CoslblEndereco;
-        private System.Windows.Forms.TextBox CostxbNome;
-        private System.Windows.Forms.Label CoslblNome;
-        private System.Windows.Forms.TextBox CostxbIdade;
-        private System.Windows.Forms.Label CoslblIdade;
-        private System.Windows.Forms.BindingSource customerBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idadeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn enderecoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telefoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cpfDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnClientesNovo;
+        private System.Windows.Forms.Button btnClientesSalvar;
+        private System.Windows.Forms.Button btnClientesVoltar;
+        private System.Windows.Forms.DataGridView dgvClientes;
+        private System.Windows.Forms.TextBox txbClientesCPF;
+        private System.Windows.Forms.Label lblClientesCPF;
+        private System.Windows.Forms.TextBox txbClientesTelefone;
+        private System.Windows.Forms.Label lblClientesTelefone;
+        private System.Windows.Forms.TextBox txbClientesEndereco;
+        private System.Windows.Forms.Label lblClientesEndereco;
+        private System.Windows.Forms.TextBox txbClientesNome;
+        private System.Windows.Forms.Label lblClientesNome;
+        private System.Windows.Forms.TextBox txbClientesIdade;
+        private System.Windows.Forms.Label lblClientesIdade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cliente_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cliente_Nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cliente_Idade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cliente_Endereco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cliente_Telefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cliente_CPF;
         private System.Windows.Forms.DataGridViewButtonColumn ClibtnEditar;
         private System.Windows.Forms.DataGridViewButtonColumn ClibtnExcluir;
     }

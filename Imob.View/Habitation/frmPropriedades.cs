@@ -22,20 +22,19 @@ namespace Imob.View.Habitation
 
         private void PropriedbtnNovo_Click(object sender, EventArgs e)
         {
-            Imob.Site.Models.Habitation c = new Imob.Site.Models.Habitation();
-            c.Endereco = PropriedtxbEndereco.Text;
-            c.Tipo = PropiedcbxTipo.Text;
+            txbPropriedadesEndereco.Text = "";
+            txbPropriedadesID.Text = "";
+            cbxPropriedadesTipo.Text = "";
 
-            (new PropriedadeController.PropriedadeControllerClient()).Salvar(c);
         }
 
         private void PropriedbtnSalvar_Click(object sender, EventArgs e)
         {
              Imob.Site.Models.Habitation c = new Imob.Site.Models.Habitation();
-             c.Endereco = PropriedtxbEndereco.Text;
-             c.Tipo = PropiedcbxTipo.Text;
-
-             (new PropriedadeController.PropriedadeControllerClient()).Editar(c); 
+             c.Endereco = txbPropriedadesEndereco.Text;
+            c.Tipo = cbxPropriedadesTipo.Text;
+             (new PropriedadeController.PropriedadeControllerClient()).Editar(c);
+            Atualizando_datagrid();
         }
 
         private void PropriedbtnVoltar_Click(object sender, EventArgs e)
@@ -45,17 +44,37 @@ namespace Imob.View.Habitation
 
         private void PropiedcbxID_Load(object sender, EventArgs e)
         {
-            ProprietarioControllerClient prop = new ProprietarioControllerClient();
-            var c = new PropriedadeControllerClient().Obter();
-            foreach (Site.Models.Habitation item in c.ToList())
+            Atualizando_datagrid();
+        }
+
+        public void Atualizando_datagrid()
+        {
+            foreach (var item in (new PropriedadeController.PropriedadeControllerClient()).Obter().ToList())
             {
-                this.DgvProprietarios.Rows.Add(
+                dgvPropriedades.Rows.Add(
                     item.ID,
-                    item.Endereco,
                     item.Tipo
                 );
             }
         }
-        
+
+        private void dgvPropriedades_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvPropriedades.Rows[e.RowIndex].DataBoundItem != null || true)
+            {
+                if (e.ColumnIndex == 3)
+                {
+
+                }
+                if (e.ColumnIndex == 4)
+                {
+                    if (MessageBox.Show("Deseja realmente excluir?", "Cadastro de Propriedades", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+                    {
+                        dgvPropriedades.Rows.RemoveAt(e.RowIndex);
+                    }
+
+                }
+            }
+        }
     }
 }

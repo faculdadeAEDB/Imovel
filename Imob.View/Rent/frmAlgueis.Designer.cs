@@ -28,165 +28,151 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.RentlblCliente = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.RentlblProprietario = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.btnImovel = new System.Windows.Forms.Button();
+            this.lblAlgueisCliente = new System.Windows.Forms.Label();
+            this.txbAlgueisCliente = new System.Windows.Forms.TextBox();
+            this.txbAlgueisProprietario = new System.Windows.Forms.TextBox();
+            this.lblAlgueisProprietario = new System.Windows.Forms.Label();
+            this.txbAlgueisImovel_ID = new System.Windows.Forms.TextBox();
+            this.lblAlgueisImovel_ID = new System.Windows.Forms.Label();
+            this.lblAlgueisImovel_Endereco = new System.Windows.Forms.Label();
+            this.txbAlgueisImovel_Endereco = new System.Windows.Forms.TextBox();
+            this.lblAlgueisClientes = new System.Windows.Forms.Label();
+            this.lblAlgueisImoveis = new System.Windows.Forms.Label();
+            this.lblAlgueisValor = new System.Windows.Forms.Label();
+            this.txbAlgueisValor = new System.Windows.Forms.TextBox();
             this.btnProNovo = new System.Windows.Forms.Button();
             this.btnProSalvar = new System.Windows.Forms.Button();
             this.btnProVoltar = new System.Windows.Forms.Button();
-            this.Cosdgv = new System.Windows.Forms.DataGridView();
+            this.dgvAlgueisClientes = new System.Windows.Forms.DataGridView();
             this.ClienteID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClienteNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClienteIdade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClienteEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClienteTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClienteCPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClientebtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.ClientebtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.dgvImoveis = new System.Windows.Forms.DataGridView();
+            this.dgvAlgueisImoveis = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PropbtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.PropbtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvImoveis)).BeginInit();
+            this.txbAlugueisDataInicio = new System.Windows.Forms.TextBox();
+            this.lblAlugueisDataInicio = new System.Windows.Forms.Label();
+            this.txbAlugueisDataFim = new System.Windows.Forms.TextBox();
+            this.lblAlugueisDataFim = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlgueisClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlgueisImoveis)).BeginInit();
             this.SuspendLayout();
             // 
-            // RentlblCliente
+            // lblAlgueisCliente
             // 
-            this.RentlblCliente.AutoSize = true;
-            this.RentlblCliente.Enabled = false;
-            this.RentlblCliente.Location = new System.Drawing.Point(9, 9);
-            this.RentlblCliente.Name = "RentlblCliente";
-            this.RentlblCliente.Size = new System.Drawing.Size(42, 13);
-            this.RentlblCliente.TabIndex = 2;
-            this.RentlblCliente.Text = "Cliente:";
+            this.lblAlgueisCliente.AutoSize = true;
+            this.lblAlgueisCliente.Location = new System.Drawing.Point(9, 9);
+            this.lblAlgueisCliente.Name = "lblAlgueisCliente";
+            this.lblAlgueisCliente.Size = new System.Drawing.Size(42, 13);
+            this.lblAlgueisCliente.TabIndex = 2;
+            this.lblAlgueisCliente.Text = "Cliente:";
             // 
-            // textBox1
+            // txbAlgueisCliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(51, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(248, 20);
-            this.textBox1.TabIndex = 3;
+            this.txbAlgueisCliente.Location = new System.Drawing.Point(51, 6);
+            this.txbAlgueisCliente.Name = "txbAlgueisCliente";
+            this.txbAlgueisCliente.Size = new System.Drawing.Size(248, 20);
+            this.txbAlgueisCliente.TabIndex = 3;
             // 
-            // textBox2
+            // txbAlgueisProprietario
             // 
-            this.textBox2.Location = new System.Drawing.Point(370, 6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(228, 20);
-            this.textBox2.TabIndex = 5;
+            this.txbAlgueisProprietario.Location = new System.Drawing.Point(370, 6);
+            this.txbAlgueisProprietario.Name = "txbAlgueisProprietario";
+            this.txbAlgueisProprietario.Size = new System.Drawing.Size(228, 20);
+            this.txbAlgueisProprietario.TabIndex = 5;
             // 
-            // RentlblProprietario
+            // lblAlgueisProprietario
             // 
-            this.RentlblProprietario.AutoSize = true;
-            this.RentlblProprietario.Enabled = false;
-            this.RentlblProprietario.Location = new System.Drawing.Point(310, 9);
-            this.RentlblProprietario.Name = "RentlblProprietario";
-            this.RentlblProprietario.Size = new System.Drawing.Size(63, 13);
-            this.RentlblProprietario.TabIndex = 4;
-            this.RentlblProprietario.Text = "Proprietario:";
+            this.lblAlgueisProprietario.AutoSize = true;
+            this.lblAlgueisProprietario.Location = new System.Drawing.Point(310, 9);
+            this.lblAlgueisProprietario.Name = "lblAlgueisProprietario";
+            this.lblAlgueisProprietario.Size = new System.Drawing.Size(63, 13);
+            this.lblAlgueisProprietario.TabIndex = 4;
+            this.lblAlgueisProprietario.Text = "Proprietario:";
             // 
-            // textBox3
+            // txbAlgueisImovel_ID
             // 
-            this.textBox3.Location = new System.Drawing.Point(63, 32);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(29, 20);
-            this.textBox3.TabIndex = 7;
+            this.txbAlgueisImovel_ID.Location = new System.Drawing.Point(63, 32);
+            this.txbAlgueisImovel_ID.Name = "txbAlgueisImovel_ID";
+            this.txbAlgueisImovel_ID.Size = new System.Drawing.Size(29, 20);
+            this.txbAlgueisImovel_ID.TabIndex = 7;
             // 
-            // label1
+            // lblAlgueisImovel_ID
             // 
-            this.label1.AutoSize = true;
-            this.label1.Enabled = false;
-            this.label1.Location = new System.Drawing.Point(9, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Imovel ID:";
+            this.lblAlgueisImovel_ID.AutoSize = true;
+            this.lblAlgueisImovel_ID.Location = new System.Drawing.Point(9, 35);
+            this.lblAlgueisImovel_ID.Name = "lblAlgueisImovel_ID";
+            this.lblAlgueisImovel_ID.Size = new System.Drawing.Size(55, 13);
+            this.lblAlgueisImovel_ID.TabIndex = 6;
+            this.lblAlgueisImovel_ID.Text = "Imovel ID:";
             // 
-            // label2
+            // lblAlgueisImovel_Endereco
             // 
-            this.label2.AutoSize = true;
-            this.label2.Enabled = false;
-            this.label2.Location = new System.Drawing.Point(98, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Imovel Endereço:";
+            this.lblAlgueisImovel_Endereco.AutoSize = true;
+            this.lblAlgueisImovel_Endereco.Location = new System.Drawing.Point(98, 35);
+            this.lblAlgueisImovel_Endereco.Name = "lblAlgueisImovel_Endereco";
+            this.lblAlgueisImovel_Endereco.Size = new System.Drawing.Size(90, 13);
+            this.lblAlgueisImovel_Endereco.TabIndex = 8;
+            this.lblAlgueisImovel_Endereco.Text = "Imovel Endereço:";
             // 
-            // textBox4
+            // txbAlgueisImovel_Endereco
             // 
-            this.textBox4.Location = new System.Drawing.Point(186, 32);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(276, 20);
-            this.textBox4.TabIndex = 9;
+            this.txbAlgueisImovel_Endereco.Location = new System.Drawing.Point(186, 32);
+            this.txbAlgueisImovel_Endereco.Name = "txbAlgueisImovel_Endereco";
+            this.txbAlgueisImovel_Endereco.Size = new System.Drawing.Size(276, 20);
+            this.txbAlgueisImovel_Endereco.TabIndex = 9;
             // 
-            // label4
+            // lblAlgueisClientes
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(149, 101);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Cliente";
+            this.lblAlgueisClientes.AutoSize = true;
+            this.lblAlgueisClientes.Location = new System.Drawing.Point(136, 91);
+            this.lblAlgueisClientes.Name = "lblAlgueisClientes";
+            this.lblAlgueisClientes.Size = new System.Drawing.Size(39, 13);
+            this.lblAlgueisClientes.TabIndex = 12;
+            this.lblAlgueisClientes.Text = "Cliente";
             // 
-            // label5
+            // lblAlgueisImoveis
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(437, 101);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 13);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Imoveis";
+            this.lblAlgueisImoveis.AutoSize = true;
+            this.lblAlgueisImoveis.Location = new System.Drawing.Point(433, 91);
+            this.lblAlgueisImoveis.Name = "lblAlgueisImoveis";
+            this.lblAlgueisImoveis.Size = new System.Drawing.Size(43, 13);
+            this.lblAlgueisImoveis.TabIndex = 13;
+            this.lblAlgueisImoveis.Text = "Imoveis";
             // 
-            // label3
+            // lblAlgueisValor
             // 
-            this.label3.AutoSize = true;
-            this.label3.Enabled = false;
-            this.label3.Location = new System.Drawing.Point(468, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Valor:";
+            this.lblAlgueisValor.AutoSize = true;
+            this.lblAlgueisValor.Location = new System.Drawing.Point(468, 35);
+            this.lblAlgueisValor.Name = "lblAlgueisValor";
+            this.lblAlgueisValor.Size = new System.Drawing.Size(34, 13);
+            this.lblAlgueisValor.TabIndex = 15;
+            this.lblAlgueisValor.Text = "Valor:";
             // 
-            // textBox5
+            // txbAlgueisValor
             // 
-            this.textBox5.Location = new System.Drawing.Point(508, 32);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(90, 20);
-            this.textBox5.TabIndex = 14;
-            // 
-            // btnImovel
-            // 
-            this.btnImovel.Location = new System.Drawing.Point(13, 67);
-            this.btnImovel.Name = "btnImovel";
-            this.btnImovel.Size = new System.Drawing.Size(96, 23);
-            this.btnImovel.TabIndex = 50;
-            this.btnImovel.Text = "Excluir";
-            this.btnImovel.UseVisualStyleBackColor = true;
+            this.txbAlgueisValor.Location = new System.Drawing.Point(508, 32);
+            this.txbAlgueisValor.Name = "txbAlgueisValor";
+            this.txbAlgueisValor.Size = new System.Drawing.Size(90, 20);
+            this.txbAlgueisValor.TabIndex = 14;
             // 
             // btnProNovo
             // 
-            this.btnProNovo.Location = new System.Drawing.Point(359, 67);
+            this.btnProNovo.Location = new System.Drawing.Point(361, 58);
             this.btnProNovo.Name = "btnProNovo";
             this.btnProNovo.Size = new System.Drawing.Size(75, 23);
             this.btnProNovo.TabIndex = 49;
             this.btnProNovo.Text = "Novo";
             this.btnProNovo.UseVisualStyleBackColor = true;
+            this.btnProNovo.Click += new System.EventHandler(this.btnProNovo_Click);
             // 
             // btnProSalvar
             // 
-            this.btnProSalvar.Location = new System.Drawing.Point(440, 67);
+            this.btnProSalvar.Location = new System.Drawing.Point(442, 58);
             this.btnProSalvar.Name = "btnProSalvar";
             this.btnProSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnProSalvar.TabIndex = 48;
@@ -195,35 +181,36 @@
             // 
             // btnProVoltar
             // 
-            this.btnProVoltar.Location = new System.Drawing.Point(521, 67);
+            this.btnProVoltar.Location = new System.Drawing.Point(523, 58);
             this.btnProVoltar.Name = "btnProVoltar";
             this.btnProVoltar.Size = new System.Drawing.Size(75, 23);
             this.btnProVoltar.TabIndex = 47;
             this.btnProVoltar.Text = "Voltar";
             this.btnProVoltar.UseVisualStyleBackColor = true;
+            this.btnProVoltar.Click += new System.EventHandler(this.btnProVoltar_Click);
             // 
-            // Cosdgv
+            // dgvAlgueisClientes
             // 
-            this.Cosdgv.AllowUserToAddRows = false;
-            this.Cosdgv.AllowUserToDeleteRows = false;
-            this.Cosdgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Cosdgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvAlgueisClientes.AllowUserToAddRows = false;
+            this.dgvAlgueisClientes.AllowUserToDeleteRows = false;
+            this.dgvAlgueisClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvAlgueisClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAlgueisClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ClienteID,
             this.ClienteNome,
             this.ClienteIdade,
             this.ClienteEndereco,
             this.ClienteTelefone,
-            this.ClienteCPF,
-            this.ClientebtnExcluir,
-            this.ClientebtnEditar});
-            this.Cosdgv.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.Cosdgv.Location = new System.Drawing.Point(12, 117);
-            this.Cosdgv.Name = "Cosdgv";
-            this.Cosdgv.ReadOnly = true;
-            this.Cosdgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Cosdgv.Size = new System.Drawing.Size(287, 198);
-            this.Cosdgv.TabIndex = 51;
-            this.Cosdgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Cosdgv_CellContentClick);
+            this.ClienteCPF});
+            this.dgvAlgueisClientes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvAlgueisClientes.Location = new System.Drawing.Point(12, 107);
+            this.dgvAlgueisClientes.MultiSelect = false;
+            this.dgvAlgueisClientes.Name = "dgvAlgueisClientes";
+            this.dgvAlgueisClientes.ReadOnly = true;
+            this.dgvAlgueisClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvAlgueisClientes.Size = new System.Drawing.Size(287, 208);
+            this.dgvAlgueisClientes.TabIndex = 51;
+            this.dgvAlgueisClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Cosdgv_CellContentClick);
             // 
             // ClienteID
             // 
@@ -261,131 +248,149 @@
             this.ClienteCPF.Name = "ClienteCPF";
             this.ClienteCPF.ReadOnly = true;
             // 
-            // ClientebtnExcluir
+            // dgvAlgueisImoveis
             // 
-            this.ClientebtnExcluir.HeaderText = "Excluir";
-            this.ClientebtnExcluir.Name = "ClientebtnExcluir";
-            this.ClientebtnExcluir.ReadOnly = true;
-            // 
-            // ClientebtnEditar
-            // 
-            this.ClientebtnEditar.HeaderText = "Editar";
-            this.ClientebtnEditar.Name = "ClientebtnEditar";
-            this.ClientebtnEditar.ReadOnly = true;
-            // 
-            // dgvImoveis
-            // 
-            this.dgvImoveis.AllowUserToAddRows = false;
-            this.dgvImoveis.AllowUserToDeleteRows = false;
-            this.dgvImoveis.AllowUserToResizeColumns = false;
-            this.dgvImoveis.AllowUserToResizeRows = false;
-            this.dgvImoveis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvImoveis.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvAlgueisImoveis.AllowUserToAddRows = false;
+            this.dgvAlgueisImoveis.AllowUserToDeleteRows = false;
+            this.dgvAlgueisImoveis.AllowUserToResizeColumns = false;
+            this.dgvAlgueisImoveis.AllowUserToResizeRows = false;
+            this.dgvAlgueisImoveis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvAlgueisImoveis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAlgueisImoveis.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Endereco,
-            this.Tipo,
-            this.PropbtnEditar,
-            this.PropbtnExcluir});
-            this.dgvImoveis.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvImoveis.Location = new System.Drawing.Point(313, 117);
-            this.dgvImoveis.Name = "dgvImoveis";
-            this.dgvImoveis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvImoveis.Size = new System.Drawing.Size(285, 198);
-            this.dgvImoveis.TabIndex = 52;
-            this.dgvImoveis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvImoveis_CellContentClick);
+            this.Tipo});
+            this.dgvAlgueisImoveis.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvAlgueisImoveis.Location = new System.Drawing.Point(313, 107);
+            this.dgvAlgueisImoveis.MultiSelect = false;
+            this.dgvAlgueisImoveis.Name = "dgvAlgueisImoveis";
+            this.dgvAlgueisImoveis.ReadOnly = true;
+            this.dgvAlgueisImoveis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvAlgueisImoveis.Size = new System.Drawing.Size(285, 208);
+            this.dgvAlgueisImoveis.TabIndex = 52;
+            this.dgvAlgueisImoveis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvImoveis_CellContentClick);
             // 
             // ID
             // 
             this.ID.HeaderText = "ID";
             this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
             // 
             // Endereco
             // 
             this.Endereco.HeaderText = "Endereco";
             this.Endereco.Name = "Endereco";
+            this.Endereco.ReadOnly = true;
             // 
             // Tipo
             // 
             this.Tipo.HeaderText = "Tipo";
             this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
             // 
-            // PropbtnEditar
+            // txbAlugueisDataInicio
             // 
-            this.PropbtnEditar.HeaderText = "Editar";
-            this.PropbtnEditar.Name = "PropbtnEditar";
+            this.txbAlugueisDataInicio.Location = new System.Drawing.Point(63, 60);
+            this.txbAlugueisDataInicio.Name = "txbAlugueisDataInicio";
+            this.txbAlugueisDataInicio.Size = new System.Drawing.Size(59, 20);
+            this.txbAlugueisDataInicio.TabIndex = 54;
+            this.txbAlugueisDataInicio.Text = "XX/XX/XX";
             // 
-            // PropbtnExcluir
+            // lblAlugueisDataInicio
             // 
-            this.PropbtnExcluir.HeaderText = "Excluir";
-            this.PropbtnExcluir.Name = "PropbtnExcluir";
+            this.lblAlugueisDataInicio.AutoSize = true;
+            this.lblAlugueisDataInicio.Location = new System.Drawing.Point(3, 63);
+            this.lblAlugueisDataInicio.Name = "lblAlugueisDataInicio";
+            this.lblAlugueisDataInicio.Size = new System.Drawing.Size(61, 13);
+            this.lblAlugueisDataInicio.TabIndex = 53;
+            this.lblAlugueisDataInicio.Text = " Data Inicio";
+            // 
+            // txbAlugueisDataFim
+            // 
+            this.txbAlugueisDataFim.Location = new System.Drawing.Point(186, 60);
+            this.txbAlugueisDataFim.Name = "txbAlugueisDataFim";
+            this.txbAlugueisDataFim.Size = new System.Drawing.Size(59, 20);
+            this.txbAlugueisDataFim.TabIndex = 56;
+            this.txbAlugueisDataFim.Text = "XX/XX/XX";
+            // 
+            // lblAlugueisDataFim
+            // 
+            this.lblAlugueisDataFim.AutoSize = true;
+            this.lblAlugueisDataFim.Location = new System.Drawing.Point(128, 63);
+            this.lblAlugueisDataFim.Name = "lblAlugueisDataFim";
+            this.lblAlugueisDataFim.Size = new System.Drawing.Size(52, 13);
+            this.lblAlugueisDataFim.TabIndex = 55;
+            this.lblAlugueisDataFim.Text = " Data Fim";
             // 
             // frmAlgueis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 327);
-            this.Controls.Add(this.dgvImoveis);
-            this.Controls.Add(this.Cosdgv);
-            this.Controls.Add(this.btnImovel);
+            this.Controls.Add(this.txbAlugueisDataFim);
+            this.Controls.Add(this.lblAlugueisDataFim);
+            this.Controls.Add(this.txbAlugueisDataInicio);
+            this.Controls.Add(this.lblAlugueisDataInicio);
+            this.Controls.Add(this.dgvAlgueisImoveis);
+            this.Controls.Add(this.dgvAlgueisClientes);
             this.Controls.Add(this.btnProNovo);
             this.Controls.Add(this.btnProSalvar);
             this.Controls.Add(this.btnProVoltar);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.RentlblProprietario);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.RentlblCliente);
+            this.Controls.Add(this.lblAlgueisValor);
+            this.Controls.Add(this.txbAlgueisValor);
+            this.Controls.Add(this.lblAlgueisImoveis);
+            this.Controls.Add(this.lblAlgueisClientes);
+            this.Controls.Add(this.txbAlgueisImovel_Endereco);
+            this.Controls.Add(this.lblAlgueisImovel_Endereco);
+            this.Controls.Add(this.txbAlgueisImovel_ID);
+            this.Controls.Add(this.lblAlgueisImovel_ID);
+            this.Controls.Add(this.txbAlgueisProprietario);
+            this.Controls.Add(this.lblAlgueisProprietario);
+            this.Controls.Add(this.txbAlgueisCliente);
+            this.Controls.Add(this.lblAlgueisCliente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmAlgueis";
-            this.Text = "Rent";
+            this.Text = "Alguéis";
             this.Load += new System.EventHandler(this.frmAlgueis_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvImoveis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlgueisClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlgueisImoveis)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label RentlblCliente;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label RentlblProprietario;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button btnImovel;
+        private System.Windows.Forms.Label lblAlgueisCliente;
+        private System.Windows.Forms.TextBox txbAlgueisCliente;
+        private System.Windows.Forms.TextBox txbAlgueisProprietario;
+        private System.Windows.Forms.Label lblAlgueisProprietario;
+        private System.Windows.Forms.TextBox txbAlgueisImovel_ID;
+        private System.Windows.Forms.Label lblAlgueisImovel_ID;
+        private System.Windows.Forms.Label lblAlgueisImovel_Endereco;
+        private System.Windows.Forms.TextBox txbAlgueisImovel_Endereco;
+        private System.Windows.Forms.Label lblAlgueisClientes;
+        private System.Windows.Forms.Label lblAlgueisImoveis;
+        private System.Windows.Forms.Label lblAlgueisValor;
+        private System.Windows.Forms.TextBox txbAlgueisValor;
         private System.Windows.Forms.Button btnProVoltar;
         private System.Windows.Forms.Button btnProSalvar;
         private System.Windows.Forms.Button btnProNovo;
-        private System.Windows.Forms.DataGridView Cosdgv;
+        private System.Windows.Forms.DataGridView dgvAlgueisClientes;
+        private System.Windows.Forms.DataGridView dgvAlgueisImoveis;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClienteID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClienteNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClienteIdade;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClienteEndereco;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClienteTelefone;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClienteCPF;
-        private System.Windows.Forms.DataGridViewButtonColumn ClientebtnExcluir;
-        private System.Windows.Forms.DataGridViewButtonColumn ClientebtnEditar;
-        private System.Windows.Forms.DataGridView dgvImoveis;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Endereco;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
-        private System.Windows.Forms.DataGridViewButtonColumn PropbtnEditar;
-        private System.Windows.Forms.DataGridViewButtonColumn PropbtnExcluir;
+        private System.Windows.Forms.TextBox txbAlugueisDataInicio;
+        private System.Windows.Forms.Label lblAlugueisDataInicio;
+        private System.Windows.Forms.TextBox txbAlugueisDataFim;
+        private System.Windows.Forms.Label lblAlugueisDataFim;
     }
 }

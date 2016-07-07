@@ -18,35 +18,16 @@ namespace Imob.View.Rent
             InitializeComponent();
         }
 
-        private void Rent_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Cosdgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (Cosdgv.Rows[e.RowIndex].DataBoundItem != null)
-            {
-                if (e.ColumnIndex == 6)
-                {
-
-                }
-                if (e.ColumnIndex == 7)
-                {
-                    if (MessageBox.Show("Deseja realmente excluir?", "Cadastro de Produtos", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
-                    {
-                        Cosdgv.Rows.RemoveAt(e.RowIndex);
-                    }
-
-                }
-            }
+            
         }
 
         public void Atualizando_grids()
         {
             foreach (var item in (new PropriedadeController.PropriedadeControllerClient()).Obter().ToList())
             {
-                dgvImoveis.Rows.Add(
+                dgvAlgueisImoveis.Rows.Add(
                     item.ID,
                     item.Endereco,
                     item.Tipo
@@ -55,7 +36,7 @@ namespace Imob.View.Rent
 
             foreach (var item in (new ClienteController.ClienteControllerClient()).Obter().ToList())
             {
-                Cosdgv.Rows.Add(
+                dgvAlgueisClientes.Rows.Add(
                     item.ID,
                     item.Nome,
                     item.Idade,
@@ -72,29 +53,25 @@ namespace Imob.View.Rent
             Atualizando_grids();
         }
 
-        private void rentBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void dgvImoveis_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            MessageBox.Show(e.ColumnIndex.ToString());
-            if (dgvImoveis.Rows[e.RowIndex].DataBoundItem != null || true)
-            {
-                if (e.ColumnIndex == 3)
-                {
+            
+        }
 
-                }
-                if (e.ColumnIndex == 4)
-                {
-                    if (MessageBox.Show("Deseja realmente excluir?", "Cadastro de Produtos", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
-                    {
-                        dgvImoveis.Rows.RemoveAt(e.RowIndex);
-                    }
+        private void btnProVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
-                }
-            }
+        private void btnProNovo_Click(object sender, EventArgs e)
+        {
+            txbAlgueisCliente.Text = "";
+            txbAlgueisImovel_Endereco.Text = "";
+            txbAlgueisImovel_ID.Text = "";
+            txbAlgueisProprietario.Text = "";
+            txbAlgueisValor.Text = "";
+
         }
     }
 }
