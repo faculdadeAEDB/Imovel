@@ -273,6 +273,10 @@
             // 
             // dgvImoveis
             // 
+            this.dgvImoveis.AllowUserToAddRows = false;
+            this.dgvImoveis.AllowUserToDeleteRows = false;
+            this.dgvImoveis.AllowUserToResizeColumns = false;
+            this.dgvImoveis.AllowUserToResizeRows = false;
             this.dgvImoveis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvImoveis.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
