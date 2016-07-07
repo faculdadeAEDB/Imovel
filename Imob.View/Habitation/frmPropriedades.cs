@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Imob.View.ClienteController;
+using Imob.View.PropriedadeController;
 
 namespace Imob.View.Habitation
 {
@@ -43,9 +43,20 @@ namespace Imob.View.Habitation
 
         private void PropiedcbxID_Load(object sender, EventArgs e)
         {
-            var c = (new PropriedadeController.PropriedadeControllerClient()).Obter();
-            Proprieddgv.DataSource = c.ToList();
             
+            var c = new PropriedadeControllerClient().Obter();
+            foreach (Site.Models.Habitation item in c.ToList())
+            {
+                MessageBox.Show("1");
+                
+                this.DgvProprietarios.Rows.Add(
+                    item.ID,
+                    item.Endereco,
+                    item.Tipo,
+                    item.Dono.Nome,
+                    item.Algueis.First().Inquilino.Nome
+                );
+            }
         }
         
     }
