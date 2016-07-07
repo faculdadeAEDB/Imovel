@@ -53,16 +53,14 @@
             this.ClienteCPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClientebtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ClientebtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.DgvProprietarios = new System.Windows.Forms.DataGridView();
+            this.dgvImoveis = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Proprietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Inquilino = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PropbtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.PropbtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvProprietarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvImoveis)).BeginInit();
             this.SuspendLayout();
             // 
             // RentlblCliente
@@ -223,6 +221,7 @@
             this.Cosdgv.ReadOnly = true;
             this.Cosdgv.Size = new System.Drawing.Size(287, 198);
             this.Cosdgv.TabIndex = 51;
+            this.Cosdgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Cosdgv_CellContentClick);
             // 
             // ClienteID
             // 
@@ -272,21 +271,20 @@
             this.ClientebtnEditar.Name = "ClientebtnEditar";
             this.ClientebtnEditar.ReadOnly = true;
             // 
-            // DgvProprietarios
+            // dgvImoveis
             // 
-            this.DgvProprietarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvProprietarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvImoveis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvImoveis.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Endereco,
             this.Tipo,
-            this.Proprietario,
-            this.Inquilino,
             this.PropbtnEditar,
             this.PropbtnExcluir});
-            this.DgvProprietarios.Location = new System.Drawing.Point(313, 117);
-            this.DgvProprietarios.Name = "DgvProprietarios";
-            this.DgvProprietarios.Size = new System.Drawing.Size(285, 198);
-            this.DgvProprietarios.TabIndex = 52;
+            this.dgvImoveis.Location = new System.Drawing.Point(313, 117);
+            this.dgvImoveis.Name = "dgvImoveis";
+            this.dgvImoveis.Size = new System.Drawing.Size(285, 198);
+            this.dgvImoveis.TabIndex = 52;
+            this.dgvImoveis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvImoveis_CellContentClick);
             // 
             // ID
             // 
@@ -295,23 +293,13 @@
             // 
             // Endereco
             // 
-            this.Endereco.HeaderText = "Endereço";
+            this.Endereco.HeaderText = "Endereco";
             this.Endereco.Name = "Endereco";
             // 
             // Tipo
             // 
             this.Tipo.HeaderText = "Tipo";
             this.Tipo.Name = "Tipo";
-            // 
-            // Proprietario
-            // 
-            this.Proprietario.HeaderText = "Proprietário";
-            this.Proprietario.Name = "Proprietario";
-            // 
-            // Inquilino
-            // 
-            this.Inquilino.HeaderText = "Inquilino";
-            this.Inquilino.Name = "Inquilino";
             // 
             // PropbtnEditar
             // 
@@ -328,7 +316,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 327);
-            this.Controls.Add(this.DgvProprietarios);
+            this.Controls.Add(this.dgvImoveis);
             this.Controls.Add(this.Cosdgv);
             this.Controls.Add(this.btnImovel);
             this.Controls.Add(this.btnProNovo);
@@ -351,8 +339,9 @@
             this.MinimizeBox = false;
             this.Name = "frmAlgueis";
             this.Text = "Rent";
+            this.Load += new System.EventHandler(this.frmAlgueis_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvProprietarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvImoveis)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,12 +373,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ClienteCPF;
         private System.Windows.Forms.DataGridViewButtonColumn ClientebtnExcluir;
         private System.Windows.Forms.DataGridViewButtonColumn ClientebtnEditar;
-        private System.Windows.Forms.DataGridView DgvProprietarios;
+        private System.Windows.Forms.DataGridView dgvImoveis;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Endereco;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Proprietario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Inquilino;
         private System.Windows.Forms.DataGridViewButtonColumn PropbtnEditar;
         private System.Windows.Forms.DataGridViewButtonColumn PropbtnExcluir;
     }
