@@ -61,7 +61,6 @@ namespace Imob.View.Rent
 
         private void dgvImoveis_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            MessageBox.Show(e.ColumnIndex.ToString());
             if (dgvImoveis.Rows[e.RowIndex].DataBoundItem != null || true)
             {
                 if (e.ColumnIndex == 3)
