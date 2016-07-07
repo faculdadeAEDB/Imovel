@@ -16,7 +16,7 @@ namespace Imob.View
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Imob.View.Habitation.frmPropriedades());
+            Application.Run(new Imob.View.Initial.frmInitial());
         }
     }
 }
