@@ -48,12 +48,11 @@ namespace Imob.View.Habitation
             ProprietarioControllerClient prop = new ProprietarioControllerClient();
             var c = new PropriedadeControllerClient().Obter();
             foreach (Site.Models.Habitation item in c.ToList())
-            {   
+            {
                 this.DgvProprietarios.Rows.Add(
                     item.ID,
                     item.Endereco,
-                    item.Tipo,
-                    prop.ObterPorId(item.ID).Nome
+                    item.Tipo
                 );
             }
         }
