@@ -52,5 +52,10 @@ namespace Imob.View.Customer
         {
             this.Close();
         }
+
+        private void Cosdgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

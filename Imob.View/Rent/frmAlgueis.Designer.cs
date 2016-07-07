@@ -77,7 +77,6 @@
             // 
             // textBox1
             // 
-            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(51, 6);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(248, 20);
@@ -85,7 +84,6 @@
             // 
             // textBox2
             // 
-            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(370, 6);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(228, 20);
@@ -103,7 +101,6 @@
             // 
             // textBox3
             // 
-            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(63, 32);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(29, 20);
@@ -131,7 +128,6 @@
             // 
             // textBox4
             // 
-            this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(186, 32);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(276, 20);
@@ -350,6 +346,9 @@
             this.Controls.Add(this.RentlblProprietario);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.RentlblCliente);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAlgueis";
             this.Text = "Rent";
             ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).EndInit();

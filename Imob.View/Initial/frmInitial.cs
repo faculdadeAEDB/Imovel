@@ -44,14 +44,6 @@ namespace Imob.View.Initial
             (new Imob.View.Payment.frmPagamentos()).ShowDialog();
             this.Visible = true;
         }
-
-        private void btnTaxas_Click(object sender, EventArgs e)
-        {
-            this.Visible = false;
-            (new Imob.View.Fee.frmTaxas()).ShowDialog();
-            this.Visible = true;
-        }
-
         private void btnAlguel_Click(object sender, EventArgs e)
         {
             this.Visible = false;

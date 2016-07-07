@@ -41,6 +41,8 @@
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PropriedbtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.PropriedbtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvProprietarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,7 +139,9 @@
             this.DgvProprietarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Endereco,
-            this.Tipo});
+            this.Tipo,
+            this.PropriedbtnEditar,
+            this.PropriedbtnExcluir});
             this.DgvProprietarios.Location = new System.Drawing.Point(19, 78);
             this.DgvProprietarios.Name = "DgvProprietarios";
             this.DgvProprietarios.Size = new System.Drawing.Size(575, 237);
@@ -158,6 +162,20 @@
             this.Tipo.HeaderText = "Tipo";
             this.Tipo.Name = "Tipo";
             // 
+            // PropriedbtnEditar
+            // 
+            this.PropriedbtnEditar.HeaderText = "Editar";
+            this.PropriedbtnEditar.Name = "PropriedbtnEditar";
+            this.PropriedbtnEditar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.PropriedbtnEditar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // PropriedbtnExcluir
+            // 
+            this.PropriedbtnExcluir.HeaderText = "Excluir";
+            this.PropriedbtnExcluir.Name = "PropriedbtnExcluir";
+            this.PropriedbtnExcluir.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.PropriedbtnExcluir.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // frmPropriedades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,6 +191,9 @@
             this.Controls.Add(this.PropiedlvlTipo);
             this.Controls.Add(this.PropriedtxbEndereco);
             this.Controls.Add(this.PropiedlvlEndereco);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmPropriedades";
             this.Text = "Propriedades";
             this.Load += new System.EventHandler(this.PropiedcbxID_Load);
@@ -197,5 +218,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Endereco;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
+        private System.Windows.Forms.DataGridViewButtonColumn PropriedbtnEditar;
+        private System.Windows.Forms.DataGridViewButtonColumn PropriedbtnExcluir;
     }
 }
