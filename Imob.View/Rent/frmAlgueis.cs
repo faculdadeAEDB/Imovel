@@ -42,7 +42,7 @@ namespace Imob.View.Rent
             }
         }
 
-        private void frmAlgueis_Load(object sender, EventArgs e)
+        public void Atualizando_grids()
         {
             foreach (var item in (new PropriedadeController.PropriedadeControllerClient()).Obter().ToList())
             {
@@ -52,6 +52,24 @@ namespace Imob.View.Rent
                     item.Tipo
                 );
             }
+
+            foreach (var item in (new ClienteController.ClienteControllerClient()).Obter().ToList())
+            {
+                Cosdgv.Rows.Add(
+                    item.ID,
+                    item.Nome,
+                    item.Idade,
+                    item.Endereco,
+                    item.Telefone,
+                    item.cpf
+                );
+            }
+
+        }
+
+        private void frmAlgueis_Load(object sender, EventArgs e)
+        {
+            Atualizando_grids();
         }
 
         private void rentBindingSource_CurrentChanged(object sender, EventArgs e)
