@@ -41,6 +41,13 @@
             this.ProprietlblEndereco = new System.Windows.Forms.Label();
             this.PropriettxbNome = new System.Windows.Forms.TextBox();
             this.ProprietlblNome = new System.Windows.Forms.Label();
+            this.ProprietID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProprietNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProprietEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProprietCPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProprietTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProprietbtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ProprietbtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdProprietario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,6 +95,14 @@
             // 
             this.grdProprietario.AllowUserToDeleteRows = false;
             this.grdProprietario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdProprietario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ProprietID,
+            this.ProprietNome,
+            this.ProprietEndereco,
+            this.ProprietCPF,
+            this.ProprietTelefone,
+            this.ProprietbtnEditar,
+            this.ProprietbtnExcluir});
             this.grdProprietario.Location = new System.Drawing.Point(13, 121);
             this.grdProprietario.Name = "grdProprietario";
             this.grdProprietario.ReadOnly = true;
@@ -158,6 +173,50 @@
             this.ProprietlblNome.TabIndex = 30;
             this.ProprietlblNome.Text = "Nome";
             // 
+            // ProprietID
+            // 
+            this.ProprietID.HeaderText = "ID";
+            this.ProprietID.Name = "ProprietID";
+            this.ProprietID.ReadOnly = true;
+            // 
+            // ProprietNome
+            // 
+            this.ProprietNome.HeaderText = "Nome";
+            this.ProprietNome.Name = "ProprietNome";
+            this.ProprietNome.ReadOnly = true;
+            // 
+            // ProprietEndereco
+            // 
+            this.ProprietEndereco.HeaderText = "Endereço";
+            this.ProprietEndereco.Name = "ProprietEndereco";
+            this.ProprietEndereco.ReadOnly = true;
+            // 
+            // ProprietCPF
+            // 
+            this.ProprietCPF.HeaderText = "CPF";
+            this.ProprietCPF.Name = "ProprietCPF";
+            this.ProprietCPF.ReadOnly = true;
+            // 
+            // ProprietTelefone
+            // 
+            this.ProprietTelefone.HeaderText = "Telefone";
+            this.ProprietTelefone.Name = "ProprietTelefone";
+            this.ProprietTelefone.ReadOnly = true;
+            // 
+            // ProprietbtnEditar
+            // 
+            this.ProprietbtnEditar.HeaderText = "Editar";
+            this.ProprietbtnEditar.Name = "ProprietbtnEditar";
+            this.ProprietbtnEditar.ReadOnly = true;
+            // 
+            // ProprietbtnExcluir
+            // 
+            this.ProprietbtnExcluir.HeaderText = "Excluir";
+            this.ProprietbtnExcluir.Name = "ProprietbtnExcluir";
+            this.ProprietbtnExcluir.ReadOnly = true;
+            this.ProprietbtnExcluir.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ProprietbtnExcluir.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // frmProprietarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,5 +259,12 @@
         private System.Windows.Forms.Label ProprietlblEndereco;
         private System.Windows.Forms.TextBox PropriettxbNome;
         private System.Windows.Forms.Label ProprietlblNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProprietID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProprietNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProprietEndereco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProprietCPF;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProprietTelefone;
+        private System.Windows.Forms.DataGridViewButtonColumn ProprietbtnEditar;
+        private System.Windows.Forms.DataGridViewButtonColumn ProprietbtnExcluir;
     }
 }

@@ -52,8 +52,7 @@ namespace Imob.View.Habitation
                 this.DgvProprietarios.Rows.Add(
                     item.ID,
                     item.Endereco,
-                    item.Tipo,
-                    prop.ObterPorId(item.ID).Nome
+                    item.Tipo
                 );
             }
         }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.CosbtnNovo = new System.Windows.Forms.Button();
             this.CosbtnSalvar = new System.Windows.Forms.Button();
             this.CosbtnVoltar = new System.Windows.Forms.Button();
@@ -43,17 +42,15 @@
             this.CoslblNome = new System.Windows.Forms.Label();
             this.CostxbIdade = new System.Windows.Forms.TextBox();
             this.CoslblIdade = new System.Windows.Forms.Label();
-            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.enderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cpfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClientebtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ClienteID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClienteNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClienteIdade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClienteEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClienteTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClienteCPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClientebtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ClientebtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // CosbtnNovo
@@ -90,18 +87,16 @@
             // 
             this.Cosdgv.AllowUserToAddRows = false;
             this.Cosdgv.AllowUserToDeleteRows = false;
-            this.Cosdgv.AutoGenerateColumns = false;
             this.Cosdgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Cosdgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.nomeDataGridViewTextBoxColumn,
-            this.idadeDataGridViewTextBoxColumn,
-            this.enderecoDataGridViewTextBoxColumn,
-            this.telefoneDataGridViewTextBoxColumn,
-            this.cpfDataGridViewTextBoxColumn,
-            this.ClientebtnEditar,
-            this.ClientebtnExcluir});
-            this.Cosdgv.DataSource = this.customerBindingSource;
+            this.ClienteID,
+            this.ClienteNome,
+            this.ClienteIdade,
+            this.ClienteEndereco,
+            this.ClienteTelefone,
+            this.ClienteCPF,
+            this.ClientebtnExcluir,
+            this.ClientebtnEditar});
             this.Cosdgv.Location = new System.Drawing.Point(13, 118);
             this.Cosdgv.Name = "Cosdgv";
             this.Cosdgv.ReadOnly = true;
@@ -188,63 +183,53 @@
             this.CoslblIdade.TabIndex = 48;
             this.CoslblIdade.Text = "Idade";
             // 
-            // customerBindingSource
+            // ClienteID
             // 
-            this.customerBindingSource.DataSource = typeof(Imob.Site.Models.Customer);
+            this.ClienteID.HeaderText = "ID";
+            this.ClienteID.Name = "ClienteID";
+            this.ClienteID.ReadOnly = true;
             // 
-            // iDDataGridViewTextBoxColumn
+            // ClienteNome
             // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ClienteNome.HeaderText = "Nome";
+            this.ClienteNome.Name = "ClienteNome";
+            this.ClienteNome.ReadOnly = true;
             // 
-            // nomeDataGridViewTextBoxColumn
+            // ClienteIdade
             // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ClienteIdade.HeaderText = "Idade";
+            this.ClienteIdade.Name = "ClienteIdade";
+            this.ClienteIdade.ReadOnly = true;
             // 
-            // idadeDataGridViewTextBoxColumn
+            // ClienteEndereco
             // 
-            this.idadeDataGridViewTextBoxColumn.DataPropertyName = "Idade";
-            this.idadeDataGridViewTextBoxColumn.HeaderText = "Idade";
-            this.idadeDataGridViewTextBoxColumn.Name = "idadeDataGridViewTextBoxColumn";
-            this.idadeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ClienteEndereco.HeaderText = "Endereco";
+            this.ClienteEndereco.Name = "ClienteEndereco";
+            this.ClienteEndereco.ReadOnly = true;
             // 
-            // enderecoDataGridViewTextBoxColumn
+            // ClienteTelefone
             // 
-            this.enderecoDataGridViewTextBoxColumn.DataPropertyName = "Endereco";
-            this.enderecoDataGridViewTextBoxColumn.HeaderText = "Endereco";
-            this.enderecoDataGridViewTextBoxColumn.Name = "enderecoDataGridViewTextBoxColumn";
-            this.enderecoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ClienteTelefone.HeaderText = "Telefone";
+            this.ClienteTelefone.Name = "ClienteTelefone";
+            this.ClienteTelefone.ReadOnly = true;
             // 
-            // telefoneDataGridViewTextBoxColumn
+            // ClienteCPF
             // 
-            this.telefoneDataGridViewTextBoxColumn.DataPropertyName = "Telefone";
-            this.telefoneDataGridViewTextBoxColumn.HeaderText = "Telefone";
-            this.telefoneDataGridViewTextBoxColumn.Name = "telefoneDataGridViewTextBoxColumn";
-            this.telefoneDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cpfDataGridViewTextBoxColumn
-            // 
-            this.cpfDataGridViewTextBoxColumn.DataPropertyName = "cpf";
-            this.cpfDataGridViewTextBoxColumn.HeaderText = "Cpf";
-            this.cpfDataGridViewTextBoxColumn.Name = "cpfDataGridViewTextBoxColumn";
-            this.cpfDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ClientebtnEditar
-            // 
-            this.ClientebtnEditar.HeaderText = "Editar";
-            this.ClientebtnEditar.Name = "ClientebtnEditar";
-            this.ClientebtnEditar.ReadOnly = true;
+            this.ClienteCPF.HeaderText = "CPF";
+            this.ClienteCPF.Name = "ClienteCPF";
+            this.ClienteCPF.ReadOnly = true;
             // 
             // ClientebtnExcluir
             // 
             this.ClientebtnExcluir.HeaderText = "Excluir";
             this.ClientebtnExcluir.Name = "ClientebtnExcluir";
             this.ClientebtnExcluir.ReadOnly = true;
+            // 
+            // ClientebtnEditar
+            // 
+            this.ClientebtnEditar.HeaderText = "Editar";
+            this.ClientebtnEditar.Name = "ClientebtnEditar";
+            this.ClientebtnEditar.ReadOnly = true;
             // 
             // frmClientes
             // 
@@ -269,7 +254,6 @@
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.frmClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,14 +275,13 @@
         private System.Windows.Forms.Label CoslblNome;
         private System.Windows.Forms.TextBox CostxbIdade;
         private System.Windows.Forms.Label CoslblIdade;
-        private System.Windows.Forms.BindingSource customerBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idadeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn enderecoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telefoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cpfDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewButtonColumn ClientebtnEditar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClienteID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClienteNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClienteIdade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClienteEndereco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClienteTelefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClienteCPF;
         private System.Windows.Forms.DataGridViewButtonColumn ClientebtnExcluir;
+        private System.Windows.Forms.DataGridViewButtonColumn ClientebtnEditar;
     }
 }

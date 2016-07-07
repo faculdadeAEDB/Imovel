@@ -34,6 +34,7 @@
             this.btnPropriedades = new System.Windows.Forms.Button();
             this.btnPagamentos = new System.Windows.Forms.Button();
             this.btnTaxas = new System.Windows.Forms.Button();
+            this.btnAlguel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClientes
@@ -71,10 +72,18 @@
             this.btnTaxas.UseVisualStyleBackColor = true;
             this.btnTaxas.Click += new System.EventHandler(this.btnTaxas_Click);
             // 
+            // btnAlguel
+            // 
+            resources.ApplyResources(this.btnAlguel, "btnAlguel");
+            this.btnAlguel.Name = "btnAlguel";
+            this.btnAlguel.UseVisualStyleBackColor = true;
+            this.btnAlguel.Click += new System.EventHandler(this.btnAlguel_Click);
+            // 
             // frmInitial
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnAlguel);
             this.Controls.Add(this.btnTaxas);
             this.Controls.Add(this.btnPagamentos);
             this.Controls.Add(this.btnPropriedades);
@@ -94,5 +103,6 @@
         private System.Windows.Forms.Button btnPropriedades;
         private System.Windows.Forms.Button btnPagamentos;
         private System.Windows.Forms.Button btnTaxas;
+        private System.Windows.Forms.Button btnAlguel;
     }
 }

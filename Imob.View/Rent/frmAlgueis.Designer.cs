@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.RentlblCliente = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -46,25 +44,26 @@
             this.btnProNovo = new System.Windows.Forms.Button();
             this.btnProSalvar = new System.Windows.Forms.Button();
             this.btnProVoltar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.Cosdgv = new System.Windows.Forms.DataGridView();
+            this.ClienteID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClienteNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClienteIdade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClienteEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClienteTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClienteCPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClientebtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ClientebtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.DgvProprietarios = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Proprietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Inquilino = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PropbtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.PropbtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvProprietarios)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 117);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(287, 198);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(313, 117);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(287, 198);
-            this.dataGridView2.TabIndex = 1;
             // 
             // RentlblCliente
             // 
@@ -168,9 +167,9 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(499, 32);
+            this.textBox5.Location = new System.Drawing.Point(508, 32);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(99, 20);
+            this.textBox5.Size = new System.Drawing.Size(90, 20);
             this.textBox5.TabIndex = 14;
             // 
             // btnImovel
@@ -209,11 +208,132 @@
             this.btnProVoltar.Text = "Voltar";
             this.btnProVoltar.UseVisualStyleBackColor = true;
             // 
-            // Rent
+            // Cosdgv
+            // 
+            this.Cosdgv.AllowUserToAddRows = false;
+            this.Cosdgv.AllowUserToDeleteRows = false;
+            this.Cosdgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Cosdgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ClienteID,
+            this.ClienteNome,
+            this.ClienteIdade,
+            this.ClienteEndereco,
+            this.ClienteTelefone,
+            this.ClienteCPF,
+            this.ClientebtnExcluir,
+            this.ClientebtnEditar});
+            this.Cosdgv.Location = new System.Drawing.Point(12, 117);
+            this.Cosdgv.Name = "Cosdgv";
+            this.Cosdgv.ReadOnly = true;
+            this.Cosdgv.Size = new System.Drawing.Size(287, 198);
+            this.Cosdgv.TabIndex = 51;
+            // 
+            // ClienteID
+            // 
+            this.ClienteID.HeaderText = "ID";
+            this.ClienteID.Name = "ClienteID";
+            this.ClienteID.ReadOnly = true;
+            // 
+            // ClienteNome
+            // 
+            this.ClienteNome.HeaderText = "Nome";
+            this.ClienteNome.Name = "ClienteNome";
+            this.ClienteNome.ReadOnly = true;
+            // 
+            // ClienteIdade
+            // 
+            this.ClienteIdade.HeaderText = "Idade";
+            this.ClienteIdade.Name = "ClienteIdade";
+            this.ClienteIdade.ReadOnly = true;
+            // 
+            // ClienteEndereco
+            // 
+            this.ClienteEndereco.HeaderText = "Endereco";
+            this.ClienteEndereco.Name = "ClienteEndereco";
+            this.ClienteEndereco.ReadOnly = true;
+            // 
+            // ClienteTelefone
+            // 
+            this.ClienteTelefone.HeaderText = "Telefone";
+            this.ClienteTelefone.Name = "ClienteTelefone";
+            this.ClienteTelefone.ReadOnly = true;
+            // 
+            // ClienteCPF
+            // 
+            this.ClienteCPF.HeaderText = "CPF";
+            this.ClienteCPF.Name = "ClienteCPF";
+            this.ClienteCPF.ReadOnly = true;
+            // 
+            // ClientebtnExcluir
+            // 
+            this.ClientebtnExcluir.HeaderText = "Excluir";
+            this.ClientebtnExcluir.Name = "ClientebtnExcluir";
+            this.ClientebtnExcluir.ReadOnly = true;
+            // 
+            // ClientebtnEditar
+            // 
+            this.ClientebtnEditar.HeaderText = "Editar";
+            this.ClientebtnEditar.Name = "ClientebtnEditar";
+            this.ClientebtnEditar.ReadOnly = true;
+            // 
+            // DgvProprietarios
+            // 
+            this.DgvProprietarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvProprietarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Endereco,
+            this.Tipo,
+            this.Proprietario,
+            this.Inquilino,
+            this.PropbtnEditar,
+            this.PropbtnExcluir});
+            this.DgvProprietarios.Location = new System.Drawing.Point(313, 117);
+            this.DgvProprietarios.Name = "DgvProprietarios";
+            this.DgvProprietarios.Size = new System.Drawing.Size(285, 198);
+            this.DgvProprietarios.TabIndex = 52;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Endereco
+            // 
+            this.Endereco.HeaderText = "Endereço";
+            this.Endereco.Name = "Endereco";
+            // 
+            // Tipo
+            // 
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            // 
+            // Proprietario
+            // 
+            this.Proprietario.HeaderText = "Proprietário";
+            this.Proprietario.Name = "Proprietario";
+            // 
+            // Inquilino
+            // 
+            this.Inquilino.HeaderText = "Inquilino";
+            this.Inquilino.Name = "Inquilino";
+            // 
+            // PropbtnEditar
+            // 
+            this.PropbtnEditar.HeaderText = "Editar";
+            this.PropbtnEditar.Name = "PropbtnEditar";
+            // 
+            // PropbtnExcluir
+            // 
+            this.PropbtnExcluir.HeaderText = "Excluir";
+            this.PropbtnExcluir.Name = "PropbtnExcluir";
+            // 
+            // frmAlgueis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 327);
+            this.Controls.Add(this.DgvProprietarios);
+            this.Controls.Add(this.Cosdgv);
             this.Controls.Add(this.btnImovel);
             this.Controls.Add(this.btnProNovo);
             this.Controls.Add(this.btnProSalvar);
@@ -230,21 +350,16 @@
             this.Controls.Add(this.RentlblProprietario);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.RentlblCliente);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "Rent";
+            this.Name = "frmAlgueis";
             this.Text = "Rent";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cosdgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvProprietarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label RentlblCliente;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
@@ -261,5 +376,22 @@
         private System.Windows.Forms.Button btnProVoltar;
         private System.Windows.Forms.Button btnProSalvar;
         private System.Windows.Forms.Button btnProNovo;
+        private System.Windows.Forms.DataGridView Cosdgv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClienteID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClienteNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClienteIdade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClienteEndereco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClienteTelefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClienteCPF;
+        private System.Windows.Forms.DataGridViewButtonColumn ClientebtnExcluir;
+        private System.Windows.Forms.DataGridViewButtonColumn ClientebtnEditar;
+        private System.Windows.Forms.DataGridView DgvProprietarios;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Endereco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Proprietario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Inquilino;
+        private System.Windows.Forms.DataGridViewButtonColumn PropbtnEditar;
+        private System.Windows.Forms.DataGridViewButtonColumn PropbtnExcluir;
     }
 }

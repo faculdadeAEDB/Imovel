@@ -51,5 +51,12 @@ namespace Imob.View.Initial
             (new Imob.View.Fee.frmTaxas()).ShowDialog();
             this.Visible = true;
         }
+
+        private void btnAlguel_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            (new Imob.View.Rent.frmAlgueis()).ShowDialog();
+            this.Visible = true;
+        }
     }
 }
