@@ -19,6 +19,9 @@ namespace Imob.Site.Controllers
         List<Owner> Obter();
 
         [OperationContract]
+        Owner ObterPorId(int id);
+
+        [OperationContract]
         Owner Editar(Owner obj);
 
         [OperationContract]

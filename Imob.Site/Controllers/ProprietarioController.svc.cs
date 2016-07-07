@@ -29,6 +29,11 @@ namespace Imob.Site.Controllers
             return repository.Obter();
         }
 
+        public Owner ObterPorId(int id)
+        {
+            return repository.Obter(id);
+        }
+
         public Owner Salvar(Owner obj)
         {
             return repository.Salvar(obj);

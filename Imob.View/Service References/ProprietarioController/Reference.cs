@@ -27,6 +27,12 @@ namespace Imob.View.ProprietarioController {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProprietarioController/Obter", ReplyAction="http://tempuri.org/IProprietarioController/ObterResponse")]
         System.Threading.Tasks.Task<Imob.Site.Models.Owner[]> ObterAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProprietarioController/ObterPorId", ReplyAction="http://tempuri.org/IProprietarioController/ObterPorIdResponse")]
+        Imob.Site.Models.Owner ObterPorId(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProprietarioController/ObterPorId", ReplyAction="http://tempuri.org/IProprietarioController/ObterPorIdResponse")]
+        System.Threading.Tasks.Task<Imob.Site.Models.Owner> ObterPorIdAsync(int id);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProprietarioController/Editar", ReplyAction="http://tempuri.org/IProprietarioController/EditarResponse")]
         Imob.Site.Models.Owner Editar(Imob.Site.Models.Owner obj);
         
@@ -81,6 +87,14 @@ namespace Imob.View.ProprietarioController {
         
         public System.Threading.Tasks.Task<Imob.Site.Models.Owner[]> ObterAsync() {
             return base.Channel.ObterAsync();
+        }
+        
+        public Imob.Site.Models.Owner ObterPorId(int id) {
+            return base.Channel.ObterPorId(id);
+        }
+        
+        public System.Threading.Tasks.Task<Imob.Site.Models.Owner> ObterPorIdAsync(int id) {
+            return base.Channel.ObterPorIdAsync(id);
         }
         
         public Imob.Site.Models.Owner Editar(Imob.Site.Models.Owner obj) {

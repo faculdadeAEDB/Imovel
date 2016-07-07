@@ -38,6 +38,14 @@ namespace Imob.Site.Models.Repository
             }
         }
 
+        public Fee Obter(int id)
+        {
+            using (Context.Context c = new Context.Context())
+            {
+                return c.Taxa.Where(item => item.ID == id).First();
+            }
+        }
+
         public Fee Salvar(Fee obj)
         {
             using (Context.Context c = new Context.Context())

@@ -38,6 +38,14 @@ namespace Imob.Site.Models.Repository
             }
         }
 
+        public Payment Obter(int id)
+        {
+            using (Context.Context c = new Context.Context())
+            {
+                return c.Pagamento.Where(item => item.ID == id).First();
+            }
+        }
+
         public Payment Salvar(Payment obj)
         {
             using (Context.Context c = new Context.Context())
