@@ -216,9 +216,11 @@
             this.ClienteCPF,
             this.ClientebtnExcluir,
             this.ClientebtnEditar});
+            this.Cosdgv.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.Cosdgv.Location = new System.Drawing.Point(12, 117);
             this.Cosdgv.Name = "Cosdgv";
             this.Cosdgv.ReadOnly = true;
+            this.Cosdgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Cosdgv.Size = new System.Drawing.Size(287, 198);
             this.Cosdgv.TabIndex = 51;
             this.Cosdgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Cosdgv_CellContentClick);
@@ -284,8 +286,10 @@
             this.Tipo,
             this.PropbtnEditar,
             this.PropbtnExcluir});
+            this.dgvImoveis.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvImoveis.Location = new System.Drawing.Point(313, 117);
             this.dgvImoveis.Name = "dgvImoveis";
+            this.dgvImoveis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvImoveis.Size = new System.Drawing.Size(285, 198);
             this.dgvImoveis.TabIndex = 52;
             this.dgvImoveis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvImoveis_CellContentClick);
