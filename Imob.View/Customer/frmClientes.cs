@@ -20,10 +20,14 @@ namespace Imob.View.Customer
 
         private void frmClientes_Load(object sender, EventArgs e)
         {
-            var c =(new ClienteController.ClienteControllerClient()).Obter();
-            Cosdgv.DataSource = c.ToList();
+            Atualizando_datagrid();
         }
 
+        public void Atualizando_datagrid()
+        {
+            var c = (new ClienteController.ClienteControllerClient()).Obter();
+            Cosdgv.DataSource = c.ToList();
+        }
         private void CosbtnNovo_Click(object sender, EventArgs e)
         {
             Imob.Site.Models.Customer c = new Imob.Site.Models.Customer();
@@ -32,8 +36,9 @@ namespace Imob.View.Customer
             c.Telefone = CostxbTelefone.Text;
             c.Idade = CostxbIdade.Text;
             c.cpf = Convert.ToInt32(CostxbCPF.Text);
+            Imob.Site.Models.Customer cliente = (new ClienteController.ClienteControllerClient()).Salvar(c);
+            Atualizando_datagrid();
 
-            (new ClienteController.ClienteControllerClient()).Salvar(c);
         }
 
         private void CosbtnSalvar_Click(object sender, EventArgs e)
@@ -44,7 +49,6 @@ namespace Imob.View.Customer
             c.Telefone = CostxbTelefone.Text;
             c.Idade = CostxbIdade.Text;
             c.cpf = Convert.ToInt32(CostxbCPF.Text);
-
             (new ClienteController.ClienteControllerClient()).Editar(c);
         }
 
