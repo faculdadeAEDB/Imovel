@@ -59,6 +59,7 @@ namespace Imob.View.Owner
 
         public void Atualizando_datagrid()
         {
+            dgvProprietarios.Rows.Clear();
             var c = (new ProprietarioController.ProprietarioControllerClient()).Obter();
 
             foreach (var item in c.ToList())
@@ -71,17 +72,18 @@ namespace Imob.View.Owner
                     item.Telefone
                 );
             }
+            dgvProprietarios.Update();
         }
 
         private void dgvProprietarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dgvProprietarios.Rows[e.RowIndex].DataBoundItem != null || true)
             {
-                if (e.ColumnIndex == 5)
+                if (e.ColumnIndex == 3)
                 {
 
                 }
-                if (e.ColumnIndex == 6)
+                if (e.ColumnIndex == 4)
                 {
                     if (MessageBox.Show("Deseja realmente excluir?", "Cadastro de Proprietario", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
                     {

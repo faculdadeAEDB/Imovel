@@ -195,6 +195,9 @@
     <None Include="Service References\AluguelController\AluguelController2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\AluguelController\AluguelController3.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\ClienteController\ClienteController.wsdl" />
     <None Include="Service References\ClienteController\ClienteController.xsd">
       <SubType>Designer</SubType>

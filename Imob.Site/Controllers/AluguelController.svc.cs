@@ -30,6 +30,18 @@ namespace Imob.Site.Controllers
             return respository.Obter();
         }
 
+        public List<string> ObterIdEInquilinos()
+        {
+            List<Rent> list = Obter();
+            List<string> listFormatada = new List<string>();
+            foreach (var item in list)
+            {
+                listFormatada.Add(item.ID + " - ");
+            }
+
+            return listFormatada;
+        }
+
         public Rent Salvar(Rent obj)
         {
             return respository.Salvar(obj);

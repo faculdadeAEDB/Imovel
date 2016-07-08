@@ -27,6 +27,12 @@ namespace Imob.View.AluguelController {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAluguelController/Obter", ReplyAction="http://tempuri.org/IAluguelController/ObterResponse")]
         System.Threading.Tasks.Task<Imob.Site.Models.Rent[]> ObterAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAluguelController/ObterIdEInquilinos", ReplyAction="http://tempuri.org/IAluguelController/ObterIdEInquilinosResponse")]
+        string[] ObterIdEInquilinos();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAluguelController/ObterIdEInquilinos", ReplyAction="http://tempuri.org/IAluguelController/ObterIdEInquilinosResponse")]
+        System.Threading.Tasks.Task<string[]> ObterIdEInquilinosAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAluguelController/Editar", ReplyAction="http://tempuri.org/IAluguelController/EditarResponse")]
         Imob.Site.Models.Rent Editar(Imob.Site.Models.Rent obj);
         
@@ -81,6 +87,14 @@ namespace Imob.View.AluguelController {
         
         public System.Threading.Tasks.Task<Imob.Site.Models.Rent[]> ObterAsync() {
             return base.Channel.ObterAsync();
+        }
+        
+        public string[] ObterIdEInquilinos() {
+            return base.Channel.ObterIdEInquilinos();
+        }
+        
+        public System.Threading.Tasks.Task<string[]> ObterIdEInquilinosAsync() {
+            return base.Channel.ObterIdEInquilinosAsync();
         }
         
         public Imob.Site.Models.Rent Editar(Imob.Site.Models.Rent obj) {

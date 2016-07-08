@@ -46,6 +46,7 @@
             this.btnPagamentosPagar.TabIndex = 0;
             this.btnPagamentosPagar.Text = "Pagar";
             this.btnPagamentosPagar.UseVisualStyleBackColor = true;
+            this.btnPagamentosPagar.Click += new System.EventHandler(this.btnPagamentosPagar_Click);
             // 
             // lblPagamentosData
             // 
@@ -100,6 +101,7 @@
             this.MinimizeBox = false;
             this.Name = "frmPagamentos";
             this.Text = "Pagamentos";
+            this.Load += new System.EventHandler(this.frmPagamentos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

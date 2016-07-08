@@ -16,5 +16,19 @@ namespace Imob.View.Payment
         {
             InitializeComponent();
         }
+
+        private void frmPagamentos_Load(object sender, EventArgs e)
+        {
+            AluguelController.AluguelControllerClient aluguel = new AluguelController.AluguelControllerClient();
+            foreach (var item in aluguel.ObterIdEInquilinos())
+            {
+                cbxPagamentosAluguel.Items.Add(item);
+            }
+        }
+
+        private void btnPagamentosPagar_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

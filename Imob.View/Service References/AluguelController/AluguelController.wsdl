@@ -5,6 +5,7 @@
       <xsd:import schemaLocation="http://localhost:10945/Controllers/AluguelController.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:10945/Controllers/AluguelController.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://localhost:10945/Controllers/AluguelController.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Imob.Site.Models" />
+      <xsd:import schemaLocation="http://localhost:10945/Controllers/AluguelController.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IAluguelController_Salvar_InputMessage">
@@ -18,6 +19,12 @@
   </wsdl:message>
   <wsdl:message name="IAluguelController_Obter_OutputMessage">
     <wsdl:part name="parameters" element="tns:ObterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAluguelController_ObterIdEInquilinos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterIdEInquilinos" />
+  </wsdl:message>
+  <wsdl:message name="IAluguelController_ObterIdEInquilinos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterIdEInquilinosResponse" />
   </wsdl:message>
   <wsdl:message name="IAluguelController_Editar_InputMessage">
     <wsdl:part name="parameters" element="tns:Editar" />
@@ -39,6 +46,10 @@
     <wsdl:operation name="Obter">
       <wsdl:input wsaw:Action="http://tempuri.org/IAluguelController/Obter" message="tns:IAluguelController_Obter_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IAluguelController/ObterResponse" message="tns:IAluguelController_Obter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObterIdEInquilinos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAluguelController/ObterIdEInquilinos" message="tns:IAluguelController_ObterIdEInquilinos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAluguelController/ObterIdEInquilinosResponse" message="tns:IAluguelController_ObterIdEInquilinos_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="Editar">
       <wsdl:input wsaw:Action="http://tempuri.org/IAluguelController/Editar" message="tns:IAluguelController_Editar_InputMessage" />
@@ -62,6 +73,15 @@
     </wsdl:operation>
     <wsdl:operation name="Obter">
       <soap:operation soapAction="http://tempuri.org/IAluguelController/Obter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObterIdEInquilinos">
+      <soap:operation soapAction="http://tempuri.org/IAluguelController/ObterIdEInquilinos" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

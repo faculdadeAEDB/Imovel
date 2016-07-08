@@ -19,6 +19,9 @@ namespace Imob.Site.Controllers
         List<Rent> Obter();
 
         [OperationContract]
+        List<string> ObterIdEInquilinos();
+
+        [OperationContract]
         Rent Editar(Rent obj);
 
         [OperationContract]
