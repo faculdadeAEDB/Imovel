@@ -29,19 +29,20 @@
         private void InitializeComponent()
         {
             this.lblRelatorioAlgueis = new System.Windows.Forms.Label();
-            this.dgvAlgueis = new System.Windows.Forms.DataGridView();
+            this.dgvAlugueis = new System.Windows.Forms.DataGridView();
+            this.btnPagamentosVoltar = new System.Windows.Forms.Button();
+            this.txbAlgueisTotalValor = new System.Windows.Forms.TextBox();
+            this.txbAlugueisTotalAlugueis = new System.Windows.Forms.TextBox();
+            this.lblAlgueisTotalValor = new System.Windows.Forms.Label();
+            this.lblAlgueisTotalAlgueis = new System.Windows.Forms.Label();
             this.ID_Aluguel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome_Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome_Proprietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_Imovel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Data_Inicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Data_Fim = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnPagamentosVoltar = new System.Windows.Forms.Button();
-            this.txbAlgueisTotalValor = new System.Windows.Forms.TextBox();
-            this.txbAlugueisTotalAlugueis = new System.Windows.Forms.TextBox();
-            this.lblAlgueisTotalValor = new System.Windows.Forms.Label();
-            this.lblAlgueisTotalAlgueis = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAlgueis)).BeginInit();
+            this.Excluir_Alguel = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlugueis)).BeginInit();
             this.SuspendLayout();
             // 
             // lblRelatorioAlgueis
@@ -54,62 +55,28 @@
             this.lblRelatorioAlgueis.TabIndex = 2;
             this.lblRelatorioAlgueis.Text = "Relatório de Algueis";
             // 
-            // dgvAlgueis
+            // dgvAlugueis
             // 
-            this.dgvAlgueis.AllowUserToAddRows = false;
-            this.dgvAlgueis.AllowUserToDeleteRows = false;
-            this.dgvAlgueis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvAlgueis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAlgueis.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvAlugueis.AllowUserToAddRows = false;
+            this.dgvAlugueis.AllowUserToDeleteRows = false;
+            this.dgvAlugueis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvAlugueis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAlugueis.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID_Aluguel,
             this.Nome_Cliente,
             this.Nome_Proprietario,
             this.ID_Imovel,
             this.Data_Inicio,
-            this.Data_Fim});
-            this.dgvAlgueis.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvAlgueis.Location = new System.Drawing.Point(12, 32);
-            this.dgvAlgueis.MultiSelect = false;
-            this.dgvAlgueis.Name = "dgvAlgueis";
-            this.dgvAlgueis.ReadOnly = true;
-            this.dgvAlgueis.Size = new System.Drawing.Size(586, 514);
-            this.dgvAlgueis.TabIndex = 3;
-            // 
-            // ID_Aluguel
-            // 
-            this.ID_Aluguel.HeaderText = "ID do Alguel";
-            this.ID_Aluguel.Name = "ID_Aluguel";
-            this.ID_Aluguel.ReadOnly = true;
-            // 
-            // Nome_Cliente
-            // 
-            this.Nome_Cliente.HeaderText = "Nome do Inquilino";
-            this.Nome_Cliente.Name = "Nome_Cliente";
-            this.Nome_Cliente.ReadOnly = true;
-            // 
-            // Nome_Proprietario
-            // 
-            this.Nome_Proprietario.HeaderText = "Nome do Proprietario";
-            this.Nome_Proprietario.Name = "Nome_Proprietario";
-            this.Nome_Proprietario.ReadOnly = true;
-            // 
-            // ID_Imovel
-            // 
-            this.ID_Imovel.HeaderText = "Imovel";
-            this.ID_Imovel.Name = "ID_Imovel";
-            this.ID_Imovel.ReadOnly = true;
-            // 
-            // Data_Inicio
-            // 
-            this.Data_Inicio.HeaderText = "Data do inicio do contrato";
-            this.Data_Inicio.Name = "Data_Inicio";
-            this.Data_Inicio.ReadOnly = true;
-            // 
-            // Data_Fim
-            // 
-            this.Data_Fim.HeaderText = "Data do fim do contrato";
-            this.Data_Fim.Name = "Data_Fim";
-            this.Data_Fim.ReadOnly = true;
+            this.Data_Fim,
+            this.Excluir_Alguel});
+            this.dgvAlugueis.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvAlugueis.Location = new System.Drawing.Point(12, 32);
+            this.dgvAlugueis.MultiSelect = false;
+            this.dgvAlugueis.Name = "dgvAlugueis";
+            this.dgvAlugueis.ReadOnly = true;
+            this.dgvAlugueis.Size = new System.Drawing.Size(586, 514);
+            this.dgvAlugueis.TabIndex = 3;
+            this.dgvAlugueis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlgueis_CellContentClick);
             // 
             // btnPagamentosVoltar
             // 
@@ -155,6 +122,50 @@
             this.lblAlgueisTotalAlgueis.TabIndex = 7;
             this.lblAlgueisTotalAlgueis.Text = "Total de Algueis";
             // 
+            // ID_Aluguel
+            // 
+            this.ID_Aluguel.HeaderText = "ID do Alguel";
+            this.ID_Aluguel.Name = "ID_Aluguel";
+            this.ID_Aluguel.ReadOnly = true;
+            // 
+            // Nome_Cliente
+            // 
+            this.Nome_Cliente.HeaderText = "Nome do Inquilino";
+            this.Nome_Cliente.Name = "Nome_Cliente";
+            this.Nome_Cliente.ReadOnly = true;
+            // 
+            // Nome_Proprietario
+            // 
+            this.Nome_Proprietario.HeaderText = "Nome do Proprietario";
+            this.Nome_Proprietario.Name = "Nome_Proprietario";
+            this.Nome_Proprietario.ReadOnly = true;
+            // 
+            // ID_Imovel
+            // 
+            this.ID_Imovel.HeaderText = "Imovel";
+            this.ID_Imovel.Name = "ID_Imovel";
+            this.ID_Imovel.ReadOnly = true;
+            // 
+            // Data_Inicio
+            // 
+            this.Data_Inicio.HeaderText = "Data do inicio do contrato";
+            this.Data_Inicio.Name = "Data_Inicio";
+            this.Data_Inicio.ReadOnly = true;
+            // 
+            // Data_Fim
+            // 
+            this.Data_Fim.HeaderText = "Data do fim do contrato";
+            this.Data_Fim.Name = "Data_Fim";
+            this.Data_Fim.ReadOnly = true;
+            // 
+            // Excluir_Alguel
+            // 
+            this.Excluir_Alguel.HeaderText = "Excluir";
+            this.Excluir_Alguel.Name = "Excluir_Alguel";
+            this.Excluir_Alguel.ReadOnly = true;
+            this.Excluir_Alguel.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Excluir_Alguel.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // frmRelatorio_Algueis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,14 +176,14 @@
             this.Controls.Add(this.txbAlugueisTotalAlugueis);
             this.Controls.Add(this.lblAlgueisTotalValor);
             this.Controls.Add(this.lblAlgueisTotalAlgueis);
-            this.Controls.Add(this.dgvAlgueis);
+            this.Controls.Add(this.dgvAlugueis);
             this.Controls.Add(this.lblRelatorioAlgueis);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmRelatorio_Algueis";
             this.Text = "frmRelatorio_Algueis";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAlgueis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlugueis)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,7 +192,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblRelatorioAlgueis;
-        private System.Windows.Forms.DataGridView dgvAlgueis;
+        private System.Windows.Forms.DataGridView dgvAlugueis;
         private System.Windows.Forms.Button btnPagamentosVoltar;
         private System.Windows.Forms.TextBox txbAlgueisTotalValor;
         private System.Windows.Forms.TextBox txbAlugueisTotalAlugueis;
@@ -193,5 +204,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_Imovel;
         private System.Windows.Forms.DataGridViewTextBoxColumn Data_Inicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Data_Fim;
+        private System.Windows.Forms.DataGridViewButtonColumn Excluir_Alguel;
     }
 }

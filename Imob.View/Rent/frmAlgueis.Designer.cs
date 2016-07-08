@@ -40,7 +40,7 @@
             this.lblAlgueisImoveis = new System.Windows.Forms.Label();
             this.lblAlgueisValor = new System.Windows.Forms.Label();
             this.txbAlgueisValor = new System.Windows.Forms.TextBox();
-            this.btnProNovo = new System.Windows.Forms.Button();
+            this.btnProResetar = new System.Windows.Forms.Button();
             this.btnProSalvar = new System.Windows.Forms.Button();
             this.btnProVoltar = new System.Windows.Forms.Button();
             this.dgvAlgueisClientes = new System.Windows.Forms.DataGridView();
@@ -160,15 +160,15 @@
             this.txbAlgueisValor.Size = new System.Drawing.Size(90, 20);
             this.txbAlgueisValor.TabIndex = 14;
             // 
-            // btnProNovo
+            // btnProResetar
             // 
-            this.btnProNovo.Location = new System.Drawing.Point(361, 58);
-            this.btnProNovo.Name = "btnProNovo";
-            this.btnProNovo.Size = new System.Drawing.Size(75, 23);
-            this.btnProNovo.TabIndex = 49;
-            this.btnProNovo.Text = "Novo";
-            this.btnProNovo.UseVisualStyleBackColor = true;
-            this.btnProNovo.Click += new System.EventHandler(this.btnProNovo_Click);
+            this.btnProResetar.Location = new System.Drawing.Point(361, 58);
+            this.btnProResetar.Name = "btnProResetar";
+            this.btnProResetar.Size = new System.Drawing.Size(75, 23);
+            this.btnProResetar.TabIndex = 49;
+            this.btnProResetar.Text = "Resetar";
+            this.btnProResetar.UseVisualStyleBackColor = true;
+            this.btnProResetar.Click += new System.EventHandler(this.btnProNovo_Click);
             // 
             // btnProSalvar
             // 
@@ -333,7 +333,7 @@
             this.Controls.Add(this.lblAlugueisDataInicio);
             this.Controls.Add(this.dgvAlgueisImoveis);
             this.Controls.Add(this.dgvAlgueisClientes);
-            this.Controls.Add(this.btnProNovo);
+            this.Controls.Add(this.btnProResetar);
             this.Controls.Add(this.btnProSalvar);
             this.Controls.Add(this.btnProVoltar);
             this.Controls.Add(this.lblAlgueisValor);
@@ -376,7 +376,7 @@
         private System.Windows.Forms.TextBox txbAlgueisValor;
         private System.Windows.Forms.Button btnProVoltar;
         private System.Windows.Forms.Button btnProSalvar;
-        private System.Windows.Forms.Button btnProNovo;
+        private System.Windows.Forms.Button btnProResetar;
         private System.Windows.Forms.DataGridView dgvAlgueisClientes;
         private System.Windows.Forms.DataGridView dgvAlgueisImoveis;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClienteID;

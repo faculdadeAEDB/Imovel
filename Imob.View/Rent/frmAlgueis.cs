@@ -20,7 +20,7 @@ namespace Imob.View.Rent
 
         private void Cosdgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            txbAlgueisCliente.Text = dgvAlgueisClientes.Rows[e.RowIndex].Cells[1].Value.ToString();
         }
 
         public void Atualizando_grids()
@@ -53,10 +53,10 @@ namespace Imob.View.Rent
             Atualizando_grids();
         }
 
-
         private void dgvImoveis_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            txbAlgueisImovel_ID.Text = dgvAlgueisImoveis.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txbAlgueisImovel_Endereco.Text = dgvAlgueisImoveis.Rows[e.RowIndex].Cells[1].Value.ToString();
         }
 
         private void btnProVoltar_Click(object sender, EventArgs e)

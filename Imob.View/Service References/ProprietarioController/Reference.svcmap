@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3ba0a5a4-ca91-4f30-8d30-9e2d20c9ac5a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d5b4e2a2-a0be-4864-982a-6c9c581cf7a1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://localhost:10945/Controllers/ProprietarioController.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ProprietarioController.wsdl" MetadataType="Wsdl" ID="06d4f228-df82-4bd5-ad1e-b2039d0c3881" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?wsdl" />
-    <MetadataFile FileName="ProprietarioController.disco" MetadataType="Disco" ID="6f1397c8-b833-4e89-8061-63d715a4bec9" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?disco" />
-    <MetadataFile FileName="ProprietarioController.xsd" MetadataType="Schema" ID="e690148a-eea5-4cfb-88be-61d4edac4ddf" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?xsd=xsd0" />
-    <MetadataFile FileName="ProprietarioController1.xsd" MetadataType="Schema" ID="b2cb1549-cc8e-4103-9181-4a498ac922ea" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?xsd=xsd2" />
-    <MetadataFile FileName="ProprietarioController2.xsd" MetadataType="Schema" ID="a80ed91e-bd15-43f4-bf2a-f5d152dceb4c" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?xsd=xsd1" />
+    <MetadataFile FileName="ProprietarioController.wsdl" MetadataType="Wsdl" ID="14ded727-6cb8-4f1a-bfba-42ebe029b51b" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?wsdl" />
+    <MetadataFile FileName="ProprietarioController.disco" MetadataType="Disco" ID="db68b92b-50ca-4149-aeff-ec06f49f4da3" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?disco" />
+    <MetadataFile FileName="ProprietarioController.xsd" MetadataType="Schema" ID="86ab9f23-1710-4dfd-beaa-56bb8aaaa7c0" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?xsd=xsd0" />
+    <MetadataFile FileName="ProprietarioController1.xsd" MetadataType="Schema" ID="8c89d505-f2f4-4205-8af4-1e8597b02cd2" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?xsd=xsd2" />
+    <MetadataFile FileName="ProprietarioController2.xsd" MetadataType="Schema" ID="a4e7fa55-aef7-4fd6-9da5-77b546066b36" SourceId="1" SourceUrl="http://localhost:10945/Controllers/ProprietarioController.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

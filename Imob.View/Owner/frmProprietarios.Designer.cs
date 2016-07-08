@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnProprietariosImovel = new System.Windows.Forms.Button();
-            this.btnProprietariosNovo = new System.Windows.Forms.Button();
+            this.btnProprietariosResetar = new System.Windows.Forms.Button();
             this.btnProprietariosSalvar = new System.Windows.Forms.Button();
             this.btnProprietariosVoltar = new System.Windows.Forms.Button();
             this.dgvProprietarios = new System.Windows.Forms.DataGridView();
@@ -61,15 +61,15 @@
             this.btnProprietariosImovel.UseVisualStyleBackColor = true;
             this.btnProprietariosImovel.Click += new System.EventHandler(this.btnImovel_Click);
             // 
-            // btnProprietariosNovo
+            // btnProprietariosResetar
             // 
-            this.btnProprietariosNovo.Location = new System.Drawing.Point(359, 92);
-            this.btnProprietariosNovo.Name = "btnProprietariosNovo";
-            this.btnProprietariosNovo.Size = new System.Drawing.Size(75, 23);
-            this.btnProprietariosNovo.TabIndex = 45;
-            this.btnProprietariosNovo.Text = "Novo";
-            this.btnProprietariosNovo.UseVisualStyleBackColor = true;
-            this.btnProprietariosNovo.Click += new System.EventHandler(this.btnProNovo_Click);
+            this.btnProprietariosResetar.Location = new System.Drawing.Point(359, 92);
+            this.btnProprietariosResetar.Name = "btnProprietariosResetar";
+            this.btnProprietariosResetar.Size = new System.Drawing.Size(75, 23);
+            this.btnProprietariosResetar.TabIndex = 45;
+            this.btnProprietariosResetar.Text = "Resetar";
+            this.btnProprietariosResetar.UseVisualStyleBackColor = true;
+            this.btnProprietariosResetar.Click += new System.EventHandler(this.btnProNovo_Click);
             // 
             // btnProprietariosSalvar
             // 
@@ -228,7 +228,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 327);
             this.Controls.Add(this.btnProprietariosImovel);
-            this.Controls.Add(this.btnProprietariosNovo);
+            this.Controls.Add(this.btnProprietariosResetar);
             this.Controls.Add(this.btnProprietariosSalvar);
             this.Controls.Add(this.btnProprietariosVoltar);
             this.Controls.Add(this.dgvProprietarios);
@@ -253,7 +253,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnProprietariosImovel;
-        private System.Windows.Forms.Button btnProprietariosNovo;
+        private System.Windows.Forms.Button btnProprietariosResetar;
         private System.Windows.Forms.Button btnProprietariosSalvar;
         private System.Windows.Forms.Button btnProprietariosVoltar;
         private System.Windows.Forms.DataGridView dgvProprietarios;
