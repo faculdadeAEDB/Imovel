@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnClientesNovo = new System.Windows.Forms.Button();
+            this.btnClientesResetar = new System.Windows.Forms.Button();
             this.btnClientesSalvar = new System.Windows.Forms.Button();
             this.btnClientesVoltar = new System.Windows.Forms.Button();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
@@ -53,15 +53,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnClientesNovo
+            // btnClientesResetar
             // 
-            this.btnClientesNovo.Location = new System.Drawing.Point(360, 89);
-            this.btnClientesNovo.Name = "btnClientesNovo";
-            this.btnClientesNovo.Size = new System.Drawing.Size(75, 23);
-            this.btnClientesNovo.TabIndex = 47;
-            this.btnClientesNovo.Text = "Novo";
-            this.btnClientesNovo.UseVisualStyleBackColor = true;
-            this.btnClientesNovo.Click += new System.EventHandler(this.btnClientesNovo_Click);
+            this.btnClientesResetar.Location = new System.Drawing.Point(360, 89);
+            this.btnClientesResetar.Name = "btnClientesResetar";
+            this.btnClientesResetar.Size = new System.Drawing.Size(75, 23);
+            this.btnClientesResetar.TabIndex = 47;
+            this.btnClientesResetar.Text = "Resetar";
+            this.btnClientesResetar.UseVisualStyleBackColor = true;
+            this.btnClientesResetar.Click += new System.EventHandler(this.btnClientesNovo_Click);
             // 
             // btnClientesSalvar
             // 
@@ -245,7 +245,7 @@
             this.ClientSize = new System.Drawing.Size(610, 327);
             this.Controls.Add(this.txbClientesIdade);
             this.Controls.Add(this.lblClientesIdade);
-            this.Controls.Add(this.btnClientesNovo);
+            this.Controls.Add(this.btnClientesResetar);
             this.Controls.Add(this.btnClientesSalvar);
             this.Controls.Add(this.btnClientesVoltar);
             this.Controls.Add(this.dgvClientes);
@@ -271,7 +271,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnClientesNovo;
+        private System.Windows.Forms.Button btnClientesResetar;
         private System.Windows.Forms.Button btnClientesSalvar;
         private System.Windows.Forms.Button btnClientesVoltar;
         private System.Windows.Forms.DataGridView dgvClientes;

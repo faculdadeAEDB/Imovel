@@ -53,9 +53,19 @@ namespace Imob.View.Habitation
             {
                 dgvPropriedades.Rows.Add(
                     item.ID,
+                    item.Endereco, 
                     item.Tipo
                 );
             }
+        }
+
+        public void Atualizando_datagrid(Site.Models.Habitation propriedade)
+        {
+            dgvPropriedades.Rows.Add(
+                propriedade.ID,
+                propriedade.Endereco,
+                propriedade.Tipo
+                );
         }
 
         private void dgvPropriedades_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -64,7 +74,9 @@ namespace Imob.View.Habitation
             {
                 if (e.ColumnIndex == 3)
                 {
-
+                    txbPropriedadesID.Text = dgvPropriedades.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    txbPropriedadesEndereco.Text = dgvPropriedades.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    cbxPropriedadesTipo.Text = dgvPropriedades.Rows[e.RowIndex].Cells[2].Value.ToString();
                 }
                 if (e.ColumnIndex == 4)
                 {

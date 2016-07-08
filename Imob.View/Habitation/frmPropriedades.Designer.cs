@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnPropriedadesNovo = new System.Windows.Forms.Button();
+            this.btnPropriedadesResetar = new System.Windows.Forms.Button();
             this.btnPropriedadesSalvar = new System.Windows.Forms.Button();
             this.btnPropriedadesVoltar = new System.Windows.Forms.Button();
             this.txbPropriedadesID = new System.Windows.Forms.TextBox();
@@ -43,18 +43,20 @@
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PropriedbtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.PropriedbtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.txbPropriedadesDono = new System.Windows.Forms.TextBox();
+            this.lblPropriedadesDono = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPropriedades)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnPropriedadesNovo
+            // btnPropriedadesResetar
             // 
-            this.btnPropriedadesNovo.Location = new System.Drawing.Point(357, 41);
-            this.btnPropriedadesNovo.Name = "btnPropriedadesNovo";
-            this.btnPropriedadesNovo.Size = new System.Drawing.Size(75, 23);
-            this.btnPropriedadesNovo.TabIndex = 41;
-            this.btnPropriedadesNovo.Text = "Novo";
-            this.btnPropriedadesNovo.UseVisualStyleBackColor = true;
-            this.btnPropriedadesNovo.Click += new System.EventHandler(this.PropriedbtnNovo_Click);
+            this.btnPropriedadesResetar.Location = new System.Drawing.Point(357, 41);
+            this.btnPropriedadesResetar.Name = "btnPropriedadesResetar";
+            this.btnPropriedadesResetar.Size = new System.Drawing.Size(75, 23);
+            this.btnPropriedadesResetar.TabIndex = 41;
+            this.btnPropriedadesResetar.Text = "Resetar";
+            this.btnPropriedadesResetar.UseVisualStyleBackColor = true;
+            this.btnPropriedadesResetar.Click += new System.EventHandler(this.PropriedbtnNovo_Click);
             // 
             // btnPropriedadesSalvar
             // 
@@ -188,13 +190,31 @@
             this.PropriedbtnExcluir.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.PropriedbtnExcluir.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
+            // txbPropriedadesDono
+            // 
+            this.txbPropriedadesDono.Location = new System.Drawing.Point(55, 43);
+            this.txbPropriedadesDono.Name = "txbPropriedadesDono";
+            this.txbPropriedadesDono.Size = new System.Drawing.Size(259, 20);
+            this.txbPropriedadesDono.TabIndex = 44;
+            // 
+            // lblPropriedadesDono
+            // 
+            this.lblPropriedadesDono.AutoSize = true;
+            this.lblPropriedadesDono.Location = new System.Drawing.Point(16, 45);
+            this.lblPropriedadesDono.Name = "lblPropriedadesDono";
+            this.lblPropriedadesDono.Size = new System.Drawing.Size(33, 13);
+            this.lblPropriedadesDono.TabIndex = 43;
+            this.lblPropriedadesDono.Text = "Dono";
+            // 
             // frmPropriedades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 327);
+            this.Controls.Add(this.txbPropriedadesDono);
+            this.Controls.Add(this.lblPropriedadesDono);
             this.Controls.Add(this.dgvPropriedades);
-            this.Controls.Add(this.btnPropriedadesNovo);
+            this.Controls.Add(this.btnPropriedadesResetar);
             this.Controls.Add(this.btnPropriedadesSalvar);
             this.Controls.Add(this.btnPropriedadesVoltar);
             this.Controls.Add(this.txbPropriedadesID);
@@ -217,7 +237,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnPropriedadesNovo;
+        private System.Windows.Forms.Button btnPropriedadesResetar;
         private System.Windows.Forms.Button btnPropriedadesSalvar;
         private System.Windows.Forms.Button btnPropriedadesVoltar;
         private System.Windows.Forms.TextBox txbPropriedadesID;
@@ -232,5 +252,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.DataGridViewButtonColumn PropriedbtnEditar;
         private System.Windows.Forms.DataGridViewButtonColumn PropriedbtnExcluir;
+        private System.Windows.Forms.TextBox txbPropriedadesDono;
+        private System.Windows.Forms.Label lblPropriedadesDono;
     }
 }
