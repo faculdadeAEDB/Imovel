@@ -15,6 +15,7 @@ namespace Imob.View.Habitation
 {
     public partial class frmPropriedades : Form
     {
+        private int editandoID = 0;
         public frmPropriedades()
         {
             InitializeComponent();
@@ -22,19 +23,38 @@ namespace Imob.View.Habitation
 
         private void PropriedbtnNovo_Click(object sender, EventArgs e)
         {
+            resetarCampos();
+        }
+
+        private void resetarCampos()
+        {
             txbPropriedadesEndereco.Text = "";
             txbPropriedadesID.Text = "";
             cbxPropriedadesTipo.Text = "";
-
+            txbPropriedadesDono.Text = "";
+            editandoID = 0;
         }
-
+        
         private void PropriedbtnSalvar_Click(object sender, EventArgs e)
         {
              Imob.Site.Models.Habitation c = new Imob.Site.Models.Habitation();
              c.Endereco = txbPropriedadesEndereco.Text;
-            c.Tipo = cbxPropriedadesTipo.Text;
-             (new PropriedadeController.PropriedadeControllerClient()).Editar(c);
-            Atualizando_datagrid();
+             c.Tipo = cbxPropriedadesTipo.Text;
+
+            if (editandoID != 0)
+            {
+                c.ID = editandoID;
+                (new PropriedadeController.PropriedadeControllerClient()).Editar(c);
+                Atualizando_datagrid();
+            }
+            else
+            {
+                Imob.Site.Models.Habitation propriedade = (new PropriedadeControllerClient()).Salvar(c);
+                Atualizando_datagrid(propriedade);
+            }
+            editandoID = 0;
+            resetarCampos();
+           
         }
 
         private void PropriedbtnVoltar_Click(object sender, EventArgs e)
@@ -49,6 +69,7 @@ namespace Imob.View.Habitation
 
         public void Atualizando_datagrid()
         {
+            dgvPropriedades.Rows.Clear();
             foreach (var item in (new PropriedadeController.PropriedadeControllerClient()).Obter().ToList())
             {
                 dgvPropriedades.Rows.Add(
@@ -77,6 +98,7 @@ namespace Imob.View.Habitation
                     txbPropriedadesID.Text = dgvPropriedades.Rows[e.RowIndex].Cells[0].Value.ToString();
                     txbPropriedadesEndereco.Text = dgvPropriedades.Rows[e.RowIndex].Cells[1].Value.ToString();
                     cbxPropriedadesTipo.Text = dgvPropriedades.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    editandoID = Convert.ToInt32(txbPropriedadesID.Text);
                 }
                 if (e.ColumnIndex == 4)
                 {

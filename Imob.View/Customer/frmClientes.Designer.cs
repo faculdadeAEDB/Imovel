@@ -55,7 +55,7 @@
             // 
             // btnClientesResetar
             // 
-            this.btnClientesResetar.Location = new System.Drawing.Point(360, 89);
+            this.btnClientesResetar.Location = new System.Drawing.Point(13, 89);
             this.btnClientesResetar.Name = "btnClientesResetar";
             this.btnClientesResetar.Size = new System.Drawing.Size(75, 23);
             this.btnClientesResetar.TabIndex = 47;
