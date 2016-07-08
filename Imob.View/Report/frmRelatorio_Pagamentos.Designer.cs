@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.dgvPagamentos = new System.Windows.Forms.DataGridView();
-            this.ID_Pagamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Data_Pagamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Valor_Pagamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblRelatorioPagamentos = new System.Windows.Forms.Label();
             this.lblPagamentosTotalPagamentos = new System.Windows.Forms.Label();
             this.lblPagamentosTotalValor = new System.Windows.Forms.Label();
             this.txbPagamentosTotalPagamentos = new System.Windows.Forms.TextBox();
             this.txbPagamentosTotalValor = new System.Windows.Forms.TextBox();
             this.btnPagamentosVoltar = new System.Windows.Forms.Button();
+            this.ID_Pagamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Data_Pagamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor_Pagamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Excluir_Pagamento = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPagamentos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +51,8 @@
             this.dgvPagamentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID_Pagamento,
             this.Data_Pagamento,
-            this.Valor_Pagamento});
+            this.Valor_Pagamento,
+            this.Excluir_Pagamento});
             this.dgvPagamentos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvPagamentos.Location = new System.Drawing.Point(12, 32);
             this.dgvPagamentos.MultiSelect = false;
@@ -58,24 +60,7 @@
             this.dgvPagamentos.ReadOnly = true;
             this.dgvPagamentos.Size = new System.Drawing.Size(586, 514);
             this.dgvPagamentos.TabIndex = 0;
-            // 
-            // ID_Pagamento
-            // 
-            this.ID_Pagamento.HeaderText = "Pagamento";
-            this.ID_Pagamento.Name = "ID_Pagamento";
-            this.ID_Pagamento.ReadOnly = true;
-            // 
-            // Data_Pagamento
-            // 
-            this.Data_Pagamento.HeaderText = "Data";
-            this.Data_Pagamento.Name = "Data_Pagamento";
-            this.Data_Pagamento.ReadOnly = true;
-            // 
-            // Valor_Pagamento
-            // 
-            this.Valor_Pagamento.HeaderText = "Valor";
-            this.Valor_Pagamento.Name = "Valor_Pagamento";
-            this.Valor_Pagamento.ReadOnly = true;
+            this.dgvPagamentos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPagamentos_CellContentClick);
             // 
             // lblRelatorioPagamentos
             // 
@@ -131,6 +116,32 @@
             this.btnPagamentosVoltar.UseVisualStyleBackColor = true;
             this.btnPagamentosVoltar.Click += new System.EventHandler(this.btnPagamentosVoltar_Click);
             // 
+            // ID_Pagamento
+            // 
+            this.ID_Pagamento.HeaderText = "Pagamento";
+            this.ID_Pagamento.Name = "ID_Pagamento";
+            this.ID_Pagamento.ReadOnly = true;
+            // 
+            // Data_Pagamento
+            // 
+            this.Data_Pagamento.HeaderText = "Data";
+            this.Data_Pagamento.Name = "Data_Pagamento";
+            this.Data_Pagamento.ReadOnly = true;
+            // 
+            // Valor_Pagamento
+            // 
+            this.Valor_Pagamento.HeaderText = "Valor";
+            this.Valor_Pagamento.Name = "Valor_Pagamento";
+            this.Valor_Pagamento.ReadOnly = true;
+            // 
+            // Excluir_Pagamento
+            // 
+            this.Excluir_Pagamento.HeaderText = "Excluir";
+            this.Excluir_Pagamento.Name = "Excluir_Pagamento";
+            this.Excluir_Pagamento.ReadOnly = true;
+            this.Excluir_Pagamento.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Excluir_Pagamento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // frmRelatorio_Pagamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,5 +177,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_Pagamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Data_Pagamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor_Pagamento;
+        private System.Windows.Forms.DataGridViewButtonColumn Excluir_Pagamento;
     }
 }

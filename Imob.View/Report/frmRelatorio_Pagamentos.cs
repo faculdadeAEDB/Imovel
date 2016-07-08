@@ -21,5 +21,17 @@ namespace Imob.View.Report
         {
             this.Close();
         }
+
+        private void dgvPagamentos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 3)
+            {
+                if (MessageBox.Show("Deseja realmente excluir?", "Cadastro de Cliente", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    dgvPagamentos.Rows.RemoveAt(e.RowIndex);
+                }
+
+            }
+        }
     }
 }
