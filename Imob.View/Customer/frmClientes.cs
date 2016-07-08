@@ -13,6 +13,8 @@ namespace Imob.View.Customer
 {
     public partial class frmClientes : Form
     {
+        private int editandoId = 0;
+
         public frmClientes()
         {
             InitializeComponent();
@@ -25,6 +27,7 @@ namespace Imob.View.Customer
 
         public void Atualizando_datagrid()
         {
+            dgvClientes.Rows.Clear();
             foreach (var item in (new ClienteController.ClienteControllerClient()).Obter().ToList())
             {
                 dgvClientes.Rows.Add(
@@ -36,6 +39,8 @@ namespace Imob.View.Customer
                     item.cpf
                 );
             }
+
+            dgvClientes.Update();
         }
 
         public void Atualizando_datagrid(Site.Models.Customer cliente)
@@ -58,8 +63,21 @@ namespace Imob.View.Customer
             c.Telefone = txbClientesTelefone.Text;
             c.Idade = txbClientesIdade.Text;
             c.cpf = Convert.ToInt32(txbClientesCPF.Text);
-            Site.Models.Customer cliente = (new ClienteControllerClient()).Salvar(c);
-            Atualizando_datagrid(cliente);
+
+            if(editandoId != 0)
+            {
+                c.ID = editandoId;
+                Site.Models.Customer cliente = (new ClienteControllerClient()).Editar(c);
+                Atualizando_datagrid();
+            }
+            else
+            {
+                Site.Models.Customer cliente = (new ClienteControllerClient()).Salvar(c);
+                Atualizando_datagrid(cliente);
+            }
+
+            editandoId = 0;
+            resetarCampos();
         }
 
         private void CosbtnVoltar_Click(object sender, EventArgs e)
@@ -73,11 +91,12 @@ namespace Imob.View.Customer
             {
                 if (e.ColumnIndex == 6)
                 {
+                    editandoId = Convert.ToInt16(dgvClientes.Rows[0].Cells[0].Value);
                     txbClientesNome.Text = dgvClientes.Rows[e.RowIndex].Cells[1].Value.ToString();
                     txbClientesIdade.Text = dgvClientes.Rows[e.RowIndex].Cells[2].Value.ToString();
                     txbClientesEndereco.Text = dgvClientes.Rows[e.RowIndex].Cells[3].Value.ToString();
                     txbClientesTelefone.Text = dgvClientes.Rows[e.RowIndex].Cells[4].Value.ToString();
-                    txbClientesCPF.Text = dgvClientes.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    txbClientesCPF.Text = dgvClientes.Rows[e.RowIndex].Cells[5].Value.ToString();
                 }
                 if (e.ColumnIndex == 7)
                 {
@@ -92,11 +111,17 @@ namespace Imob.View.Customer
 
         private void btnClientesNovo_Click(object sender, EventArgs e)
         {
+            resetarCampos();
+        }
+
+        private void resetarCampos()
+        {
             txbClientesCPF.Text = "";
             txbClientesEndereco.Text = "";
             txbClientesIdade.Text = "";
             txbClientesNome.Text = "";
             txbClientesTelefone.Text = "";
+            editandoId = 0;
         }
     }
 }
