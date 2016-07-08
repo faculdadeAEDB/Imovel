@@ -40,7 +40,6 @@
             this.Cliente_CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClibtnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ClibtnExcluir = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.txbClientesCPF = new System.Windows.Forms.TextBox();
             this.lblClientesCPF = new System.Windows.Forms.Label();
             this.txbClientesTelefone = new System.Windows.Forms.TextBox();
             this.lblClientesTelefone = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@
             this.lblClientesNome = new System.Windows.Forms.Label();
             this.txbClientesIdade = new System.Windows.Forms.TextBox();
             this.lblClientesIdade = new System.Windows.Forms.Label();
+            this.txbClientesCPF = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +65,7 @@
             // 
             // btnClientesSalvar
             // 
-            this.btnClientesSalvar.Location = new System.Drawing.Point(441, 89);
+            this.btnClientesSalvar.Location = new System.Drawing.Point(441, 61);
             this.btnClientesSalvar.Name = "btnClientesSalvar";
             this.btnClientesSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnClientesSalvar.TabIndex = 46;
@@ -75,7 +75,7 @@
             // 
             // btnClientesVoltar
             // 
-            this.btnClientesVoltar.Location = new System.Drawing.Point(522, 89);
+            this.btnClientesVoltar.Location = new System.Drawing.Point(522, 61);
             this.btnClientesVoltar.Name = "btnClientesVoltar";
             this.btnClientesVoltar.Size = new System.Drawing.Size(75, 23);
             this.btnClientesVoltar.TabIndex = 45;
@@ -158,13 +158,6 @@
             this.ClibtnExcluir.Name = "ClibtnExcluir";
             this.ClibtnExcluir.ReadOnly = true;
             // 
-            // txbClientesCPF
-            // 
-            this.txbClientesCPF.Location = new System.Drawing.Point(380, 63);
-            this.txbClientesCPF.Name = "txbClientesCPF";
-            this.txbClientesCPF.Size = new System.Drawing.Size(217, 20);
-            this.txbClientesCPF.TabIndex = 43;
-            // 
             // lblClientesCPF
             // 
             this.lblClientesCPF.AutoSize = true;
@@ -238,18 +231,26 @@
             this.lblClientesIdade.TabIndex = 48;
             this.lblClientesIdade.Text = "Idade";
             // 
+            // txbClientesCPF
+            // 
+            this.txbClientesCPF.Location = new System.Drawing.Point(380, 63);
+            this.txbClientesCPF.Mask = "0000";
+            this.txbClientesCPF.Name = "txbClientesCPF";
+            this.txbClientesCPF.Size = new System.Drawing.Size(35, 20);
+            this.txbClientesCPF.TabIndex = 50;
+            // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 327);
+            this.Controls.Add(this.txbClientesCPF);
             this.Controls.Add(this.txbClientesIdade);
             this.Controls.Add(this.lblClientesIdade);
             this.Controls.Add(this.btnClientesResetar);
             this.Controls.Add(this.btnClientesSalvar);
             this.Controls.Add(this.btnClientesVoltar);
             this.Controls.Add(this.dgvClientes);
-            this.Controls.Add(this.txbClientesCPF);
             this.Controls.Add(this.lblClientesCPF);
             this.Controls.Add(this.txbClientesTelefone);
             this.Controls.Add(this.lblClientesTelefone);
@@ -275,7 +276,6 @@
         private System.Windows.Forms.Button btnClientesSalvar;
         private System.Windows.Forms.Button btnClientesVoltar;
         private System.Windows.Forms.DataGridView dgvClientes;
-        private System.Windows.Forms.TextBox txbClientesCPF;
         private System.Windows.Forms.Label lblClientesCPF;
         private System.Windows.Forms.TextBox txbClientesTelefone;
         private System.Windows.Forms.Label lblClientesTelefone;
@@ -293,5 +293,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cliente_CPF;
         private System.Windows.Forms.DataGridViewButtonColumn ClibtnEditar;
         private System.Windows.Forms.DataGridViewButtonColumn ClibtnExcluir;
+        private System.Windows.Forms.MaskedTextBox txbClientesCPF;
     }
 }

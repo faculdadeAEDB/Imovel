@@ -38,9 +38,9 @@
             this.ID_Aluguel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome_Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome_Proprietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_Imovel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Data_Inicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Data_Fim = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AluguelValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Excluir_Alguel = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlugueis)).BeginInit();
             this.SuspendLayout();
@@ -65,9 +65,9 @@
             this.ID_Aluguel,
             this.Nome_Cliente,
             this.Nome_Proprietario,
-            this.ID_Imovel,
             this.Data_Inicio,
             this.Data_Fim,
+            this.AluguelValor,
             this.Excluir_Alguel});
             this.dgvAlugueis.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvAlugueis.Location = new System.Drawing.Point(12, 32);
@@ -140,12 +140,6 @@
             this.Nome_Proprietario.Name = "Nome_Proprietario";
             this.Nome_Proprietario.ReadOnly = true;
             // 
-            // ID_Imovel
-            // 
-            this.ID_Imovel.HeaderText = "Imovel";
-            this.ID_Imovel.Name = "ID_Imovel";
-            this.ID_Imovel.ReadOnly = true;
-            // 
             // Data_Inicio
             // 
             this.Data_Inicio.HeaderText = "Data do inicio do contrato";
@@ -157,6 +151,12 @@
             this.Data_Fim.HeaderText = "Data do fim do contrato";
             this.Data_Fim.Name = "Data_Fim";
             this.Data_Fim.ReadOnly = true;
+            // 
+            // AluguelValor
+            // 
+            this.AluguelValor.HeaderText = "Valor";
+            this.AluguelValor.Name = "AluguelValor";
+            this.AluguelValor.ReadOnly = true;
             // 
             // Excluir_Alguel
             // 
@@ -183,6 +183,7 @@
             this.MinimizeBox = false;
             this.Name = "frmRelatorio_Algueis";
             this.Text = "frmRelatorio_Algueis";
+            this.Load += new System.EventHandler(this.frmRelatorio_Algueis_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlugueis)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -201,9 +202,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_Aluguel;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome_Cliente;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome_Proprietario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_Imovel;
         private System.Windows.Forms.DataGridViewTextBoxColumn Data_Inicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Data_Fim;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AluguelValor;
         private System.Windows.Forms.DataGridViewButtonColumn Excluir_Alguel;
     }
 }

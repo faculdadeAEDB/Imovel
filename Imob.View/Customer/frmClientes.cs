@@ -57,27 +57,43 @@ namespace Imob.View.Customer
 
         private void CosbtnSalvar_Click(object sender, EventArgs e)
         {
-            Site.Models.Customer c = new Site.Models.Customer();
-            c.Nome = txbClientesNome.Text;
-            c.Endereco = txbClientesEndereco.Text;
-            c.Telefone = txbClientesTelefone.Text;
-            c.Idade = txbClientesIdade.Text;
-            c.cpf = Convert.ToInt32(txbClientesCPF.Text);
-
-            if(editandoId != 0)
+            if (verificarcampos())
             {
-                c.ID = editandoId;
-                Site.Models.Customer cliente = (new ClienteControllerClient()).Editar(c);
-                Atualizando_datagrid();
+                Site.Models.Customer c = new Site.Models.Customer();
+                c.Nome = txbClientesNome.Text;
+                c.Endereco = txbClientesEndereco.Text;
+                c.Telefone = txbClientesTelefone.Text;
+                c.Idade = txbClientesIdade.Text;
+                c.cpf = Convert.ToInt32(txbClientesCPF.Text);
+
+                if (editandoId != 0)
+                {
+                    c.ID = editandoId;
+                    Site.Models.Customer cliente = (new ClienteControllerClient()).Editar(c);
+                    Atualizando_datagrid();
+                }
+                else
+                {
+                    Site.Models.Customer cliente = (new ClienteControllerClient()).Salvar(c);
+                    Atualizando_datagrid(cliente);
+                }
+
+                editandoId = 0;
+                resetarCampos();
             }
             else
-            {
-                Site.Models.Customer cliente = (new ClienteControllerClient()).Salvar(c);
-                Atualizando_datagrid(cliente);
-            }
+                MessageBox.Show("Nem todos os campos foram preenchidos", "Campos Incorretos");
 
-            editandoId = 0;
-            resetarCampos();
+        }
+
+        private bool verificarcampos()
+        {
+            if (txbClientesCPF.Text.Trim() != "" && txbClientesEndereco.Text.Trim() != "" && txbClientesIdade.Text.Trim() != "" && txbClientesNome.Text.Trim() != "" && txbClientesTelefone.Text.Trim() != "")
+            {
+               return(true);
+            }
+                return (false);
+
         }
 
         private void CosbtnVoltar_Click(object sender, EventArgs e)

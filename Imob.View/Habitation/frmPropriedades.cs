@@ -37,24 +37,38 @@ namespace Imob.View.Habitation
         
         private void PropriedbtnSalvar_Click(object sender, EventArgs e)
         {
-             Imob.Site.Models.Habitation c = new Imob.Site.Models.Habitation();
-             c.Endereco = txbPropriedadesEndereco.Text;
-             c.Tipo = cbxPropriedadesTipo.Text;
-
-            if (editandoID != 0)
+            if ((verificarcampos()))
             {
-                c.ID = editandoID;
-                (new PropriedadeController.PropriedadeControllerClient()).Editar(c);
-                Atualizando_datagrid();
+                Imob.Site.Models.Habitation c = new Imob.Site.Models.Habitation();
+                c.Endereco = txbPropriedadesEndereco.Text;
+                c.Tipo = cbxPropriedadesTipo.Text;
+
+                if (editandoID != 0)
+                {
+                    c.ID = editandoID;
+                    (new PropriedadeController.PropriedadeControllerClient()).Editar(c);
+                    Atualizando_datagrid();
+                }
+                else
+                {
+                    Imob.Site.Models.Habitation propriedade = (new PropriedadeControllerClient()).Salvar(c);
+                    Atualizando_datagrid(propriedade);
+                }
+                editandoID = 0;
+                resetarCampos();
             }
             else
+                MessageBox.Show("Nem todos os campos foram preenchidos", "Campos Incorretos");
+        }
+
+        private bool verificarcampos()
+        {
+            if (txbPropriedadesDono.Text.Trim() != "" && txbPropriedadesEndereco.Text.Trim() != "")
             {
-                Imob.Site.Models.Habitation propriedade = (new PropriedadeControllerClient()).Salvar(c);
-                Atualizando_datagrid(propriedade);
+                return (true);
             }
-            editandoID = 0;
-            resetarCampos();
-           
+            return (false);
+
         }
 
         private void PropriedbtnVoltar_Click(object sender, EventArgs e)

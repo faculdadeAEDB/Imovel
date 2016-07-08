@@ -12,6 +12,8 @@ namespace Imob.View.Report
 {
     public partial class frmRelatorio_Algueis : Form
     {
+        decimal contadorvalor = 0;
+        int contadoralugueis = 0;
         public frmRelatorio_Algueis()
         {
             InitializeComponent();
@@ -31,6 +33,46 @@ namespace Imob.View.Report
                     dgvAlugueis.Rows.RemoveAt(e.RowIndex);
                 }
 
+            }
+        }
+
+        private void frmRelatorio_Algueis_Load(object sender, EventArgs e)
+        {
+            Atualizando_grids();
+            Contando_Alugueis();
+            Contando_Valores();
+        }
+
+        private void Contando_Valores()
+        {
+            foreach (var item in (new AluguelController.AluguelControllerClient()).Obter().ToList())
+            {
+                contadorvalor =+ item.Valor;
+            }
+            txbAlgueisTotalValor.Text = contadorvalor.ToString();
+        }
+
+        private void Contando_Alugueis()
+        {
+            foreach(var item in (new AluguelController.AluguelControllerClient()).Obter().ToList())
+            {
+                contadoralugueis = contadoralugueis + 1;
+            }
+            txbAlugueisTotalAlugueis.Text = contadoralugueis.ToString();
+        }
+
+        private void Atualizando_grids()
+        {
+            foreach (var item in (new AluguelController.AluguelControllerClient()).Obter().ToList())
+            {
+                dgvAlugueis.Rows.Add(
+                    item.ID,
+                    item.Inquilino,
+                    item.Dono,
+                    item.DataInicio,
+                    item.DataFim,
+                    item.Valor
+                );
             }
         }
     }

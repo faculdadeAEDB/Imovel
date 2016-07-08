@@ -13,7 +13,6 @@ namespace Imob.Site.Models
         public string DataFim { get; set; }
         public Customer Inquilino { get; set; }
         public Owner Dono { get; set; }
-
         public ICollection<Payment> Pagamentos { get; set; }
 
     }
