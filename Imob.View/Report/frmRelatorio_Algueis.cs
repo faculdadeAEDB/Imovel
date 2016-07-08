@@ -31,6 +31,8 @@ namespace Imob.View.Report
                 if (MessageBox.Show("Deseja realmente excluir?", "Cadastro de Cliente", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
                 {
                     dgvAlugueis.Rows.RemoveAt(e.RowIndex);
+                    Contando_Alugueis();
+                    Contando_Valores();
                 }
 
             }
@@ -45,6 +47,7 @@ namespace Imob.View.Report
 
         private void Contando_Valores()
         {
+            contadorvalor = 0;
             foreach (var item in (new AluguelController.AluguelControllerClient()).Obter().ToList())
             {
                 contadorvalor =+ item.Valor;
@@ -54,6 +57,7 @@ namespace Imob.View.Report
 
         private void Contando_Alugueis()
         {
+            contadoralugueis = 0;
             foreach(var item in (new AluguelController.AluguelControllerClient()).Obter().ToList())
             {
                 contadoralugueis = contadoralugueis + 1;
