@@ -38,16 +38,28 @@ namespace Imob.View.Customer
             }
         }
 
+        public void Atualizando_datagrid(Site.Models.Customer cliente)
+        {
+            dgvClientes.Rows.Add(
+                cliente.ID,
+                cliente.Nome,
+                cliente.Idade,
+                cliente.Endereco,
+                cliente.Telefone,
+                cliente.cpf
+            );
+        }
+
         private void CosbtnSalvar_Click(object sender, EventArgs e)
         {
-            Imob.Site.Models.Customer c = new Imob.Site.Models.Customer();
+            Site.Models.Customer c = new Site.Models.Customer();
             c.Nome = txbClientesNome.Text;
             c.Endereco = txbClientesEndereco.Text;
             c.Telefone = txbClientesTelefone.Text;
             c.Idade = txbClientesIdade.Text;
             c.cpf = Convert.ToInt32(txbClientesCPF.Text);
-            Imob.Site.Models.Customer cliente = (new ClienteController.ClienteControllerClient()).Salvar(c);
-            Atualizando_datagrid();
+            Site.Models.Customer cliente = (new ClienteControllerClient()).Salvar(c);
+            Atualizando_datagrid(cliente);
         }
 
         private void CosbtnVoltar_Click(object sender, EventArgs e)
@@ -61,7 +73,11 @@ namespace Imob.View.Customer
             {
                 if (e.ColumnIndex == 6)
                 {
-
+                    txbClientesNome.Text = dgvClientes.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    txbClientesIdade.Text = dgvClientes.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    txbClientesEndereco.Text = dgvClientes.Rows[e.RowIndex].Cells[3].Value.ToString();
+                    txbClientesTelefone.Text = dgvClientes.Rows[e.RowIndex].Cells[4].Value.ToString();
+                    txbClientesCPF.Text = dgvClientes.Rows[e.RowIndex].Cells[1].Value.ToString();
                 }
                 if (e.ColumnIndex == 7)
                 {
