@@ -118,7 +118,17 @@ namespace Imob.View.Customer
                 {
                     if (MessageBox.Show("Deseja realmente excluir?", "Cadastro de Cliente", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
                     {
+                        /*Site.Models.Customer c = new Site.Models.Customer();
+                        c.ID = Convert.ToInt32(dgvClientes.Rows[e.RowIndex].Cells[0].Value);
+                        c.Idade = dgvClientes.Rows[e.RowIndex].Cells[2].Value.ToString();
+                        c.Nome = dgvClientes.Rows[e.RowIndex].Cells[1].Value.ToString();
+                        c.Endereco = dgvClientes.Rows[e.RowIndex].Cells[3].Value.ToString();
+                        c.Telefone = dgvClientes.Rows[e.RowIndex].Cells[4].Value.ToString();
+                        c.cpf = Convert.ToInt32(dgvClientes.Rows[e.RowIndex].Cells[5].Value);
+                        c.Alugueis = null;
+                        Site.Models.Customer cliente = (new ClienteControllerClient()).Excluir(c);*/
                         dgvClientes.Rows.RemoveAt(e.RowIndex);
+
                     }
 
                 }
